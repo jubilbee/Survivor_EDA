@@ -50,7 +50,7 @@ def get_gender(main, gender):
         contestant_links = soup.find('a', class_='category-page__pagination-next wds-button wds-is-secondary')
         if contestant_links:
             contestants = contestant_links.get('href')
-            #print("Next page URL:", contestant) # Debug
+            #print("Next page URL:", contestants) # Debug
         else:
             break
     return gender_dict
@@ -74,8 +74,9 @@ contestant_table.replace('Solomon "Sol" Yi', 'Sol Yi', inplace=True)
 contestant_table.replace('Christine "Teeny" Chirichillo', 'Teeny Chirichillo', inplace=True)
 
 contestant_table['Name'] = contestant_table['Name'].apply(lambda name: find_closest_match(name, gender_dict, threshold=0.6))
-
-
+season_table['Winner'] = season_table['Winner'].apply(lambda name: find_closest_match(name, gender_dict, threshold=0.6))
+season_table['Runner(s)-up'] = season_table['Runner(s)-up'].apply(lambda name: find_closest_match(name, gender_dict, threshold=0.6))
+season_table['Runner(s)-up.1'] = season_table['Runner(s)-up.1'].apply(lambda name: find_closest_match(name, gender_dict, threshold=0.6))
 
 def get_ethnicity(URLS):
     ethnicity_dict = {}
@@ -102,24 +103,44 @@ URLS = [
 get_ethnicity(URLS)
 contestant_table['Ethnicity'] = contestant_table['Ethnicity'].fillna('White')
 
-# Filling in genders
+# Filling in nonbinary genders
 contestant_table['Gender'] = contestant_table['Name'].map(gender_dict)
 contestant_table.loc[contestant_table['Name'] == 'Teeny Chirichillo', 'Gender'] = 'N'
 contestant_table.loc[contestant_table['Name'] == 'Evvie Jagoda', 'Gender'] = 'N'
 
 
-# Then need to work on getting lgbt info (for a bool column? maybe)
+def get_lgbt(main):
+    lgbt_dict = {name: False for name in contestant_table['Name']}
+    contestants = None
+    while True:
+        if contestants:
+            url = contestants
+        else:
+            url = main
+        page = requests.get(url)
+        soup = BeautifulSoup(page.content, 'html.parser')
+        results = soup.find('div', class_='category-page__members')
+        names = results.find_all('li', class_='category-page__member')
+        for name in names:
+            name = name.find('a', class_='category-page__member-link').text.strip()
+            lgbt_dict[name] = True
+        contestant_links = soup.find('a', class_='category-page__pagination-next wds-button wds-is-secondary')
+        if contestant_links:
+            contestants = contestant_links.get('href')
+        else:  
+            break
+    contestant_table['LGBT'] = contestant_table['Name'].map(lgbt_dict)
+    return lgbt_dict
+lgbt_dict = get_lgbt('https://survivor.fandom.com/wiki/Category:LGBT_Contestants')
+
+
 # Then webscrape new table on idols/ whatever ig?
-
-# https://survivor.fandom.com/wiki/Category:LGBT_Contestants
-# I think similar to gender function but a bool instead of input value
-
 # Have found a site with some tables on idol, advantage/disadvantage, immunity stats
 # Determining whether to make add this info to the contestant table, or its own table
 # If it's own table, probably need to find a way to convert the contestant name to the contestant tables index? (foreign key)
 
-# As it is, I also need to convert names from season table's winner/ runner up columns to match the other table.
-# Need to change 'Subtitle' value on season table for 1st season to 'Borneo' (remove[c])
-# It may be better to change the Season on contestant table to int only. So I can match to season table
+
+# Need to change 'Subtitle' value on season table for 1st season to 'Borneo' (remove[c]) - Simple replace or loc
+# It may be better to change the Season on contestant table to int only. So I can match to season table - Something like 'Season' = i+1? i=0 
 
 contestant_table
