@@ -186,23 +186,50 @@ def has_disability(url):
     return disabled_dict
 has_disability('https://survivor.fandom.com/wiki/Category:Disabled_Contestants') # <- add to contestant table, same as lgbt - a bool
 
-# Determining whether to make add this info to the contestant table, or its own table
 # If it's own table, probably need to find a way to convert the contestant name to the contestant tables index? (foreign key)
 # Most idols https://truedorktimes.com/survivor/boxscores/idolsfound-season.htm
 # advantages found https://truedorktimes.com/survivor/boxscores/advantages.htm
 # individual immunity wins https://truedorktimes.com/survivor/boxscores/icwin.htm
 # contestant performance stats per season https://www.truedorktimes.com/survivor/boxscores/data.htm
-    # I'm not sure how i would be able to use the seasonal performance data, i would 
-    # guess to show how well different contestants perform, and how that lines up with their placement
-    # issue with that is the social game aspect, poor players either being voted off early due to their poor performance
-    # or kept later due to their low threat level.
-    # similarly, high performers could be kept longer due to their usefulness for tribe strength
-    # or sent home early due to their high threat level. 
-    # i wonder if theres a wiki table on disabled contestants? ik the one paralympian contestant was ultimately voted off because she would've won.
-    # there's an inherant bias, i think, not in how contestants are picked for the show, but in how players view competitors threat levels
     # for stat table should probably start with a function similar to gender one, but with the code for forming the table mixed in?
+# on the stats by season landing page, all seasons have pagination with links to their page listed as <a href> s{season}.html
+# Can probably do similar to gender function, but using variable  for the season number to replace number in url
+# the main url f'https://www.truedorktimes.com/survivor/boxscores/s{season}.htm'
+def stats():
+    seasons = 48
+    all_stats = []
+    for season in range(1, seasons + 1):
+        url = f'https://www.truedorktimes.com/survivor/boxscores/s{season}.htm'
+        page = requests.get(url)
+        soup = BeautifulSoup(page.content, 'html.parser')
+        tables = soup.find('table')
+        stats_table = pd.read_html(StringIO(str(tables)))
+        stats_table = pd.concat(stats_table, axis=0).reset_index(drop=True)
+        all_stats.append(stats_table)
 
+    stats = pd.concat(all_stats, axis=0).reset_index(drop=True)
+    return stats
+stats_table = stats()
+# SurvSc: Survival Score
+# SurvAv: Survival Average
+# ChW: Challenge Wins
+# ChA: Challenge Appearances
+# ChW%: Challenge Win %
+# SO: Sit Outs
+# VFB: Votes For Bootee
+# VAP: Votes Against (Total)
+# TotV: Total Votes Cast
+# TCA: Tribal Council Appearances
+# TC%: Tribal Council %
+# wTCR: Tribal Council Ratio (weighted)
+# JVF: Jury Votes For 
+# TotJ: Total Number Of Jurors
+# JV%: Jury Votes %
 
+# Stats table may warrant adding dictionary of some sort to project, to further explain the data as presented.
 
-
+# Need to: iterate over contestant name href's to get the full matching name (and maybe replace the name with the index for the matching name from contestant table)
+# Drop the repeat/ unnecessary columns at the end of table
+# Look at the table info/ details to figure out how to get rid of the top column names? (or at least learn how to work with a table with this format)
+# Rename all sub column names/ abbr with their meanings
 contestant_table
