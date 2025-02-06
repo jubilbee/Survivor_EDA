@@ -126,9 +126,9 @@ def get_lgbt(main):
             contestants = contestant_links.get('href')
         else:  
             break
-    contestant_table['LGBT'] = contestant_table['Name'].map(lgbt_dict)
+    contestant_table['Lgbt'] = contestant_table['Name'].map(lgbt_dict)
     return lgbt_dict
-lgbt_dict = get_lgbt('https://survivor.fandom.com/wiki/Category:LGBT_Contestants')
+get_lgbt('https://survivor.fandom.com/wiki/Category:LGBT_Contestants')
 
 
 contestant_table.replace({'Survivor: Borneo': 1, 
@@ -173,11 +173,34 @@ contestant_table.replace({'Survivor: Borneo': 1,
     'Survivor: Winners at War': 40}, inplace=True) #.infer_objects(copy=False) 
 
 
+def has_disability(url):
+    disabled_dict = {name: False for name in contestant_table['Name']}
+    page = requests.get(url)
+    soup = BeautifulSoup(page.content, 'html.parser')
+    results = soup.find('div', class_='category-page__members')
+    names = results.find_all('li', class_='category-page__member')
+    for name in names:
+        name = name.find('a', class_='category-page__member-link').text.strip()
+        disabled_dict[name] = True
+    contestant_table['Has Disability'] = contestant_table['Name'].map(disabled_dict)
+    return disabled_dict
+has_disability('https://survivor.fandom.com/wiki/Category:Disabled_Contestants') # <- add to contestant table, same as lgbt - a bool
 
-# Then webscrape new table on idols/ whatever ig?
-# Have found a site with some tables on idol, advantage/disadvantage, immunity stats
 # Determining whether to make add this info to the contestant table, or its own table
 # If it's own table, probably need to find a way to convert the contestant name to the contestant tables index? (foreign key)
+# Most idols https://truedorktimes.com/survivor/boxscores/idolsfound-season.htm
+# advantages found https://truedorktimes.com/survivor/boxscores/advantages.htm
+# individual immunity wins https://truedorktimes.com/survivor/boxscores/icwin.htm
+# contestant performance stats per season https://www.truedorktimes.com/survivor/boxscores/data.htm
+    # I'm not sure how i would be able to use the seasonal performance data, i would 
+    # guess to show how well different contestants perform, and how that lines up with their placement
+    # issue with that is the social game aspect, poor players either being voted off early due to their poor performance
+    # or kept later due to their low threat level.
+    # similarly, high performers could be kept longer due to their usefulness for tribe strength
+    # or sent home early due to their high threat level. 
+    # i wonder if theres a wiki table on disabled contestants? ik the one paralympian contestant was ultimately voted off because she would've won.
+    # there's an inherant bias, i think, not in how contestants are picked for the show, but in how players view competitors threat levels
+    # for stat table should probably start with a function similar to gender one, but with the code for forming the table mixed in?
 
 
 
