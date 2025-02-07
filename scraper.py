@@ -172,7 +172,6 @@ contestant_table.replace({'Survivor: Borneo': 1,
     'Survivor: Island of the Idols': 39, 
     'Survivor: Winners at War': 40}, inplace=True) #.infer_objects(copy=False) 
 
-
 def has_disability(url):
     disabled_dict = {name: False for name in contestant_table['Name']}
     page = requests.get(url)
@@ -190,11 +189,7 @@ has_disability('https://survivor.fandom.com/wiki/Category:Disabled_Contestants')
 # Most idols https://truedorktimes.com/survivor/boxscores/idolsfound-season.htm
 # advantages found https://truedorktimes.com/survivor/boxscores/advantages.htm
 # individual immunity wins https://truedorktimes.com/survivor/boxscores/icwin.htm
-# contestant performance stats per season https://www.truedorktimes.com/survivor/boxscores/data.htm
-    # for stat table should probably start with a function similar to gender one, but with the code for forming the table mixed in?
-# on the stats by season landing page, all seasons have pagination with links to their page listed as <a href> s{season}.html
-# Can probably do similar to gender function, but using variable  for the season number to replace number in url
-# the main url f'https://www.truedorktimes.com/survivor/boxscores/s{season}.htm'
+
 def stats():
     seasons = 48
     all_stats = []
@@ -210,6 +205,13 @@ def stats():
     stats = pd.concat(all_stats, axis=0).reset_index(drop=True)
     return stats
 stats_table = stats()
+
+# Drop unnecessary/ duplicate columns
+stats_table.drop(('Unnamed: 1_level_0', 'SurvSc'), axis = 1, inplace=True)
+stats_table.drop(('Unnamed: 2_level_0', 'SurvAv'), axis = 1, inplace=True)
+stats_table.drop(('Unnamed: 0_level_0', 'Unnamed: 0_level_1'), axis = 1, inplace=True)
+stats_table.drop(('Challenge stats', 'ChW.1'), axis = 1, inplace=True)
+
 # SurvSc: Survival Score
 # SurvAv: Survival Average
 # ChW: Challenge Wins
@@ -229,7 +231,8 @@ stats_table = stats()
 # Stats table may warrant adding dictionary of some sort to project, to further explain the data as presented.
 
 # Need to: iterate over contestant name href's to get the full matching name (and maybe replace the name with the index for the matching name from contestant table)
-# Drop the repeat/ unnecessary columns at the end of table
 # Look at the table info/ details to figure out how to get rid of the top column names? (or at least learn how to work with a table with this format)
 # Rename all sub column names/ abbr with their meanings
+# Add at least the top indivdual immunity wins info (link above) to stats.
+# May make another table for idols/advantages, or add to stats 
 contestant_table
