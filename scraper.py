@@ -190,6 +190,7 @@ has_disability('https://survivor.fandom.com/wiki/Category:Disabled_Contestants')
 # advantages found https://truedorktimes.com/survivor/boxscores/advantages.htm
 # individual immunity wins https://truedorktimes.com/survivor/boxscores/icwin.htm
 
+
 def stats():
     seasons = 48
     all_stats = []
@@ -200,11 +201,27 @@ def stats():
         tables = soup.find('table')
         stats_table = pd.read_html(StringIO(str(tables)))
         stats_table = pd.concat(stats_table, axis=0).reset_index(drop=True)
-        all_stats.append(stats_table)
 
+        name_links = soup.find_all('tr', class_='score')
+        contestant_names = []
+        for name in name_links:
+           a_tag = name.find('a')
+           if a_tag:
+            href = a_tag['href']
+            contestant_name = href.split('/')[-1].split('.')[0]
+            contestant_name = contestant_name.replace('_', ' ').title()
+            contestant_names.append(contestant_name)
+        
+        if ('Unnamed: 0_level_0', 'Contestant') in stats_table.columns:
+            stats_table[('Unnamed: 0_level_0', 'Contestant')] = pd.Series(contestant_names)
+        all_stats.append(stats_table)
     stats = pd.concat(all_stats, axis=0).reset_index(drop=True)
     return stats
 stats_table = stats()
+
+# for some reason season 2 and 45 seem to not be functioning?
+# these 2 seasons don't have hyperlinks for their names going to other tables
+# may need to manually update for these 2 seasons
 
 # Drop unnecessary/ duplicate columns
 stats_table.drop(('Unnamed: 1_level_0', 'SurvSc'), axis = 1, inplace=True)
