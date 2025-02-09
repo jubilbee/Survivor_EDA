@@ -62,7 +62,8 @@ def find_closest_match(name, gender_dict, threshold=0.6):
         return name
     else:
         return closest_matches[0] 
-    
+
+# Manually replaces what names weren't abled to be replaced with find_closest_match    
 contestant_table.replace('Jon "Jonny Fairplay" Dalton', 'Jon Dalton', inplace=True)        
 contestant_table.replace('Leon Joseph "LJ" McKanas', 'LJ McKanas', inplace=True)
 contestant_table.replace('Evelyn "Evvie" Jagoda', 'Evvie Jagoda', inplace=True)
@@ -130,7 +131,7 @@ def get_lgbt(main):
     return lgbt_dict
 get_lgbt('https://survivor.fandom.com/wiki/Category:LGBT_Contestants')
 
-
+# Manually replaces season names in contestant table with their season number
 contestant_table.replace({'Survivor: Borneo': 1, 
     'Survivor: The Australian Outback': 2,
     'Survivor: Africa': 3, 
@@ -185,43 +186,91 @@ def has_disability(url):
     return disabled_dict
 has_disability('https://survivor.fandom.com/wiki/Category:Disabled_Contestants') # <- add to contestant table, same as lgbt - a bool
 
+
 # If it's own table, probably need to find a way to convert the contestant name to the contestant tables index? (foreign key)
 # Most idols https://truedorktimes.com/survivor/boxscores/idolsfound-season.htm
 # advantages found https://truedorktimes.com/survivor/boxscores/advantages.htm
 # individual immunity wins https://truedorktimes.com/survivor/boxscores/icwin.htm
 
-
 def stats():
     seasons = 48
     all_stats = []
+
     for season in range(1, seasons + 1):
         url = f'https://www.truedorktimes.com/survivor/boxscores/s{season}.htm'
         page = requests.get(url)
         soup = BeautifulSoup(page.content, 'html.parser')
         tables = soup.find('table')
-        stats_table = pd.read_html(StringIO(str(tables)))
-        stats_table = pd.concat(stats_table, axis=0).reset_index(drop=True)
-
+        stats_table = pd.read_html(StringIO(str(tables)))[0]
+        
         name_links = soup.find_all('tr', class_='score')
         contestant_names = []
-        for name in name_links:
-           a_tag = name.find('a')
-           if a_tag:
-            href = a_tag['href']
-            contestant_name = href.split('/')[-1].split('.')[0]
-            contestant_name = contestant_name.replace('_', ' ').title()
+        for i in range(len(stats_table)):
+            try:
+                name = name_links[i]
+                a_tag = name.find('a')
+                if a_tag:
+                    href = a_tag['href']
+                    contestant_name = href.split('/')[-1].split('.')[0]
+                    contestant_name = contestant_name.replace('_', ' ').title()
+                else:
+                    contestant_name = stats_table.loc[i, ('Unnamed: 0_level_0', 'Contestant')]
+            except (IndexError, KeyError):
+                contestant_name = stats_table.loc[i, ('Unnamed: 0_level_0', 'Contestant')]
             contestant_names.append(contestant_name)
         
+    
         if ('Unnamed: 0_level_0', 'Contestant') in stats_table.columns:
             stats_table[('Unnamed: 0_level_0', 'Contestant')] = pd.Series(contestant_names)
+
         all_stats.append(stats_table)
+    
     stats = pd.concat(all_stats, axis=0).reset_index(drop=True)
     return stats
+
 stats_table = stats()
 
-# for some reason season 2 and 45 seem to not be functioning?
-# these 2 seasons don't have hyperlinks for their names going to other tables
-# may need to manually update for these 2 seasons
+stats_table.replace({
+'Colby': 'Colby Donaldson',
+'Tina': 'Tina Wesson',
+'Keith': 'Keith Famie',
+'Nick': 'Nick Brown',
+'Jerri': 'Jerri Manthey',
+'Skupin*': 'Michael Skupin',
+'Mitchell': 'Mitchell Olson',
+'Jeff V': 'Jeff Varner',
+'Alicia': 'Alicia Calaway',
+'Elisabeth': 'Elisabeth Filarski',
+'Amber': 'Amber Mariano',
+'Rodger': 'Rodger Bingham',
+'Kimmi': 'Kimmi Kappenberg',
+'Maralyn': 'Maralyn Hershey',
+'Kel': 'Kel Gleason',
+'Debb': 'Debb Eaton',
+'Austin': 'Austin Li Coon',
+'Dee': 'Dee Valladares',
+'Emily': 'Emily Flippen',
+'Bruce': 'Bruce Perreault',
+'Katurah': 'Katurah Topps',
+'J.Maya': 'J. Maya',
+'Drew': 'Drew Basile',
+'Julie': 'Julie Alley',
+'Kellie': 'Kellie Nalbandian',
+'Kaleb': 'Kaleb Gebrewold',
+'Sifu': 'Sifu Alsup',
+'Jake': "Jake O'Kane",
+'Sean': 'Sean Edwards',
+'Kendra': 'Kendra McQuarrie',
+'Brando': 'Brando Meyer',
+'Sabiyah': 'Sabiyah Broderick',
+'Brandon': 'Brandon Donlon',
+'Hannah': 'Hannah Rose'
+}, inplace=True)
+
+# Ok ,still need to find a way to copy values of duplicate columns to original 
+# 'if dupe column not null, original column = dupe' or vice versa
+# need to do this before dropping them.
+
 
 # Drop unnecessary/ duplicate columns
 stats_table.drop(('Unnamed: 1_level_0', 'SurvSc'), axis = 1, inplace=True)
@@ -247,9 +296,9 @@ stats_table.drop(('Challenge stats', 'ChW.1'), axis = 1, inplace=True)
 
 # Stats table may warrant adding dictionary of some sort to project, to further explain the data as presented.
 
-# Need to: iterate over contestant name href's to get the full matching name (and maybe replace the name with the index for the matching name from contestant table)
 # Look at the table info/ details to figure out how to get rid of the top column names? (or at least learn how to work with a table with this format)
 # Rename all sub column names/ abbr with their meanings
 # Add at least the top indivdual immunity wins info (link above) to stats.
 # May make another table for idols/advantages, or add to stats 
 contestant_table
+
