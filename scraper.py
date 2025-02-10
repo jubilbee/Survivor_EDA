@@ -267,11 +267,12 @@ stats_table.replace({
 'Hannah': 'Hannah Rose'
 }, inplace=True)
 
-# Ok ,still need to find a way to copy values of duplicate columns to original 
-# 'if dupe column not null, original column = dupe' or vice versa
-# need to do this before dropping them.
 
+if stats_table[('Overall scores', 'SurvSc')].isnull().any():
+    stats_table.loc[stats_table[('Overall scores', 'SurvSc')].isnull(), ('Overall scores', 'SurvSc')] = stats_table[('Unnamed: 1_level_0', 'SurvSc')]
 
+if stats_table[('Overall scores', 'SurvAv')].isnull().any():
+    stats_table.loc[stats_table[('Overall scores', 'SurvAv')].isnull(), ('Overall scores', 'SurvAv')] = stats_table[('Unnamed: 2_level_0', 'SurvAv')]
 # Drop unnecessary/ duplicate columns
 stats_table.drop(('Unnamed: 1_level_0', 'SurvSc'), axis = 1, inplace=True)
 stats_table.drop(('Unnamed: 2_level_0', 'SurvAv'), axis = 1, inplace=True)
@@ -294,7 +295,6 @@ stats_table.drop(('Challenge stats', 'ChW.1'), axis = 1, inplace=True)
 # TotJ: Total Number Of Jurors
 # JV%: Jury Votes %
 
-# Stats table may warrant adding dictionary of some sort to project, to further explain the data as presented.
 
 # Look at the table info/ details to figure out how to get rid of the top column names? (or at least learn how to work with a table with this format)
 # Rename all sub column names/ abbr with their meanings
