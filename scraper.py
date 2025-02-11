@@ -4,7 +4,7 @@ from io import StringIO
 import difflib
 import pandas as pd
 
-#season overview table
+# season overview table
 URL = "https://en.wikipedia.org/wiki/Survivor_(American_TV_series)"
 page = requests.get(URL)
 soup  = BeautifulSoup(page.content, 'html.parser')
@@ -15,8 +15,7 @@ table = tables[0]
 season_table = pd.read_html(StringIO(str(table)))
 season_table = pd.concat(season_table, axis=0).reset_index(drop=True)
 
-# Should I turn these into functions? And call them in j notebook, or should i write to csv at end
-#contestant table
+# contestant table
 URL = "https://en.wikipedia.org/wiki/List_of_Survivor_(American_TV_series)_contestants"
 page = requests.get(URL)
 soup = BeautifulSoup(page.content, 'html.parser')
@@ -27,7 +26,7 @@ contestant_table = pd.read_html(StringIO(str(tables)))
 contestant_table = pd.concat(contestant_table, axis=0).reset_index(drop=True)
 
 season_table.loc[season_table['Subtitle'] == 'Borneo[c]', 'Subtitle'] = 'Borneo'
-
+# Function to create dictionaries of contestants with the same gender
 def get_gender(main, gender):
     gender_dict = {}
     contestants = None
@@ -51,11 +50,11 @@ def get_gender(main, gender):
         else:
             break
     return gender_dict
-
+# Run function for Male and Female contestants, combine into one dictionary
 female_dict = get_gender('https://survivor.fandom.com/wiki/Category:Female_Contestants', 'F')
 male_dict = get_gender('https://survivor.fandom.com/wiki/Category:Male_Contestants', 'M')
 gender_dict = {**male_dict, **female_dict}
-
+# Function to look for close name matches in the gender dictionary and contestant table, and replaces contestant table values with the gender dictionary values 
 def find_closest_match(name, gender_dict, threshold=0.6):
     closest_matches = difflib.get_close_matches(name, gender_dict.keys(), n=1, cutoff=threshold)
     if not closest_matches:
@@ -63,19 +62,19 @@ def find_closest_match(name, gender_dict, threshold=0.6):
     else:
         return closest_matches[0] 
 
-# Manually replaces what names weren't abled to be replaced with find_closest_match    
+# Manually replaces what names won't be able to be replaced with find_closest_match    
 contestant_table.replace('Jon "Jonny Fairplay" Dalton', 'Jon Dalton', inplace=True)        
 contestant_table.replace('Leon Joseph "LJ" McKanas', 'LJ McKanas', inplace=True)
 contestant_table.replace('Evelyn "Evvie" Jagoda', 'Evvie Jagoda', inplace=True)
 contestant_table.replace('Janani "J. Maya" Krishnan-Jha', 'J. Maya', inplace=True)
 contestant_table.replace('Solomon "Sol" Yi', 'Sol Yi', inplace=True)
 contestant_table.replace('Christine "Teeny" Chirichillo', 'Teeny Chirichillo', inplace=True)
-
+# Run closest match function for contestant table and Winner/ Runners up columns of season table
 contestant_table['Name'] = contestant_table['Name'].apply(lambda name: find_closest_match(name, gender_dict, threshold=0.6))
 season_table['Winner'] = season_table['Winner'].apply(lambda name: find_closest_match(name, gender_dict, threshold=0.6))
 season_table['Runner(s)-up'] = season_table['Runner(s)-up'].apply(lambda name: find_closest_match(name, gender_dict, threshold=0.6))
 season_table['Runner(s)-up.1'] = season_table['Runner(s)-up.1'].apply(lambda name: find_closest_match(name, gender_dict, threshold=0.6))
-
+# Function to fill Ethnicity column in contestant table with data from list of urls
 def get_ethnicity(URLS):
     ethnicity_dict = {}
     for URL in URLS:
@@ -106,7 +105,7 @@ contestant_table['Gender'] = contestant_table['Name'].map(gender_dict)
 contestant_table.loc[contestant_table['Name'] == 'Teeny Chirichillo', 'Gender'] = 'N'
 contestant_table.loc[contestant_table['Name'] == 'Evvie Jagoda', 'Gender'] = 'N'
 
-
+# Function to fill lgbt column in contestant table with True or False values based on url containing a list of lgbt contestants
 def get_lgbt(main):
     lgbt_dict = {name: False for name in contestant_table['Name']}
     contestants = None
@@ -172,7 +171,7 @@ contestant_table.replace({'Survivor: Borneo': 1,
     'Survivor: Edge of Extinction': 38, 
     'Survivor: Island of the Idols': 39, 
     'Survivor: Winners at War': 40}, inplace=True) #.infer_objects(copy=False) 
-
+# function to fill a disability column in contestant table with True or False values
 def has_disability(url):
     disabled_dict = {name: False for name in contestant_table['Name']}
     page = requests.get(url)
@@ -186,23 +185,18 @@ def has_disability(url):
     return disabled_dict
 has_disability('https://survivor.fandom.com/wiki/Category:Disabled_Contestants') # <- add to contestant table, same as lgbt - a bool
 
-
-# If it's own table, probably need to find a way to convert the contestant name to the contestant tables index? (foreign key)
-# Most idols https://truedorktimes.com/survivor/boxscores/idolsfound-season.htm
-# advantages found https://truedorktimes.com/survivor/boxscores/advantages.htm
-# individual immunity wins https://truedorktimes.com/survivor/boxscores/icwin.htm
-
+# Creates a contestants stats table by iterating over various urls per season
 def stats():
     seasons = 48
     all_stats = []
-
+    # iterate over season urls
     for season in range(1, seasons + 1):
         url = f'https://www.truedorktimes.com/survivor/boxscores/s{season}.htm'
         page = requests.get(url)
         soup = BeautifulSoup(page.content, 'html.parser')
         tables = soup.find('table')
         stats_table = pd.read_html(StringIO(str(tables)))[0]
-        
+        # find contestant name attributes
         name_links = soup.find_all('tr', class_='score')
         contestant_names = []
         for i in range(len(stats_table)):
@@ -219,7 +213,6 @@ def stats():
                 contestant_name = stats_table.loc[i, ('Unnamed: 0_level_0', 'Contestant')]
             contestant_names.append(contestant_name)
         
-    
         if ('Unnamed: 0_level_0', 'Contestant') in stats_table.columns:
             stats_table[('Unnamed: 0_level_0', 'Contestant')] = pd.Series(contestant_names)
 
@@ -229,45 +222,45 @@ def stats():
     return stats
 
 stats_table = stats()
-
+# Manually replaces names that couldn't be handled when making stats table, with their full name
 stats_table.replace({
-'Colby': 'Colby Donaldson',
-'Tina': 'Tina Wesson',
-'Keith': 'Keith Famie',
-'Nick': 'Nick Brown',
-'Jerri': 'Jerri Manthey',
-'Skupin*': 'Michael Skupin',
-'Mitchell': 'Mitchell Olson',
-'Jeff V': 'Jeff Varner',
-'Alicia': 'Alicia Calaway',
-'Elisabeth': 'Elisabeth Filarski',
-'Amber': 'Amber Mariano',
-'Rodger': 'Rodger Bingham',
-'Kimmi': 'Kimmi Kappenberg',
-'Maralyn': 'Maralyn Hershey',
-'Kel': 'Kel Gleason',
-'Debb': 'Debb Eaton',
-'Austin': 'Austin Li Coon',
-'Dee': 'Dee Valladares',
-'Emily': 'Emily Flippen',
-'Bruce': 'Bruce Perreault',
-'Katurah': 'Katurah Topps',
-'J.Maya': 'J. Maya',
-'Drew': 'Drew Basile',
-'Julie': 'Julie Alley',
-'Kellie': 'Kellie Nalbandian',
-'Kaleb': 'Kaleb Gebrewold',
-'Sifu': 'Sifu Alsup',
-'Jake': "Jake O'Kane",
-'Sean': 'Sean Edwards',
-'Kendra': 'Kendra McQuarrie',
-'Brando': 'Brando Meyer',
-'Sabiyah': 'Sabiyah Broderick',
-'Brandon': 'Brandon Donlon',
-'Hannah': 'Hannah Rose'
+    'Colby': 'Colby Donaldson',
+    'Tina': 'Tina Wesson',
+    'Keith': 'Keith Famie',
+    'Nick': 'Nick Brown',
+    'Jerri': 'Jerri Manthey',
+    'Skupin*': 'Michael Skupin',
+    'Mitchell': 'Mitchell Olson',
+    'Jeff V': 'Jeff Varner',
+    'Alicia': 'Alicia Calaway',
+    'Elisabeth': 'Elisabeth Filarski',
+    'Amber': 'Amber Mariano',
+    'Rodger': 'Rodger Bingham',
+    'Kimmi': 'Kimmi Kappenberg',
+    'Maralyn': 'Maralyn Hershey',
+    'Kel': 'Kel Gleason',
+    'Debb': 'Debb Eaton',
+    'Austin': 'Austin Li Coon',
+    'Dee': 'Dee Valladares',
+    'Emily': 'Emily Flippen',
+    'Bruce': 'Bruce Perreault',
+    'Katurah': 'Katurah Topps',
+    'J.Maya': 'J. Maya',
+    'Drew': 'Drew Basile',
+    'Julie': 'Julie Alley',
+    'Kellie': 'Kellie Nalbandian',
+    'Kaleb': 'Kaleb Gebrewold',
+    'Sifu': 'Sifu Alsup',
+    'Jake': "Jake O'Kane",
+    'Sean': 'Sean Edwards',
+    'Kendra': 'Kendra McQuarrie',
+    'Brando': 'Brando Meyer',
+    'Sabiyah': 'Sabiyah Broderick',
+    'Brandon': 'Brandon Donlon',
+    'Hannah': 'Hannah Rose'
 }, inplace=True)
 
-
+# Copy values from duplicate columns over to original column (where value is null) 
 if stats_table[('Overall scores', 'SurvSc')].isnull().any():
     stats_table.loc[stats_table[('Overall scores', 'SurvSc')].isnull(), ('Overall scores', 'SurvSc')] = stats_table[('Unnamed: 1_level_0', 'SurvSc')]
 
@@ -279,6 +272,33 @@ stats_table.drop(('Unnamed: 2_level_0', 'SurvAv'), axis = 1, inplace=True)
 stats_table.drop(('Unnamed: 0_level_0', 'Unnamed: 0_level_1'), axis = 1, inplace=True)
 stats_table.drop(('Challenge stats', 'ChW.1'), axis = 1, inplace=True)
 
+# Need to add following to stats table: 
+
+# advantages found 
+# individual immunity wins 
+
+# most idols table
+page = requests.get('https://truedorktimes.com/survivor/boxscores/idolsfound-season.htm')
+soup = BeautifulSoup(page.content, 'html.parser')
+tables = soup.find_all('table')
+idols = pd.read_html(StringIO(str(tables)))
+idols = pd.concat(idols, axis=0).reset_index(drop=True)
+# note- there is also a full google sheet for idols found (is listed per instance) this has more context for idol usages, including 45+ contestants with 1 or less idols founds but not played. 
+# advantages - (only through season 40) 
+page = requests.get('https://truedorktimes.com/survivor/boxscores/advantages.htm')
+soup = BeautifulSoup(page.content, 'html.parser')
+tables = soup.find_all('table')
+advantages = pd.read_html(StringIO(str(tables)))
+advantages = pd.concat(advantages, axis=0).reset_index(drop=True)
+# individual immunity wins
+page = requests.get('https://truedorktimes.com/survivor/boxscores/icwin.htm')
+soup = BeautifulSoup(page.content, 'html.parser')
+tables = soup.find_all('table')
+immunity = pd.read_html(StringIO(str(tables)))
+immunity = pd.concat(immunity, axis=0).reset_index(drop=True)
+
+# List of Column name meanings (To potentially update to later):
+# -- Stats table --
 # SurvSc: Survival Score
 # SurvAv: Survival Average
 # ChW: Challenge Wins
@@ -294,7 +314,20 @@ stats_table.drop(('Challenge stats', 'ChW.1'), axis = 1, inplace=True)
 # JVF: Jury Votes For 
 # TotJ: Total Number Of Jurors
 # JV%: Jury Votes %
-
+# -- Idols --
+# IF: Idols founds
+# IH: Idols held
+# IP: Idols Played
+# VV: Votes voided
+# -- Advantages --
+# AF: Advantage found
+# AP: Advantage played
+# VV: Votes voided - redundant (idol list includes advantagess this is relevant to)
+# VFB: Votes for booted player (If adv. extra or steal a vote. Will likely drop)
+# Tie broken? Only applies to 2 vote block advantages, will drop
+# -- Immunity Wins --
+# ICW: Individual (immunity) challenge wins
+# ICA: Challenge appearances
 
 # Look at the table info/ details to figure out how to get rid of the top column names? (or at least learn how to work with a table with this format)
 # Rename all sub column names/ abbr with their meanings
