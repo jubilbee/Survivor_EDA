@@ -212,12 +212,9 @@ def stats():
             except (IndexError, KeyError):
                 contestant_name = stats_table.loc[i, ('Unnamed: 0_level_0', 'Contestant')]
             contestant_names.append(contestant_name)
-        
         if ('Unnamed: 0_level_0', 'Contestant') in stats_table.columns:
             stats_table[('Unnamed: 0_level_0', 'Contestant')] = pd.Series(contestant_names)
-
         all_stats.append(stats_table)
-    
     stats = pd.concat(all_stats, axis=0).reset_index(drop=True)
     return stats
 
@@ -274,15 +271,13 @@ stats_table.drop(('Challenge stats', 'ChW.1'), axis = 1, inplace=True)
 
 # Need to add following to stats table: 
 
-# advantages found 
-# individual immunity wins 
-
 # most idols table
 page = requests.get('https://truedorktimes.com/survivor/boxscores/idolsfound-season.htm')
 soup = BeautifulSoup(page.content, 'html.parser')
 tables = soup.find_all('table')
 idols = pd.read_html(StringIO(str(tables)))
 idols = pd.concat(idols, axis=0).reset_index(drop=True)
+# to drop - Rank, Contestant, Season
 # note- there is also a full google sheet for idols found (is listed per instance) this has more context for idol usages, including 45+ contestants with 1 or less idols founds but not played. 
 # advantages - (only through season 40) 
 page = requests.get('https://truedorktimes.com/survivor/boxscores/advantages.htm')
@@ -290,12 +285,14 @@ soup = BeautifulSoup(page.content, 'html.parser')
 tables = soup.find_all('table')
 advantages = pd.read_html(StringIO(str(tables)))
 advantages = pd.concat(advantages, axis=0).reset_index(drop=True)
+# To drop - Rank, Contestant, Season, VV, VFB, Tie broken?
 # individual immunity wins
 page = requests.get('https://truedorktimes.com/survivor/boxscores/icwin.htm')
 soup = BeautifulSoup(page.content, 'html.parser')
 tables = soup.find_all('table')
 immunity = pd.read_html(StringIO(str(tables)))
 immunity = pd.concat(immunity, axis=0).reset_index(drop=True)
+# To drop- Rank, Contestant, Season (Will ultimately drop Contestant.1 for all 3 - will be merged onto stats)
 
 # List of Column name meanings (To potentially update to later):
 # -- Stats table --
@@ -330,8 +327,6 @@ immunity = pd.concat(immunity, axis=0).reset_index(drop=True)
 # ICA: Challenge appearances
 
 # Look at the table info/ details to figure out how to get rid of the top column names? (or at least learn how to work with a table with this format)
-# Rename all sub column names/ abbr with their meanings
-# Add at least the top indivdual immunity wins info (link above) to stats.
 # May make another table for idols/advantages, or add to stats 
 contestant_table
 
