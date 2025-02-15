@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 from io import StringIO
 import difflib
 import pandas as pd
+import os
 
 # season overview table
 URL = "https://en.wikipedia.org/wiki/Survivor_(American_TV_series)"
@@ -60,7 +61,7 @@ def find_closest_match(name, gender_dict, threshold=0.6):
     if not closest_matches:
         return name
     else:
-        return closest_matches[0] 
+        return closest_matches[0] # Pytest to double check that the names match up? Maybe
 
 # Manually replaces what names won't be able to be replaced with find_closest_match    
 contestant_table.replace('Jon "Jonny Fairplay" Dalton', 'Jon Dalton', inplace=True)        
@@ -278,7 +279,8 @@ tables = soup.find_all('table')
 idols = pd.read_html(StringIO(str(tables)))
 idols = pd.concat(idols, axis=0).reset_index(drop=True)
 # to drop - Rank, Contestant, Season
-# note- there is also a full google sheet for idols found (is listed per instance) this has more context for idol usages, including 45+ contestants with 1 or less idols founds but not played. 
+# clean values (save for notebook?) - drop row index [81] (45+ players tie -> null contestant.1), strip row values of * (and other special characters as listed on url)
+
 # advantages - (only through season 40) 
 page = requests.get('https://truedorktimes.com/survivor/boxscores/advantages.htm')
 soup = BeautifulSoup(page.content, 'html.parser')
@@ -286,7 +288,8 @@ tables = soup.find_all('table')
 advantages = pd.read_html(StringIO(str(tables)))
 advantages = pd.concat(advantages, axis=0).reset_index(drop=True)
 # To drop - Rank, Contestant, Season, VV, VFB, Tie broken?
-# individual immunity wins
+
+#  individual immunity wins
 page = requests.get('https://truedorktimes.com/survivor/boxscores/icwin.htm')
 soup = BeautifulSoup(page.content, 'html.parser')
 tables = soup.find_all('table')
@@ -294,39 +297,22 @@ immunity = pd.read_html(StringIO(str(tables)))
 immunity = pd.concat(immunity, axis=0).reset_index(drop=True)
 # To drop- Rank, Contestant, Season (Will ultimately drop Contestant.1 for all 3 - will be merged onto stats)
 
-# List of Column name meanings (To potentially update to later):
-# -- Stats table --
-# SurvSc: Survival Score
-# SurvAv: Survival Average
-# ChW: Challenge Wins
-# ChA: Challenge Appearances
-# ChW%: Challenge Win %
-# SO: Sit Outs
-# VFB: Votes For Bootee
-# VAP: Votes Against (Total)
-# TotV: Total Votes Cast
-# TCA: Tribal Council Appearances
-# TC%: Tribal Council %
-# wTCR: Tribal Council Ratio (weighted)
-# JVF: Jury Votes For 
-# TotJ: Total Number Of Jurors
-# JV%: Jury Votes %
-# -- Idols --
-# IF: Idols founds
-# IH: Idols held
-# IP: Idols Played
-# VV: Votes voided
-# -- Advantages --
-# AF: Advantage found
-# AP: Advantage played
-# VV: Votes voided - redundant (idol list includes advantagess this is relevant to)
-# VFB: Votes for booted player (If adv. extra or steal a vote. Will likely drop)
-# Tie broken? Only applies to 2 vote block advantages, will drop
-# -- Immunity Wins --
-# ICW: Individual (immunity) challenge wins
-# ICA: Challenge appearances
 
 # Look at the table info/ details to figure out how to get rid of the top column names? (or at least learn how to work with a table with this format)
 # May make another table for idols/advantages, or add to stats 
 contestant_table
 
+# contestants, seasons, stats (idols, advantages, indiv. immunities)
+def create_csv(df, file):
+    if os.path.exists(file):
+        return print(f'{file} already exists.')
+    else:
+        df.to_csv(file)
+        print(f'{file} has been created.')
+    return
+seasons = create_csv(season_table, 'seasons.csv')
+contestants = create_csv(contestant_table, 'contestants.csv')
+stats = create_csv(stats_table, 'stats.csv')
+idols = create_csv(idols, 'idols.csv') # Note - Manually added values in that were left off initial table
+advantages = create_csv(advantages, 'advantages.csv')
+immunities = create_csv(immunity, 'immunities.csv')
