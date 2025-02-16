@@ -29,6 +29,9 @@ contestant_table = pd.concat(contestant_table, axis=0).reset_index(drop=True)
 season_table.loc[season_table['Subtitle'] == 'Borneo[c]', 'Subtitle'] = 'Borneo'
 # Function to create dictionaries of contestants with the same gender
 def get_gender(main, gender):
+    """
+    
+    """
     gender_dict = {}
     contestants = None
     while True:
@@ -57,6 +60,9 @@ male_dict = get_gender('https://survivor.fandom.com/wiki/Category:Male_Contestan
 gender_dict = {**male_dict, **female_dict}
 # Function to look for close name matches in the gender dictionary and contestant table, and replaces contestant table values with the gender dictionary values 
 def find_closest_match(name, gender_dict, threshold=0.6):
+    """
+    
+    """
     closest_matches = difflib.get_close_matches(name, gender_dict.keys(), n=1, cutoff=threshold)
     if not closest_matches:
         return name
@@ -77,6 +83,9 @@ season_table['Runner(s)-up'] = season_table['Runner(s)-up'].apply(lambda name: f
 season_table['Runner(s)-up.1'] = season_table['Runner(s)-up.1'].apply(lambda name: find_closest_match(name, gender_dict, threshold=0.6))
 # Function to fill Ethnicity column in contestant table with data from list of urls
 def get_ethnicity(URLS):
+    """
+    
+    """
     ethnicity_dict = {}
     for URL in URLS:
         page = requests.get(URL)
@@ -108,6 +117,9 @@ contestant_table.loc[contestant_table['Name'] == 'Evvie Jagoda', 'Gender'] = 'N'
 
 # Function to fill lgbt column in contestant table with True or False values based on url containing a list of lgbt contestants
 def get_lgbt(main):
+    """
+    
+    """
     lgbt_dict = {name: False for name in contestant_table['Name']}
     contestants = None
     while True:
@@ -174,6 +186,9 @@ contestant_table.replace({'Survivor: Borneo': 1,
     'Survivor: Winners at War': 40}, inplace=True) #.infer_objects(copy=False) 
 # function to fill a disability column in contestant table with True or False values
 def has_disability(url):
+    """
+    
+    """
     disabled_dict = {name: False for name in contestant_table['Name']}
     page = requests.get(url)
     soup = BeautifulSoup(page.content, 'html.parser')
@@ -187,7 +202,10 @@ def has_disability(url):
 has_disability('https://survivor.fandom.com/wiki/Category:Disabled_Contestants') # <- add to contestant table, same as lgbt - a bool
 
 # Creates a contestants stats table by iterating over various urls per season
-def stats():
+def stats(): # need to add season column?
+    """
+
+    """
     seasons = 48
     all_stats = []
     # iterate over season urls
@@ -197,6 +215,7 @@ def stats():
         soup = BeautifulSoup(page.content, 'html.parser')
         tables = soup.find('table')
         stats_table = pd.read_html(StringIO(str(tables)))[0]
+        stats_table['Unnamed: 0_level_0','Season'] = season
         # find contestant name attributes
         name_links = soup.find_all('tr', class_='score')
         contestant_names = []
@@ -217,7 +236,7 @@ def stats():
             stats_table[('Unnamed: 0_level_0', 'Contestant')] = pd.Series(contestant_names)
         all_stats.append(stats_table)
     stats = pd.concat(all_stats, axis=0).reset_index(drop=True)
-    return stats
+    return stats # used AI to help troubleshoot this function. (may add info on this in docstring)
 
 stats_table = stats()
 # Manually replaces names that couldn't be handled when making stats table, with their full name
@@ -304,6 +323,9 @@ contestant_table
 
 # contestants, seasons, stats (idols, advantages, indiv. immunities)
 def create_csv(df, file):
+    """
+    
+    """
     if os.path.exists(file):
         return print(f'{file} already exists.')
     else:
