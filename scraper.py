@@ -283,6 +283,12 @@ if stats_table[('Overall scores', 'SurvSc')].isnull().any():
 
 if stats_table[('Overall scores', 'SurvAv')].isnull().any():
     stats_table.loc[stats_table[('Overall scores', 'SurvAv')].isnull(), ('Overall scores', 'SurvAv')] = stats_table[('Unnamed: 2_level_0', 'SurvAv')]
+
+if stats_table[('Unnamed: 0_level_0', 'Contestant')].isnull().any():
+    stats_table.loc[stats_table[('Unnamed: 0_level_0', 'Contestant')].isnull(), ('Unnamed: 0_level_0', 'Contestant')] = stats_table[('Unnamed: 0_level_0', 'Unnamed: 0_level_1')]
+
+if stats_table[('Challenge stats', 'ChW%')].isnull().any():
+    stats_table.loc[stats_table[('Challenge stats', 'ChW%')].isnull(), ('Challenge stats', 'ChW%')] = stats_table[('Challenge stats', 'ChW.1')]
 # Drop unnecessary/ duplicate columns
 stats_table.drop(('Unnamed: 1_level_0', 'SurvSc'), axis = 1, inplace=True)
 stats_table.drop(('Unnamed: 2_level_0', 'SurvAv'), axis = 1, inplace=True)
@@ -337,6 +343,6 @@ def create_csv(df, file):
 seasons = create_csv(season_table, 'seasons.csv')
 contestants = create_csv(contestant_table, 'contestants.csv')
 stats = create_csv(stats_table, 'stats.csv')
-idols = create_csv(idols, 'idol.csv') # Note - Manually added values in that were left off initial table
+idols = create_csv(idols, 'idols.csv') # Note - Manually added values in that were left off initial table
 advantages = create_csv(advantages, 'advantages.csv')
 immunities = create_csv(immunity, 'immunities.csv')
