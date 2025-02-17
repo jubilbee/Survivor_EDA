@@ -1,876 +1,876 @@
-,Season,Name,Age,Hometown,Profession,Finish,Ethnicity,Gender,Lgbt,Has Disability
-0,1,Sonja Christopher,63,"Walnut Creek, CA",Gym Teacher / Retired,16th,White,F,True,False
-1,1,B.B. Andersen,64,"Mission Hills, KS",Real Estate Developer,15th,White,M,False,False
-2,1,Stacey Stillman,27,"San Francisco, CA",Attorney,14th,White,F,False,False
-3,1,Ramona Gray,29,"Edison, NJ",Biochemist,13th,African-American,F,False,False
-4,1,Dirk Been,23,"Spring Green, WI",Dairy Farmer,12th,White,M,False,False
-5,1,Joel Klug,27,"Sherwood, AR",Health Club Consultant,11th,White,M,False,False
-6,1,Gretchen Cordy,38,"Clarksville, TN",Teacher,10th,White,F,False,False
-7,1,Greg Buis,24,"Gold Hill, CO",Ivy League Graduate,9th,White,M,False,False
-8,1,Jenna Lewis,22,"Franklin, NH",Student,8th,White,F,False,False
-9,1,Gervase Peterson,30,"Willingboro, NJ",YMCA Basketball Coach,7th,African-American,M,False,False
-10,1,Colleen Haskell,23,"Miami Beach, FL",Student,6th,White,F,False,False
-11,1,Sean Kenniff,30,"Carle Place, NY",Neurologist,5th,White,M,False,False
-12,1,Susan Hawk,38,"Palmyra, WI",Truck Driver,4th,White,F,False,False
-13,1,Rudy Boesch,72,"Virginia Beach, VA",Retired NAVY Seal,3rd,White,M,False,False
-14,1,Kelly Wiglesworth,22,"Kernville, CA",River Rafting Guide,Runner-up,White,F,False,False
-15,1,Richard Hatch,39,"Newport, RI",Corporate Trainer,Winner,White,M,True,False
-16,2,Debb Eaton,45,"Milan, NH",Corrections Officer,16th,White,F,False,False
-17,2,Kel Gleason,32,"Fort Hood, TX",Army Intelligence Officer,15th,Latin American,M,False,False
-18,2,Maralyn Hershey,51,"Wakefield, VA",Retired Police Officer,14th,White,F,False,False
-19,2,Mitchell Olson,23,"Union City, NJ",Singer/Songwriter,13th,White,M,True,False
-20,2,Kimmi Kappenberg,28,"Ronkonkoma, NY",Bartender,12th,White,F,False,False
-21,2,Michael Skupin,38,"White Lake, MI",Software Publisher,11th,White,M,False,False
-22,2,Jeff Varner,34,"New York, NY",Internet Projects Manager,10th,White,M,True,False
-23,2,Alicia Calaway,32,"New York, NY",Personal Trainer,9th,African-American,F,False,False
-24,2,Jerri Manthey,30,"Los Angeles, CA",Aspiring Actress,8th,White,F,False,False
-25,2,Nick Brown,23,"Steilacoom, WA",Law Student,7th,African-American,M,False,False
-26,2,Amber Mariano,22,"Beaver, PA",Administrative Assistant,6th,White,F,False,False
-27,2,Rodger Bingham,53,"Crittenden, KY",Teacher/Farmer,5th,White,M,False,False
-28,2,Elisabeth Filarski,23,"Newton, MA",Footwear Designer,4th,White,F,False,False
-29,2,Keith Famie,40,"West Bloomfield, MI",Chef,3rd,White,M,False,False
-30,2,Colby Donaldson,26,"Dallas, TX",Auto Customizer,Runner-up,White,M,False,False
-31,2,Tina Wesson,39,"Knoxville, TN",Personal Nurse,Winner,White,F,False,False
-32,3,Diane Ogden,42,"Lincoln, NE",Mail Carrier,16th,White,F,False,False
-33,3,Jessie Camacho,27,"Orlando, FL",Sheriff,15th,Latin American,F,False,False
-34,3,Carl Bilancione,46,"Winter Springs, FL",Dentist,14th,White,M,False,False
-35,3,Linda Spencer,44,"Boston, MA",Career Counselor,13th,African-American,F,False,False
-36,3,Silas Gaither,23,"Los Angeles, CA",Bartender,12th,White,M,False,False
-37,3,Lindsey Richter,27,"Portland, OR",Advertising Executive,11th,White,F,False,False
-38,3,Clarence Black,24,"Detroit, MI",Basketball Coach,10th,African-American,M,False,False
-39,3,Kelly Goldsmith,22,"San Diego, CA",Behavior Analyst,9th,White,F,False,False
-40,3,Brandon Quinton,25,"Dallas, TX",Bartender,8th,White,M,True,False
-41,3,Frank Garrison,43,"Odessa, NY",Telephone Technician,7th,White,M,False,False
-42,3,Kim Powers,29,"Conshohocken, PA",Freelance Marketer,6th,White,F,False,False
-43,3,Teresa Cooper,42,"Jackson, GA",Flight Attendant,5th,White,F,False,False
-44,3,Tom Buchanan,46,"Rich Valley, VA",Goat Farmer,4th,White,M,False,False
-45,3,Lex van den Berghe,38,"Santa Cruz, CA",Marketing Manager,3rd,White,M,False,False
-46,3,Kim Johnson,57,"Oyster Bay, NY",Retired Teacher,Runner-up,White,F,False,False
-47,3,Ethan Zohn,27,"New York, NY",Professional Soccer Player,Winner,White,M,False,False
-48,4,Peter Harkey,45,"Millis, MA",Bowling Alley Owner,16th,White,M,False,False
-49,4,Patricia Jackson,49,"Lugoff, SC",Truck Assembler,15th,White,F,False,False
-50,4,Hunter Ellis,33,"La Jolla, CA",Ex-Navy Fighter Pilot,14th,White,M,False,False
-51,4,Sarah Jones,24,"Newport Beach, CA",Account Manager,13th,White,F,False,False
-52,4,Gabriel Cade,23,"Hollywood, CA",Bartender,12th,White,M,False,False
-53,4,Gina Crews,28,"Gainesville, FL",Nature Guide,11th,White,F,False,False
-54,4,Rob Mariano,26,"Canton, MA",Construction Worker,10th,White,M,False,False
-55,4,John Carroll,36,"Omaha, NE",Nurse,9th,White,M,True,False
-56,4,Zoe Zanidakis,35,"Monhegan Island, ME",Fishing Boat Captain,8th,White,F,False,False
-57,4,Tammy Leitner,29,"Mesa, AZ",Crime Reporter,7th,White,F,False,False
-58,4,Robert DeCanio,38,"College Point, NY",Limousine Driver,6th,White,M,False,False
-59,4,Sean Rector,30,"Los Angeles, CA",Teacher,5th,African-American,M,False,False
-60,4,Paschal English,57,"Thomaston, GA",Judge,4th,White,M,False,False
-61,4,Kathy Vavrick-O'Brien,47,"Burlington, VT",Real Estate Agent,3rd,White,F,False,False
-62,4,Neleh Dennis,21,"Layton, UT",Student,Runner-up,White,F,False,False
-63,4,Vecepia Towery,36,"Hayward, CA",Office Manager,Winner,African-American,F,False,False
-64,5,John Raymond,40,"Slidell, LA",Pastor,16th,White,M,False,False
-65,5,Tanya Vance,27,"Kingsport, TN",Social Worker,15th,White,F,False,False
-66,5,Jed Hildebrand,25,"Dallas, TX",Dental Student,14th,White,M,False,False
-67,5,Ghandia Johnson,33,"Denver, CO",Legal Secretary,13th,African-American,F,False,False
-68,5,Stephanie Dill,29,"Fayetteville, AR",Firefighter,12th,White,F,False,False
-69,5,Robb Zbacnik,23,"Scottsdale, AZ",Bartender,11th,White,M,False,False
-70,5,Shii Ann Huang,28,"New York, NY",Executive Recruiter,10th,Asian-American,F,False,False
-71,5,Erin Collins,26,"Austin, TX",Real Estate Agent,9th,White,F,False,False
-72,5,Ken Stafford,30,"Brooklyn, NY",Police Officer,8th,White,M,False,False
-73,5,Penny Ramsey,27,"Plano, TX",Pharmaceutical Saleswoman,7th,White,F,False,False
-74,5,Jake Billingsley,61,"McKinney, TX",Land Broker,6th,White,M,False,False
-75,5,"Ted Rogers, Jr.",37,"Durham, NC",Software Developer,5th,African-American,M,False,False
-76,5,Helen Glover,47,"Middletown, RI",Navy Swim Instructor,4th,White,F,False,False
-77,5,Jan Gentry,53,"Tampa, FL",Teacher,3rd,White,F,False,False
-78,5,Clay Jordan,46,"Monroe, LA",Restaurant Owner,Runner-up,White,M,False,False
-79,5,Brian Heidik,34,"Quartz Hill, CA",Used Car Salesman,Winner,White,M,False,False
-80,6,Ryan Aiken,23,"Ellicott City, MD",Model,16th,White,M,False,False
-81,6,Janet Koth,47,"Manchester, MO",Homemaker,15th,White,F,False,False
-82,6,Daniel Lue,27,"Houston, TX",Tax Accountant,14th,Asian-American,M,False,False
-83,6,JoAnna Ward,31,"Orangeburg, SC",Guidance Counselor,13th,African-American,F,False,False
-84,6,Jeanne Hebert,41,"North Attleborough, MA",Marketing Director,12th,White,F,False,False
-85,6,Shawna Mitchell,23,"Redwood City, CA",Retail Saleswoman,11th,White,F,False,False
-86,6,Roger Sexton,56,"Valencia, CA",Construction Company Vice President,10th,White,M,False,False
-87,6,Dave Johnson,24,"Pasadena, CA",Rocket Scientist,9th,White,M,False,False
-88,6,Deena Bennett,35,"Riverside, CA",Deputy District Attorney,8th,Latin American,F,False,False
-89,6,Alex Bell,32,"Los Angeles, CA",Triathlon Coach,7th,White,M,False,False
-90,6,Christy Smith,24,"Basalt, CO",Children's Adventure Guide,6th,White,F,False,True
-91,6,Heidi Strobel,24,"Jefferson City, MO",Gym Teacher,5th,White,F,False,False
-92,6,Butch Lockley,50,"Olney, IL",School Principal,4th,White,M,False,False
-93,6,Rob Cesternino,24,"Wantagh, NY",Computer Projects Coordinator,3rd,White,M,False,False
-94,6,Matthew von Ertfelda,33,"Washington, D.C.",Restaurant Designer,Runner-up,White,M,False,False
-95,6,Jenna Morasca,21,"Pittsburgh, PA",Swimsuit Model,Winner,White,F,False,False
-96,7,Nicole Delma,24,"Hermosa Beach, CA",Massage Therapist,16th,White,F,False,False
-97,7,Ryan Shoulders,23,"Clarksville, TN",Produce Clerk,15th,White,M,False,False
-98,7,Michelle Tesauro,22,"Pittstown, NJ",Student,14th,White,F,False,False
-99,7,Trish Dunn,42,"Annapolis, MD",Sales Executive,13th,White,F,False,False
-100,7,Shawn Cohen,28,"New York, NY",Advertising Salesman,12th,White,M,False,False
-101,7,Osten Taylor,27,"Boston, MA",Equity Trade Manager,11th,African-American,M,False,False
-102,7,Andrew Savage,40,"Chicago, IL",Attorney,10th,White,M,False,False
-103,7,Ryan Opray,31,"Los Gatos, CA",Electrician,9th,White,M,False,False
-104,7,Rupert Boneham,39,"Indianapolis, IN",Troubled Teens Mentor,8th,White,M,False,False
-105,7,Tijuana Bradley,27,"St. Louis, MO",Pharmaceutical Saleswoman,7th,African-American,F,False,False
-106,7,Christa Hastie,24,"Los Angeles, CA",Computer Programmer,6th,White,F,False,False
-107,7,Burton Roberts,31,"San Francisco, CA",Marketing Executive,5th,White,M,False,False
-108,7,Darrah Johnson,22,"Liberty, MS",Mortician,4th,White,F,False,False
-109,7,Jon Dalton,29,"Danville, VA",Art Consultant,3rd,White,M,False,False
-110,7,Lillian Morris,51,"Cincinnati, OH",Scoutmaster,Runner-up,White,F,False,False
-111,7,Sandra Diaz-Twine,29,"Fort Lewis, WA",Office Assistant,Winner,Latin American,F,False,False
-112,8,Tina Wesson,42,"Knoxville, TN",Motivational Speaker,18th,White,F,False,False
-113,8,Rudy Boesch,75,"Virginia Beach, VA",Retired Navy Seal,17th,White,M,False,False
-114,8,Jenna Morasca,22,"Pittsburgh, PA",Swimsuit Model,16th,White,F,False,False
-115,8,Rob Cesternino,25,"Wantagh, NY",Computer Projects Coordinator,15th,White,M,False,False
-116,8,Richard Hatch,42,"Newport, RI",Corporate Trainer,14th,White,M,True,False
-117,8,Susan Hawk,42,"Palmyra, WI",Waitress/Bartender,13th,White,F,False,False
-118,8,Colby Donaldson,29,"Dallas, TX",Actor,12th,White,M,False,False
-119,8,Ethan Zohn,30,"Lexington, MA",Motivational Speaker,11th,White,M,False,False
-120,8,Jerri Manthey,33,"Los Angeles, CA",Actress,10th,White,F,False,False
-121,8,Lex van den Berghe,40,"Santa Cruz, CA",Freelance Writer,9th,White,M,False,False
-122,8,Kathy Vavrick-O'Brien,49,"Burlington, VT",Real Estate Agent,8th,White,F,False,False
-123,8,Alicia Calaway,35,"New York, NY",Health and Fitness Reporter,7th,African-American,F,False,False
-124,8,Shii Ann Huang,30,"New York, NY",Executive Recruiter,6th,Asian-American,F,False,False
-125,8,Tom Buchanan,48,"Rich Valley, VA",Goat Farmer,5th,White,M,False,False
-126,8,Rupert Boneham,40,"Indianapolis, IN",Troubled Teens Mentor,4th,White,M,False,False
-127,8,Jenna Lewis,26,"Franklin, NH",Actress,3rd,White,F,False,False
-128,8,Rob Mariano,28,"Canton, MA",Construction Worker,Runner-up,White,M,False,False
-129,8,Amber Mariano,25,"Beaver, PA",Administrative Assistant,Winner,White,F,False,False
-130,9,Brook Geraghty,33,"Huntington Beach, CA",Document Manager,18th,White,M,False,False
-131,9,Dolly Neely,25,"Mercer, PA",Sheep Farmer,17th,White,F,False,False
-132,9,John Palyok,31,"Los Angeles, CA",Sales Manager,16th,White,M,False,False
-133,9,Mia Galeotalanza,30,"Toms River, NJ",Bookkeeper,15th,White,F,False,False
-134,9,Brady Finta,33,"Huntington Beach, CA",FBI Agent,14th,White,M,False,False
-135,9,Travis Sampson,33,"Blountville, TN",Security Officer,13th,White,M,False,False
-136,9,Lisa Keiffer,44,"New Orleans, LA",Real State Agent,12th,White,F,False,False
-137,9,John Kenney,22,"Los Angeles, CA",Mechanical Bull Operator/Model,11th,White,M,False,False
-138,9,Rory Freeman,35,"Des Moines, IA",Housing Case Manager,10th,African-American,M,False,False
-139,9,Lea Masters,40,"Columbia, SC",Drill Sergeant,9th,White,M,False,False
-140,9,Chad Crittenden,35,"Oakland, CA",Teacher,8th,White,M,False,True
-141,9,Leann Slaby,35,"Kansasville, WI",Equity Research Assistant,7th,White,F,False,False
-142,9,Ami Cusack,31,"Lakewood, CO",Coffee Barista,6th,White,F,True,False
-143,9,Julie Berry,23,"Gorham, ME",Youth Mentor,5th,White,F,False,False
-144,9,Eliza Orlins,21,"Syracuse, NY",Pre-Law Student,4th,White,F,False,False
-145,9,Scout Cloud Lee,59,"Stillwater, OK",Rancher,3rd,White,F,True,False
-146,9,Twila Tanner,41,"Marshall, MO",Highway Repair Worker,Runner-up,White,F,False,False
-147,9,Chris Daugherty,33,"South Vienna, OH",Highway Construction Worker,Winner,White,M,False,False
-148,10,Jonathan Libby,23,"Dallas, TX",Sales & Marketing Associate,20th,White,M,False,False
-149,10,Wanda Shirk,55,"Ulysses, PA",English Teacher,19th,White,F,False,False
-150,10,Jolanda Jones,39,"Houston, TX",Attorney,18th,African-American,F,True,False
-151,10,Ashlee Ashby,22,"Easley, SC",Student,17th,White,F,False,False
-152,10,Jeff Wilson,21,"Ventura, CA",Personal Trainer,16th,White,M,False,False
-153,10,Kim Mullen,25,"Huber Heights, OH",Graduate Student,15th,White,F,False,False
-154,10,Willard Smith,57,"Bellevue, WA",Attorney,14th,White,M,False,False
-155,10,Angie Jakusz,24,"New Orleans, LA",Bartender,13th,White,F,False,False
-156,10,James Miller,33,"Mobile, AL",Steelworker,12th,White,M,False,False
-157,10,Ibrehem Rahman,27,"Birmingham, AL",Model,11th,African-American,M,False,False
-158,10,Bobby Jon Drinkard,27,"Troy, AL",Waiter,10th,White,M,False,False
-159,10,Coby Archa,32,"Dallas, TX",Hairdresser,9th,White,M,True,False
-160,10,Janu Tornell,39,"Las Vegas, NV",Vegas Showgirl,8th,Latin American,F,False,False
-161,10,Stephenie LaGrossa,25,"Glenolden, PA",Pharmaceutical Sales Representative,7th,White,F,False,False
-162,10,Gregg Carey,27,"Chicago, IL",Business Consultant,6th,White,M,False,False
-163,10,Caryn Groedel,46,"Solon, OH",Civil Rights Attorney,5th,White,F,False,False
-164,10,Jenn Lyon,32,"Encino, CA",Nanny,4th,White,F,False,False
-165,10,Ian Rosenberger,23,"Key Largo, FL",Dolphin Trainer,3rd,White,M,False,False
-166,10,Katie Gallagher,29,"Merced, CA",Advertising Executive,Runner-up,White,F,False,False
-167,10,Tom Westman,41,"Sayville, NY",Firefighter,Winner,White,M,False,False
-168,11,Jim Lynch,63,"Northglenn, CO",Retired Fire Captain,18th,White,M,False,False
-169,11,Morgan McDevitt,21,"Decatur, IL",Magician's Assistant,17th,White,F,False,False
-170,11,Brianna Varela,21,"Edmonds, WA",Retail Salesperson,16th,Latin American,F,False,False
-171,11,Brooke Struck,26,"Hood River, OR",Law Student,15th,White,F,False,False
-172,11,Blake Towsley,24,"Dallas, TX",Real Estate Broker,14th,White,M,False,False
-173,11,Margaret Bobonich,43,"Chardon, OH",Nursing Practitioner,13th,White,F,False,False
-174,11,Brian Corridan,22,"New York, NY",Ivy League Student,12th,White,M,True,False
-175,11,Amy O'Hara,39,"Revere, MA",Police Sergeant,11th,White,F,False,False
-176,11,Brandon Bellinger,22,"Manhattan, KS",Farmer,10th,White,M,False,False
-177,11,Bobby Jon Drinkard,27,"Troy, AL",Waiter,9th,White,M,False,False
-178,11,Jamie Newton,24,"North Hollywood, CA",Water Skiing Instructor,8th,White,M,False,False
-179,11,Gary Hogeboom,46,"Grand Haven, MI",Former NFL Quarterback,7th,White,M,False,False
-180,11,Judd Sergeant,34,"Ridgefield, NJ",Hotel Doorman,6th,White,M,False,False
-181,11,Cindy Hall,31,"Naples, FL",Zookeeper,5th,White,F,False,False
-182,11,Lydia Morales,42,"Lakewood, WA",Fishmonnger,4th,Latin American,F,False,False
-183,11,Rafe Judkins,22,"Providence, RI",Wilderness Guide,3rd,White,M,True,False
-184,11,Stephenie LaGrossa,25,"Philadelphia, PA",Pharmaceutical Sales Representative,Runner-up,White,F,False,False
-185,11,Danni Boatwright,30,"Tonganoxie, KS",Sports Radio Host,Winner,White,F,False,False
-186,12,Tina Scheer,45,"Hayward, WI",Lumberjill,16th,White,F,False,False
-187,12,Melinda Hyder,32,"Sevierville, TN",Singer/Entertainer,15th,White,F,False,False
-188,12,Misty Giles,24,"Dallas, TX",Missile Engineer,14th,White,F,False,False
-189,12,Ruth Marie Milliman,48,"Greenville, SC",Property Developer,13th,White,F,False,False
-190,12,Bobby Mason,32,"Los Angeles, CA",Attorney,12th,African-American,M,False,False
-191,12,Dan Barry,52,"South Hadley, MA",Astronaut,11th,White,M,False,False
-192,12,Nick Stanbury,25,"Tempe, AZ",Financial Salesman,10th,White,M,False,False
-193,12,Austin Carty,24,"High Point, NC",Writer,9th,White,M,False,False
-194,12,Sally Schumann,27,"Chicago, IL",Social Worker,8th,White,F,False,False
-195,12,Bruce Kanegai,58,"Simi Valley, CA",Art Teacher,7th,Asian-American,M,False,False
-196,12,Courtney Marit,31,"Los Angeles, CA",Fire Dancer,6th,White,F,False,False
-197,12,Shane Powers,35,"Los Angeles, CA",Marketing Executive,5th,White,M,False,False
-198,12,Cirie Fields,34,"Walterboro, SC",Nurse,4th,African-American,F,False,False
-199,12,Terry Deitz,46,"Simsbury, CT",Pilot,3rd,White,M,False,False
-200,12,Danielle DiLorenzo,24,"Pompano Beach, FL",Medical Sales Representative,Runner-up,White,F,False,False
-201,12,Aras Baskauskas,24,"Santa Monica, CA",Yoga Instructor,Winner,White,M,False,False
-202,13,Sekou Bunch,46,"Los Angeles, CA",Jazz Musician,20th,African-American,M,False,False
-203,13,Billy Garcia,36,"New York, NY",Heavy Metal Musician,19th,Latin American,M,False,False
-204,13,Cecilia Mansilla,29,"Oakland, CA",Risk Consultant,18th,Latin American,F,False,False
-205,13,J.P. Calderon,30,"Marina Del Rey, CA",Profession Volleyball Player,17th,Latin American,M,True,False
-206,13,Stephannie Favor,35,"Columbia, SC",Nursing Student,16th,African-American,F,False,False
-207,13,Cao Boi Bui,42,"Christiansburg, VA",Nail Salon Manager,15th,Asian-American,M,False,False
-208,13,Cristina Coria,35,"Los Angeles, CA",Police Officer,14th,Latin American,F,False,False
-209,13,Jessica Smith,27,"Chico, CA",Roller Girl,13th,White,F,False,False
-210,13,Brad Virata,27,"Los Angeles, CA",Fashion Director,12th,Asian-American,M,True,False
-211,13,Rebecca Borman,34,"Laurelton, NY",Makeup Artist,11th,African-American,F,False,False
-212,13,Jenny Guzon-Bae,36,"Lake Forest, IL",Real Estate Agent,10th,Asian-American,F,False,False
-213,13,Nate Gonzalez,26,"Los Angeles, CA",Shoe Salesman,9th,Latin American,M,False,False
-214,13,Candice Cody,23,"Fayetteville, NC",Pre-Med Student,8th,White,F,False,False
-215,13,Jonathan Penner,44,"Los Angeles, CA",Writer,7th,White,M,False,False
-216,13,Parvati Shallow,24,"Los Angeles, CA",Boxer,6th,White,F,True,False
-217,13,Adam Gentry,28,"San Diego, CA",Copier Sales Executive,5th,White,M,False,False
-218,13,Sundra Oakley,31,"Los Angeles, CA",Actress,4th,African-American,F,False,False
-219,13,Becky Lee,28,"Washington, D.C.",Attorney,2nd Runner-up,Asian-American,F,False,False
-220,13,Ozzy Lusth,25,"Venice, CA",Waiter,Runner-up,Latin American,M,True,False
-221,13,Yul Kwon,31,"San Mateo, CA",Management Consultant,Winner,Asian-American,M,False,False
-222,14,Jessica deBen,27,"Los Angeles, CA",Fashion Stylist,19th,White,F,False,False
-223,14,Erica Durousseau,27,"Lake Charles, LA",Non-Profit Fundraiser,18th,African-American,F,False,False
-224,14,Sylvia Kwan,52,"Ross, CA",Architect,17th,Asian-American,F,False,False
-225,14,Gary Stritesky,55,"Ramsey, MN",School Bus Driver,16th,White,M,False,False
-226,14,Liliana Gomez,25,"Oxnard, CA",Loan Officer,15th,Latin American,F,False,False
-227,14,Rita Verreos,38,"San Antonio, TX",Single Mother,14th,Latin American,F,False,False
-228,14,Anthony Robinson,32,"Compton, CA",Expert Witness Locator,13th,African-American,M,False,False
-229,14,Rocky Reid,28,"Los Angeles, CA",Bartender,12th,White,M,False,False
-230,14,Lisi Linares,36,"Los Angeles, CA",Customer Service Representative,11th,Latin American,F,False,False
-231,14,Michelle Yi,23,"Cincinnati, OH",Student,10th,Asian-American,F,False,False
-232,14,Edgardo Rivera,28,"Miami Beach, FL",Advertising Executive,9th,Latin American,M,False,False
-233,14,Mookie Lee,25,"Chicago, IL",Business Consultant,8th,Asian-American,M,False,False
-234,14,Alex Angarita,28,"Los Angeles, CA",Attorney,7th,Latin American,M,False,False
-235,14,Stacy Kimball,27,"Boulder, CO",Web Producer,6th,Asian-American,F,False,False
-236,14,Boo Bernis,34,"Lafayette, LA",Construction Worker,5th,White,M,False,False
-237,14,Yau-Man Chan,54,"Martinez, CA",Internet Technology Director,4th,Asian-American,M,False,False
-238,14,Cassandra Franklin,42,"Los Angeles, CA",College Administrator,Co-runner up,African-American,F,False,False
-239,14,Dreamz Herd,25,"Wilmington, NC",Cheerleading Coach,Co-runner up,African-American,M,False,False
-240,14,Earl Cole,35,"Santa Monica, CA",Advertising Executive,Winner,African-American,M,False,False
-241,15,Chicken Morris,47,"Marion, VA",Chicken Farmer,16th,White,M,False,False
-242,15,Ashley Massaro,28,"East Northport, NY",Professional Wrestler,15th,White,F,False,False
-243,15,Leslie Nease,38,"Tega Cay, SC",Christian Radio Host,14th,White,F,False,False
-244,15,Dave Cruser,37,"Simi Valley, CA",Former Model,13th,White,M,False,False
-245,15,Aaron Reisberger,32,"Venice, CA",Surfing Instructor,12th,White,M,False,False
-246,15,Sherea Lloyd,26,"Atlanta, GA",Elementary Teacher,11th,African-American,F,False,False
-247,15,Jaime Dugan,22,"Columbia, SC",Student,10th,White,F,False,False
-248,15,Jean-Robert Bellande,36,"Las Vegas, NV",Profession Poker Player,9th,White,M,False,False
-249,15,Frosti Zernow,20,"Chicago, IL",Student/Athlete,8th,Asian-American,M,False,False
-250,15,James Clement,30,"Lafayette, LA",Gravedigger,7th,African-American,M,False,False
-251,15,Erik Huffman,26,"Nashville, TN",Musician,6th,White,M,False,False
-252,15,Peih-Gee Law,29,"Marina Del Rey, CA",Jeweler,5th,Asian-American,F,False,False
-253,15,Denise Martin,40,"Douglas, MA",School Lunch Lady,4th,White,F,False,False
-254,15,Amanda Kimmel,23,"Kalispell, MT",Hiking Guide,2nd Runner-up,White,F,False,False
-255,15,Courtney Yates,26,"New York, NY",Waitress,Runner-up,White,F,False,False
-256,15,Todd Herzog,22,"Pleasant Grove, UT",Flight Attendant,Winner,White,M,True,False
-257,16,Jon Dalton,33,"Danville, VA",Art Consultant,20th,White,M,False,False
-258,16,Mary Sartain,29,"Emeryville, CA",Real Estate Manager,19th,White,F,False,False
-259,16,Yau-Man Chan,55,"Martinez, CA",Internet Technology Director,18th,Asian-American,M,False,False
-260,16,Mikey Bortone,34,"Los Angeles, CA",Aspiring Writer,17th,White,M,False,False
-261,16,Joel Anderson,32,"Avondale, AZ",Firefighter,16th,White,M,False,False
-262,16,Jonathan Penner,45,"Los Angeles, CA",Writer,15th,White,M,False,False
-263,16,Chet Welch,48,"Ford City, PA",Pageant Coach,14th,White,M,True,False
-264,16,Kathy Sleckman,45,"Glen Ellyn, IL",Golf Course Vendor,13th,White,F,False,False
-265,16,Tracy Hughes-Wolf,43,"Fredericksburg, VA",Residential Builder,12th,White,F,False,False
-266,16,Ami Cusack,34,"Golden, CO",Nanny,11th,White,F,True,False
-267,16,Eliza Orlins,25,"New York, NY",Law School Student,10th,White,F,False,False
-268,16,Ozzy Lusth,26,"Venice, CA",Photographer,9th,Latin American,M,True,False
-269,16,Jason Siska,22,"Fox River Grove, IL",Gymnastics Coach,8th,White,M,False,False
-270,16,James Clement,30,"Lafayette, LA",Gravedigger,7th,African-American,M,False,False
-271,16,Alexis Jones,24,"Beverly Hills, CA",Motivational Speaker,6th,Latin American,F,False,False
-272,16,Erik Reichenbach,22,"Pinckney, MI",Ice Cream Scooper,5th,White,M,False,False
-273,16,Natalie Bolton,32,"Los Angeles, CA",Personal Trainer,4th,Asian-American,F,True,False
-274,16,Cirie Fields,37,"Norwalk, CT",Nurse,3rd,African-American,F,False,False
-275,16,Amanda Kimmel,23,"Los Angeles, CA",Aspiring Designer,Runner-up,White,F,False,False
-276,16,Parvati Shallow,25,"Los Angeles, CA",Charity Organizer,Winner,White,F,True,False
-277,17,Michelle Chase,24,"Los Angeles, CA",Music Producer,18th,White,F,False,False
-278,17,Gillian Larson,61,"Temecula, CA",Retired Nurse,17th,White,F,False,False
-279,17,Paloma Soto-Castillo,24,"Downey, CA",Student,16th,Latin American,F,False,False
-280,17,Jacquie Berg,25,"Santa Barbara, CA",Medical Saleswoman,15th,White,F,False,False
-281,17,GC Brown,26,"Portland, OR",Maintenance Man,14th,African-American,M,False,False
-282,17,Kelly Czarnecki,22,"Buffalo Grove, IL",Retail Saleswoman,13th,White,F,False,False
-283,17,Ace Gordon,27,"Naples, FL",Jewelry Salesman/Photographer,12th,White,M,False,False
-284,17,Dan Kay,32,"Boston, MA",Attorney,11th,White,M,False,False
-285,17,Marcus Lehman,28,"Atlanta, GA",Doctor,10th,Latin American,M,False,False
-286,17,Charlie Herschel,29,"New York, NY",Attorney,9th,White,M,True,False
-287,17,Randy Bailey,49,"Eagle Rock, MO",Wedding Videographer,8th,White,M,False,False
-288,17,Corinne Kaplan,29,"Los Angeles, CA",Pharmaceutical Saleswoman,7th,White,F,False,False
-289,17,Crystal Cox,29,"Durham, NC",Olympic Gold Medalist,6th,African-American,F,False,False
-290,17,Ken Hoang,22,"Westminster, CA",Professional Gamer,5th,Asian-American,M,False,False
-291,17,Matty Whitmore,29,"Pacific Palisades, CA",Personal Trainer,4th,White,M,False,False
-292,17,Sugar Kiper,29,"Brooklyn, NY",Pin-Up Model,2nd Runner-up,White,F,False,False
-293,17,Jessica Smith,47,"Charles City, IA",Hairdresser,Runner-up,White,F,False,False
-294,17,Bob Crowley,57,"Portland, ME",Physics Teacher,Winner,White,M,False,False
-295,18,Carolina Eastwood,26,"West Hollywood, CA",Bartender,16th,Latin American,F,False,False
-296,18,Candace Smith,31,"Dayton, OH",Attorney,15th,African-American,F,False,False
-297,18,Jerry Sims,49,"Rock Hill, SC",U.S. Army Sergeant,14th,African-American,M,False,False
-298,18,Sandy Burgin,53,"Louisville, KY",Bus Driver,13th,White,F,False,False
-299,18,Spencer Duhm,19,"Lakeland, FL",Student,12th,White,M,True,False
-300,18,Sydney Wheeler,24,"Raleigh, NC",Model,11th,White,F,False,False
-301,18,Joe Dowdle,26,"Austin, TX",Real Estate Salesman,10th,White,M,False,False
-302,18,Brendan Synnott,30,"New York, NY",Entrepreneur,9th,White,M,False,False
-303,18,Tyson Apostol,29,"Lindon, UT",Professional Cyclist,8th,White,M,False,False
-304,18,Sierra Reed,23,"Los Angeles, CA",Model,7th,White,F,False,False
-305,18,Debbie Beebe,46,"Auburn, AL",School Principal,6th,White,F,False,False
-306,18,Coach Wade,37,"Bolivar, MO",Soccer Coach/Musician,5th,White,M,False,False
-307,18,Taj Johnson-George,37,"Nashville, TN",Former Pop Star,4th,African-American,F,False,False
-308,18,Erinn Lobdell,26,"Waukesha, WI",Hairdresser,3rd,White,F,False,False
-309,18,Stephen Fishbach,29,"New York, NY",Corporate Consultant,Runner-up,White,M,False,False
-310,18,J.T. Thomas,24,"Samson, AL",Cattle Rancher,Winner,White,M,False,False
-311,19,Marisa Calihan,26,"Cincinnati, OH",Student,20th,White,F,False,False
-312,19,Mike Borassi,62,"Marina del Rey, CA",Personal Chef,19th,White,M,False,False
-313,19,Betsy Bolan,48,"Campton, NH",Police Officer,18th,White,F,False,False
-314,19,Ben Browning,28,"Los Angeles, CA",Bar Manager,17th,White,M,False,False
-315,19,Yasmin Giles,33,"Los Angeles, CA",Hairstylist,16th,African-American,F,False,False
-316,19,Ashley Trainer,22,"Maple Grove, MN",Spa Saleswoman,15th,White,F,False,False
-317,19,Russell Swan,42,"Glenside, PA",Attorney,14th,African-American,M,False,False
-318,19,Elizabeth Beisel,33,"New York, NY",Urban Planner,13th,White,F,False,False
-319,19,Erik Cardona,28,"Ontario, CA",Bartender,12th,Latin American,M,False,False
-320,19,Kelly Sharbaugh,25,"Los Angeles, CA",Hairstylist,11th,White,F,False,False
-321,19,Laura Morett,39,"Salem, OR",Office Manager,10th,White,F,False,False
-322,19,John Fincher,25,"Los Angeles, CA",Rocket Scientist,9th,Latin American,M,False,False
-323,19,Dave Ball,38,"Los Angeles, CA",Fitness Instructor,8th,White,M,False,False
-324,19,Monica Padilla,25,"San Diego, CA",Law Student,7th,Latin American,F,False,False
-325,19,Shambo Waters,45,"Renton, WA",Saleswoman,6th,White,F,True,False
-326,19,Jaison Robinson,28,"Chicago, IL",Law Student,5th,African-American,M,False,False
-327,19,Brett Clouser,23,"Los Angeles, CA",T-shirt Designer,4th,White,M,False,False
-328,19,Mick Trimming,33,"Los Angeles, CA",Doctor,2nd Runner-up,White,M,False,False
-329,19,Russell Hantz,36,"Dayton, TX",Oil Company Owner,Runner-up,White,M,False,False
-330,19,Natalie White,26,"Van Buren, AR",Pharmaceutical Saleswoman,Winner,White,F,False,False
-331,20,Sugar Kiper,30,"Los Angeles, CA",Pin-Up Model,20th,White,F,False,False
-332,20,Stephenie LaGrossa,29,"Philadelphia, PA",Pharmaceutical Sales Representative,19th,White,F,False,False
-333,20,Randy Bailey,50,"Eagle Rock, MO",Wedding Videographer,18th,White,M,False,False
-334,20,Cirie Fields,39,"Norwalk, CT",Nurse,17th,African-American,F,False,False
-335,20,Tom Westman,45,"Sayville, NY",Motivational Speaker,16th,White,M,False,False
-336,20,Tyson Apostol,29,"Lindon, UT",Former Professional Cyclist,15th,White,M,False,False
-337,20,James Clement,32,"Lafayette, LA",Gravedigger,14th,African-American,M,False,False
-338,20,Rob Mariano,33,"Pensacola, FL",Construction Worker,13th,White,M,False,False
-339,20,Coach Wade,38,"Los Angeles, CA",Soccer Coach/Musician,12th,White,M,False,False
-340,20,Courtney Yates,29,"New York, NY",Waitress,11th,White,F,False,False
-341,20,J.T. Thomas,25,"Samson, AL",Cattle Rancher,10th,White,M,False,False
-342,20,Amanda Kimmel,25,"Los Angeles, CA",Aspiring Designer,9th,White,F,False,False
-343,20,Candice Cody,27,"Washington, DC",Physician,8th,White,F,False,False
-344,20,Danielle DiLorenzo,28,"Pompano Beach, FL",Medical Sales Representative,7th,White,F,False,False
-345,20,Rupert Boneham,45,"Indianapolis, IN",Troubled Teens Mentor,6th,White,M,False,False
-346,20,Colby Donaldson,35,"Dallas, TX",Actor,5th,White,M,False,False
-347,20,Jerri Manthey,38,"Los Angeles, CA",Actress,4th,White,F,False,False
-348,20,Russell Hantz,36,"Dayton, TX",Oil Company Owner,2nd Runner-up,White,M,False,False
-349,20,Parvati Shallow,27,"Los Angeles, CA",Charity Organizer,Runner-up,White,F,True,False
-350,20,Sandra Diaz-Twine,35,"Fayetteville, NC",Office Assistant,Winner,Latin American,F,False,False
-351,21,Wendy DeSmidt-Kohlhoff,48,"Fromberg, MT",Goat Rancher,20th,White,F,False,False
-352,21,Shannon Elkins,30,"Lafayette, LA",Pest Control Company Owner,19th,White,M,False,False
-353,21,Jimmy Johnson,67,"Islamorada, FL",Former NFL Coach,18th,White,M,False,False
-354,21,Jimmy Tarantino,48,"Gloucester, MA",Commercial Fisherman,17th,White,M,False,False
-355,21,Tyrone Davis,42,"Inglewood, CA",Firefighter,16th,African-American,M,False,False
-356,21,Kelly Bruno,26,"Durham, NC",Medical Student,15th,White,F,False,True
-357,21,Yve Rojas,41,"Kansas City, MO",Homemaker,14th,Latin American,F,False,False
-358,21,Jill Behm,43,"Erie, PA",ER Doctor,13th,White,F,False,False
-359,21,Alina Wilson,23,"Downey, CA",Art Student,12th,White,F,False,False
-360,21,Marty Piombo,48,"Mill Valley, CA",Technology Executive,11th,White,M,False,False
-361,21,Brenda Lowe,27,"Miami, FL",Paddleboard Company Owner,10th,Latin American,F,False,False
-362,21,NaOnka Mixon,27,"Los Angeles, CA",P.E. Teacher,9th,African-American,F,False,False
-363,21,Kelly Shinn,20,"Mesa, AZ",Nursing Student,8th,White,F,False,False
-364,21,Benry Henry,24,"Los Angeles, CA",Club Promoter,7th,White,M,False,False
-365,21,Jane Bright,56,"Jackson Springs, NC",Dog Trainer,6th,White,F,False,False
-366,21,Dan Lembo,63,"Watermill, NY",Real Estate Executive,5th,White,M,False,False
-367,21,Holly Hoffman,44,"Eureka, SD",Swim Coach,4th,White,F,False,False
-368,21,Sash Lenahan,30,"New York, NY",Real Estate Broker,2nd Runner-up,African-American,M,False,False
-369,21,Chase Rice,24,"Fairview, NC",Professional Racecar Jackman,Runner-up,White,M,False,False
-370,21,Fabio Birza,21,"Venice, CA",Student,Winner,White,M,False,False
-371,22,Francesca Hogi,36,"Washington, DC",Attorney,18th,African-American,F,False,False
-372,22,Russell Hantz,38,"Dayton, TX",Oil Company Owner,17th,White,M,False,False
-373,22,Kristina Kell,46,"Malibu, CA",Law Student,16th,White,F,False,False
-374,22,Krista Klumpp,25,"Columbia, SC",Pharmaceutical Representative,15th,White,F,False,False
-375,22,Stephanie Valencia,26,"Long Beach, CA",Waitress,14th,Latin American,F,False,False
-376,22,Sarita White,36,"Santa Monica, CA",Visual Effects Producer,13th,White,F,False,False
-377,22,David Murphy,31,"West Hollywood, CA",Defense Attorney,12th,White,M,False,False
-378,22,Julie Wolfe,50,"Oceanside, CA",Firefighter,11th,White,F,False,False
-379,22,Steve Wright,51,"Huntington Beach, CA",Ex-NFL Player,10th,White,M,False,False
-380,22,Ralph Kiser,45,"Lebanon, VA",Farmer,9th,White,M,False,False
-381,22,Grant Mattos,29,"West Hollywood, CA",Ex-NFL Player,8th,White,M,False,False
-382,22,Matt Elrod,22,"Nashville, TN",Pre-Med Student,7th,White,M,False,False
-383,22,Mike Chiesl,31,"Del Mar, CA",Iraq War Veteran,6th,White,M,False,False
-384,22,Andrea Boehlke,21,"Random Lake, WI",Student,5th,White,F,False,False
-385,22,Ashley Underwood,25,"Benton, ME",Nurse,4th,White,F,False,False
-386,22,Natalie Tenerelli,19,"Acton, CA",Professional Dancer,2nd Runner-up,White,F,False,False
-387,22,Phillip Sheppard,52,"Santa Monica, CA",Former Federal Agent?,Runner-up,African-American,M,False,False
-388,22,Rob Mariano,34,"Pensacola, FL",Construction Worker,Winner,White,M,False,False
-389,23,Semhar Tadesse,24,"Los Angeles, CA",Spoken Word Artist,18th,African-American,F,False,False
-390,23,Mark Caruso,48,"Forest Hills, NY",Retired NYPD Detective,17th,White,M,True,False
-391,23,Stacey Powell,44,"Grand Prairie, TX",Mortician,16th,African-American,F,False,False
-392,23,Elyse Umemoto,27,"Las Vegas, NV",Dance Team Manager,15th,Latin American,F,False,False
-393,23,Mikayla Wingle,22,"Tampa, FL",Lingerie Football Player,14th,White,F,False,False
-394,23,Christine Shields Markoski,39,"Merrick, NY",Teacher,13th,Latin American,F,False,False
-395,23,Jim Rice,35,"Denver, CO",Medical Marijuana Dispenser,12th,White,M,False,False
-396,23,Keith Tollefson,26,"Edina, MN",Water Treatment Technician,11th,White,M,False,False
-397,23,Dawn Meehan,41,"South Jordan, UT",English Profressor,10th,White,F,False,False
-398,23,Whitney Duncan,26,"Nashville, TN",Country Music Singer,9th,White,F,False,False
-399,23,John Cochran,24,"Washington, D.C.",Harvard Law Student,8th,White,M,False,False
-400,23,Edna Ma,35,"Los Angeles, CA",Anesthesiologist,7th,Asian-American,F,False,False
-401,23,Brandon Hantz,19,"Katy, TX",Oil Tanker Crewman,6th,White,M,False,False
-402,23,Rick Nelson,51,"Aurora, UT",Rancher,5th,White,M,False,False
-403,23,Ozzy Lusth,30,"Venice, CA",Photographer,4th,Latin American,M,True,False
-404,23,Albert Destrade,26,"Plantation, FL",Baseball/Dating Coach,2nd Runner-up,Latin American,M,False,False
-405,23,Coach Wade,39,"Susanville, CA",Soccer Coach/Musician,Runner-up,White,M,False,False
-406,23,Sophie Clarke,22,"Willsboro, NY",Medical Student,Winner,White,F,False,False
-407,24,Kourtney Moon,29,"Austin, TX",Motorcycle Repairwoman,18th,White,F,False,False
-408,24,Nina Acosta,51,"Clovis, CA",Retired LAPD Officer,17th,White,F,False,False
-409,24,Matt Quinlan,33,"San Francisco, CA",Attorney,16th,White,M,False,False
-410,24,Bill Posley,28,"Venice, CA",Stand-Up Comedian,15th,African-American,M,True,False
-411,24,Monica Culpepper,41,"Tampa, FL",Ex-NFL Player's Wife,14th,White,F,False,False
-412,24,Colton Cumbie,21,"Monroeville, AL",Student,13th,White,M,True,False
-413,24,Jonas Otsuji,37,"Lehi, UT",Sushi Chef,12th,Asian-American,M,False,False
-414,24,Michael Jefferson,30,"Seattle, WA",Banker,11th,White,M,False,False
-415,24,Jay Byars,25,"Gaffney, SC",Model,10th,White,M,False,False
-416,24,Leif Manson,27,"San Diego, CA",Phlebotomist,9th,White,M,False,True
-417,24,Troyzan Robertson,50,"Miami, FL",Swimsuit Photographer,8th,White,M,False,False
-418,24,Kat Edorsson,22,"Orlando, FL",Timeshare Representative,7th,White,F,False,False
-419,24,Tarzan Smith,64,"Houston, TX",Plastic Surgeon,6th,White,M,False,False
-420,24,Alicia Rosa,25,"Chicago, IL",Special Education Teacher,5th,Latin American,F,False,False
-421,24,Christina Cha,29,"West Hollywood, CA",Career Consultant,4th,Asian-American,F,False,False
-422,24,Chelsea Meissner,26,"Charleston, SC",Medical Saleswoman,2nd Runner-up,White,F,False,False
-423,24,Sabrina Thompson,33,"Brooklyn, NY",High School Teacher,Runner-up,African-American,F,False,False
-424,24,Kim Spradlin-Wolfe,29,"San Antonio, TX",Bridal Shop Owner,Winner,White,F,False,False
-425,25,Zane Knight,28,"Danville, VA",Tire Repairman,18th,White,M,False,False
-426,25,Roxy Morris,28,"Brooklyn, NY",Seminary Student,17th,African-American,F,False,False
-427,25,Angie Layton,20,"Provo, UT",Model/Student,16th,White,F,False,False
-428,25,Russell Swan,45,"Glenside, PA",Attorney,15th,African-American,M,False,False
-429,25,Dana Lambert,32,"Winston-Salem, NC",Cosmetologist,14th,White,F,True,False
-430,25,Sarah Dawson,28,"Silver Spring, MD",Insurance Saleswoman,13th,African-American,F,False,False
-431,25,Katie Hanson,22,"Newark, DE",Former Miss Delaware,12th,White,F,False,False
-432,25,RC Saint-Amour,27,"New York, NY",Investment Banker,11th,White,F,False,False
-433,25,Jeff Kent,44,"Austin, TX",Former MLB Player,10th,White,M,False,False
-434,25,Artis Silvester,53,"Terrytown, LA",Computer Engineer,9th,African-American,M,False,False
-435,25,Pete Yurkowski,24,"Holmdel, NJ",Engineer Graduate/Model,8th,White,M,False,False
-436,25,Jonathan Penner,50,"Los Angeles, CA",Writer,7th,White,M,False,False
-437,25,Carter Williams,24,"Shawnee, KS",Track Coach,6th,White,M,False,False
-438,25,Abi-Maria Gomes,32,"Los Angeles, CA",Business Student,5th,Latin American,F,False,False
-439,25,Malcolm Freberg,25,"Hermosa Beach, CA",Bartender,4th,White,M,False,False
-440,25,Lisa Whelchel,49,"Dallas, TX",Former TV Teen Star,Co-runner up,White,F,False,False
-441,25,Michael Skupin,50,"White Lake, MI",Professional Speaker,Co-runner up,White,M,False,False
-442,25,Denise Stapley,41,"Cedar Rapids, IA",Sex Therapist,Winner,White,F,False,False
-443,26,Francesca Hogi,38,"Brooklyn, NY",Attorney,20th,African-American,F,False,False
-444,26,Allie Pohevitz,25,"Oceanside, NY",Bartender,19th,White,F,False,False
-445,26,Hope Driskill,23,"Jefferson City, MO",Pre-Law Student,18th,White,F,False,False
-446,26,Shamar Thomas,27,"Brooklyn, NY",Iraq War Veteran,17th,African-American,M,False,False
-447,26,Laura Alexander,23,Washington DC,Administrative Officer,16th,White,F,False,False
-448,26,Brandon Hantz,21,"Katy, TX",Chemical Disposal,15th,White,M,False,False
-449,26,Matt Bischoff,38,"Cincinnati, OH",BMX Bike Salesman,14th,White,M,False,False
-450,26,Julia Landauer,21,"Stanford, CA",Racecar Driver,13th,White,F,False,False
-451,26,Corinne Kaplan,33,"Los Angeles, CA",Pharmaceutical Sales,12th,White,F,False,False
-452,26,Michael Snow,44,"New York, NY",Event Planner,11th,White,M,True,False
-453,26,Phillip Sheppard,54,"Santa Monica, CA",Software Sales,10th,African-American,M,False,False
-454,26,Malcolm Freberg,26,"Hermosa Beach, CA",Bartender,9th,White,M,False,False
-455,26,Reynold Toepfer,30,"San Francisco, CA",Real Estate Salesman,8th,White,M,False,False
-456,26,Andrea Boehlke,23,"New York, NY",Entertainment Host and Writer,7th,White,F,False,False
-457,26,Brenda Lowe,30,"Miami, FL",Paddleboard Company Owner,6th,Latin American,F,False,False
-458,26,Erik Reichenbach,27,"Santa Clarita, CA",Comic Book Artist,5th,White,M,False,False
-459,26,Eddie Fox,23,"East Brunswick, NJ",Fireman/EMT,4th,White,M,False,False
-460,26,Sherri Biethman,41,"Boise, ID",Fast Food Franchisee,Co-runner up,White,F,False,False
-461,26,Dawn Meehan,42,"South Jordan, UT",English professor,Co-runner up,White,F,False,False
-462,26,John Cochran,25,Washington DC,Harvard Law Student,Winner,White,M,False,False
-463,27,Rupert Boneham,49,"Indianapolis, IN",Troubled Teens Mentor,20th,White,M,False,False
-464,27,Colton Cumbie,22,"Monroeville, AL",Student Teacher,19th,White,M,True,False
-465,27,Rachel Foulger,33,"Orem, UT",Cocktail Waitress/Graphic Designer,18th,White,F,False,False
-466,27,Marissa Peterson,21,"Chapel Hill, NC",Student,17th,African-American,F,False,False
-467,27,Candice Cody,30,Washington DC,Physician,16th,White,F,False,False
-468,27,Brad Culpepper,44,"Tampa, FL",Attorney/Retired NFL Player,15th,White,M,False,False
-469,27,Kat Edorsson,23,"Orlando, FL",Full-Time Student/Sales,14th,White,F,False,False
-470,27,John Cody,30,Washington DC,Physician/Army Orthopedic Surgery Resident,13th,White,M,False,False
-471,27,Laura Boneham,44,"Indianapolis, IN",Merchandiser,12th,White,F,False,False
-472,27,Aras Baskauskas,31,"Santa Monica, CA",Musician,11th,White,M,False,False
-473,27,Vytas Baskauskas,33,"Santa Monica, CA",Yoga Instructor/Math Instructor,10th,White,M,False,False
-474,27,Caleb Bankston,26,"Crossville, AL",Post Office Manager/Farmer,9th,White,M,True,False
-475,27,Katie Collins,25,"New York, NY",Hedge Fund Support,8th,White,F,False,False
-476,27,Hayden Moss,27,"Tempe, AZ",Real Estate,7th,White,M,False,False
-477,27,Laura Morett,43,"Salem, OR",Fitness Instructor,6th,White,F,False,False
-478,27,Ciera Eastin,24,"Salem, OR",Cosmetology Student,5th,White,F,False,False
-479,27,Tina Wesson,52,"Knoxville, TN",Motivational Speaker,4th,White,F,False,False
-480,27,Gervase Peterson,43,"Willingboro, NJ",Cigar Lounge Owner,2nd Runner-up,African-American,M,False,False
-481,27,Monica Culpepper,42,"Tampa, FL",Homemaker,Runner-up,White,F,False,False
-482,27,Tyson Apostol,34,"Heber, UT",Former Pro Cyclist/Shop Manager,Winner,White,M,False,False
-483,28,David Samson,45,"Plantation, FL",Miami Marlins President,18th,White,M,False,False
-484,28,Garrett Adelstein,27,"Santa Monica, CA",Professional Poker Player,17th,White,M,False,False
-485,28,Brice Johnston,27,"Philadelphia, PA",Social Worker,16th,African-American,M,True,False
-486,28,J'Tia Taylor,31,"Chicago, IL",Nuclear Engineer,15th,African-American,F,False,False
-487,28,Cliff Robinson,46,"Newark, NJ",Former NBA All-Star,14th,African-American,M,False,False
-488,28,Lindsey Ogle,29,"Kokomo, IN",Hairstylist,13th,White,F,False,False
-489,28,Alexis Maxwell,21,"Addison, IL",Student,12th,Latin American,F,False,False
-490,28,Sarah Lacina,29,"Cedar Rapids, IA",Police Officer,11th,White,F,False,False
-491,28,Morgan McLeod,21,"San Jose, CA",Ex-NFL Cheerleader,10th,White,F,False,False
-492,28,LJ McKanas,34,"Boston, MA",Horse Trainer,9th,White,M,False,False
-493,28,Jeremiah Wood,34,"Dobson, NC",Male Model,8th,White,M,False,False
-494,28,Jefra Bland,22,"Campbellsville, KY",Miss Kentucky Teen USA,7th,White,F,False,False
-495,28,Tasha Fox,37,"St. Louis, MO",Accountant,6th,African-American,F,False,False
-496,28,Trish Hegarty,48,"Needham, MA",Pilates Teacher,5th,White,F,False,False
-497,28,Spencer Bledsoe,21,"Chicago, IL",Economics Student,4th,White,M,False,False
-498,28,Kass McQuillen,41,"Tehachapi, CA",Attorney,3rd,White,F,False,False
-499,28,Woo Hwang,29,"Newport Beach, CA",Martial Arts Instructor,Runner-up,Asian-American,M,False,False
-500,28,Tony Vlachos,39,"Jersey City, NJ",Police Officer,Winner,White,M,False,False
-501,29,Nadiya Anderson,28,"Edgewater, NJ",Crossfit Coach/Project Coordinator,18th,Asian-American,F,False,False
-502,29,Val Collins,35,"Foxborough, MA",Police Officer,17th,African-American,F,False,False
-503,29,John Rocker,39,"Atlanta, GA",Former MLB Player,16th,White,M,False,False
-504,29,Drew Christy,25,"Winter Park, FL",Traveling Sales Representative,15th,White,M,False,False
-505,29,Kelley Wentworth,28,"Seattle, WA",Marketing Manager,14th,White,F,False,False
-506,29,Dale Wentworth,55,"Ephrata, WA",Farmer,13th,White,M,False,False
-507,29,Julie McGee,34,"Atlanta, GA",Model/Spray Tan Business Owner,12th,White,F,False,False
-508,29,Josh Canfield,32,"New York, NY",Singer/Actor/Writer,11th,White,M,True,False
-509,29,Jeremy Collins,36,"Foxborough, MA",Firefighter,10th,African-American,M,False,False
-510,29,Wes Nale,24,"Shreveport, LA",Firefighter,9th,White,M,False,False
-511,29,Reed Kelly,31,"New York, NY",Broadway Performer/Model/Aerialist,8th,White,M,True,False
-512,29,Alec Christy,22,"Winter Park, FL",Student,7th,White,M,False,False
-513,29,Jon Misch,26,"Waterford, MI",Financial Assistant,6th,White,M,False,False
-514,29,Baylor Wilson,20,"Nashville, TN",Student,5th,White,F,False,False
-515,29,Keith Nale,53,"Shreveport, LA",Firefighter,4th,White,M,False,False
-516,29,Missy Payne,47,"Dallas, TX",Competitive Cheerleading Gym Owner,2nd Runner-up,White,F,False,False
-517,29,Jaclyn Schultz,25,"Wyandotte, MI",Media Buyer,Runner-up,White,F,False,False
-518,29,Natalie Anderson,28,"Edgewater, NJ",Crossfit Coach/Physical Therapy Student,Winner,Asian-American,F,False,False
-519,30,Charlotte Schou,31,"Long Beach, CA",Retail Buyer,18th,White,F,False,False
-520,30,Vince S.,32,"Santa Monica, CA",Coconut Vendor,17th,White,M,False,False
-521,30,Nina Poersch,51,"Palmdale, CA",Hearing Advocate,16th,Asian-American,F,False,True
-522,30,Lindsey Cascaddan,24,"College Park, FL",Hairdresser,15th,White,F,False,False
-523,30,Max Dawson,37,"Topanga, CA",Media Consultant,14th,White,M,False,False
-524,30,Joaquin Souberbielle,27,"Valley Stream, NY",Marketing Director,13th,Latin American,M,False,False
-525,30,Kelly Remington,44,"Grand Island, NY",State Trooper,12th,White,F,True,False
-526,30,Hali Ford,25,"San Francisco, CA",Law Student,11th,White,F,False,False
-527,30,Joe Anglim,25,"Scottsdale, AZ",Jewelry Designer,10th,White,M,False,False
-528,30,Jenn Brown,22,"Long Beach, CA",Sailing Instructor,9th,White,F,False,False
-529,30,Shirin Oskooi,31,"San Francisco, CA",Yahoo! Executive,8th,Asian-American,F,False,False
-530,30,Tyler Fredrickson,33,"Los Angeles, CA",Ex-Talent Agent Assistant,7th,White,M,False,False
-531,30,Dan Foley,47,"Gorham, ME",Postal Worker,6th,White,M,False,False
-532,30,Sierra Dawn Thomas,27,"Roy, UT",Barrel Racer,5th,White,F,False,False
-533,30,Rodney Lavoie Jr.,24,"Boston, MA",General Contractor,4th,White,M,False,False
-534,30,Will Sims II,41,"Sherman Oaks, CA",YouTube Sensation,Co-runner up,African-American,M,False,False
-535,30,Carolyn Rivera,52,"Tampa, FL",Corporate Executive,Co-runner up,White,F,False,False
-536,30,Mike Holloway,38,"North Richland Hills, TX",Oil Driller,Winner,White,M,False,False
-537,31,Vytas Baskauskas,35,"Santa Monica, CA",Yoga Instructor/Math Professor,20th,White,M,False,False
-538,31,Shirin Oskooi,32,"San Francisco, CA",Yahoo! Executive,19th,Asian-American,F,False,False
-539,31,Peih-Gee Law,37,"San Francisco, CA",Jeweler,18th,Asian-American,F,False,False
-540,31,Jeff Varner,49,"Greensboro, NC",Internet Projects Manager,17th,White,M,True,False
-541,31,Monica Padilla,30,"Queens, NY",Law Student,16th,Latin American,F,False,False
-542,31,Terry Deitz,55,"Simsbury, CT",Pilot,15th,White,M,False,False
-543,31,Woo Hwang,31,"Newport Beach, CA",Martial Arts Instructor,14th,Asian-American,M,False,False
-544,31,Kass McQuillen,42,"Tehachapi, CA",Attorney,13th,White,F,False,False
-545,31,Andrew Savage,51,"San Jose, CA",Attorney,12th,White,M,False,False
-546,31,Kelly Wiglesworth,37,"Greensboro, NC",River Guide,11th,White,F,False,False
-547,31,Ciera Eastin,26,"Salem, OR",Cosmetology Student,10th,White,F,False,False
-548,31,Stephen Fishbach,36,"New York, NY",Corporate Consultant,9th,White,M,False,False
-549,31,Joe Anglim,25,"Scottsdale, AZ",Jewelry Designer,8th,White,M,False,False
-550,31,Abi-Maria Gomes,35,"Los Angeles, CA",Business Student,7th,Latin American,F,False,False
-551,31,Kimmi Kappenberg,42,"The Woodlands, TX",Bartender,6th,White,F,False,False
-552,31,Keith Nale,54,"Keithville, LA",Firefighter,5th,White,M,False,False
-553,31,Kelley Wentworth,29,"Seattle, WA",Marketing Manager,4th,White,F,False,False
-554,31,Spencer Bledsoe,22,"Chicago, IL",Economics Student,Co-runner up,White,M,False,False
-555,31,Tasha Fox,39,"St. Louis, MO",Accountant,Co-runner up,African-American,F,False,False
-556,31,Jeremy Collins,37,"Foxborough, MA",Firefighter,Winner,African-American,M,False,False
-557,32,Darnell Hamilton,27,"Chicago, IL",Postal Worker,18th,African-American,M,False,False
-558,32,Jennifer Lanzetti,38,"Salt Lake City, UT",Contractor,17th,White,F,False,False
-559,32,Elisabeth Filarski,27,"Brooklyn, NY",Quantitative Strategist,16th,White,F,False,False
-560,32,Caleb Reynolds,28,"Hopkinsville, KY",Army Veteran,15th,White,M,False,False
-561,32,Alecia Holden,24,"Dallas, TX",Real Estate Agent,14th,White,F,False,False
-562,32,Anna Khait,26,"Brooklyn, NY",Professional Poker Player,13th,White,F,False,False
-563,32,Peter Baggenstos,34,"Minneapolis, MN",ER Doctor,12th,African-American,M,False,False
-564,32,Neal Gottlieb,38,"Sausalito, CA",Ice Cream Entrepreneur,11th,White,M,False,False
-565,32,Nick Maiorano,30,"Redondo Beach, CA",Personal Trainer,10th,White,M,False,False
-566,32,Debbie Wanner,49,"Reading, PA",Chemist,9th,White,F,False,False
-567,32,Scot Pollard,40,"Carmel, IN",Former NBA Player,8th,White,M,False,False
-568,32,Julia Sokolowski,19,"Boston, MA",College Student,7th,White,F,False,False
-569,32,Kyle Jason,31,"Detroit, MI",Bounty Hunter,6th,White,M,False,False
-570,32,Joe del Campo,71,"Vero Beach, FL",Former FBI Agent,5th,White,M,False,False
-571,32,Cydney Gillon,23,"Douglasville, GA",Bodybuilder,4th,African-American,F,False,False
-572,32,Tai Trang,51,"San Francisco, CA",Gardener,2nd Runner-up,Asian-American,M,True,False
-573,32,Aubry Bracco,29,"Cambridge, MA",Social Media Marketer,Runner-up,White,F,False,False
-574,32,Michele Fitzgerald,24,"Freehold, NJ",Bartender,Winner,White,F,False,False
-575,33,Rachel Ako,37,"Los Angeles, CA",Recruiting Director,20th,Asian-American,F,False,False
-576,33,Mari Takahashi,31,"Los Angeles, CA",Gamer,19th,Asian-American,F,True,False
-577,33,Paul Wachter,52,"Sugarloaf Key, FL",Boat Mechanic,18th,White,M,False,False
-578,33,Lucy Huang,42,"Diamond Bar, CA",Dietitian,17th,Asian-American,F,False,False
-579,33,CeCe Taylor,39,"Granada Hills, CA",Insurance Adjuster,16th,African-American,F,False,False
-580,33,Figgy Figueroa,23,"Nashville, TN",Bartender,15th,Latin American,F,False,False
-581,33,Michaela Bradshaw,25,"Fort Worth, TX",Vacation Club Saleswoman,14th,African-American,F,False,False
-582,33,Michelle Schubert,28,"Yakima, WA",Missionary Recruiter,13th,White,F,False,False
-583,33,Taylor Stocker,24,"Post Falls, ID",Snowboard Instructor,12th,White,M,False,False
-584,33,Chris Hammons,38,"Moore, OK",Trial Attorney,11th,White,M,False,False
-585,33,Jessica Lewis,37,"Voorheesville, NY",Assistant District Attorney,10th,White,F,False,False
-586,33,Zeke Smith,28,"Brooklyn, NY",Asset Manager,9th,White,M,True,False
-587,33,Will Wahl,18,"Long Valley, NJ",High School Student,8th,White,M,False,False
-588,33,Sunday Burquest,45,"Otsego, MN",Youth Pastor,7th,White,F,False,False
-589,33,Jay Starrett,27,"Fort Lauderdale, FL",Real Estate Agent,6th,Latin American,M,False,False
-590,33,Bret LaBelle,42,"Dedham, MA",Police Sergeant,5th,White,M,True,False
-591,33,David Wright,42,"Sherman Oaks, CA",Television Writer,4th,White,M,False,False
-592,33,Hannah Shapiro,24,"West Hollywood, CA",Barista,Co-runner up,White,F,True,False
-593,33,Ken McNickle,33,"Denver, CO",Model,Co-runner up,White,M,False,False
-594,33,Adam Klein,25,"San Francisco, CA",Homeless Shelter Manager,Winner,White,M,False,False
-595,34,Ciera Eastin,27,"Salem, OR",Cosmetology Student,20th,White,F,False,False
-596,34,Tony Vlachos,42,"Jersey City, NJ",Police Officer,19th,White,M,False,False
-597,34,Caleb Reynolds,28,"Hopkinsville, KY",Army Veteran,18th,White,M,False,False
-598,34,Malcolm Freberg,29,"Hermosa Beach, CA",Bartender,17th,White,M,False,False
-599,34,J.T. Thomas,31,"Mobile, AL",Cattle Rancher,16th,White,M,False,False
-600,34,Sandra Diaz-Twine,42,"Fayetteville, NC",Office Assistant,15th,Latin American,F,False,False
-601,34,Jeff Varner,50,"High Point, NC",Internet Project Manager,14th,White,M,True,False
-602,34,Hali Ford,26,"Knoxville, TN",Law Student,13th,White,F,False,False
-603,34,Ozzy Lusth,34,"Venice, CA",Photographer,12th,Latin American,M,True,False
-604,34,Debbie Wanner,51,"Reading, PA",Chemist,11th,White,F,False,False
-605,34,Zeke Smith,28,"Brooklyn, NY",Asset Manager,10th,White,M,True,False
-606,34,Sierra Dawn Thomas,29,"Roy, UT",Barrel Racer,9th,White,F,False,False
-607,34,Andrea Boehlke,27,"New York, NY",Entertainment Host/Writer,8th,White,F,False,False
-608,34,Michaela Bradshaw,25,"Fort Worth, TX",Vacation Club Sales,7th,African-American,F,False,False
-609,34,Cirie Fields,45,"Norwalk, CT",Nurse,6th,African-American,F,False,False
-610,34,Aubry Bracco,30,"Cambridge, MA",Social Media Marketer,5th,White,F,False,False
-611,34,Tai Trang,52,"San Francisco, CA",Gardener,4th,Asian-American,M,True,False
-612,34,Troyzan Robertson,54,"Miami, FL",Swimsuit Photographer,2nd Runner-up,White,M,False,False
-613,34,Brad Culpepper,47,"Tampa, FL",Attorney/Former NFL Player,Runner-up,White,M,False,False
-614,34,Sarah Lacina,32,"Marion, IA",Police Officer,Winner,White,F,False,False
-615,35,Katrina Radke,46,"Excelsior, MN",Olympian,18th,White,F,False,False
-616,35,Simone Nguyen,25,"New York, NY",Diversity Advocate,17th,Asian-American,F,True,False
-617,35,Patrick Bolton,24,"Auburn, AL",Small Business Owner,16th,White,M,False,False
-618,35,Alan Ball,31,"Houston, TX",NFL Player,15th,African-American,M,False,False
-619,35,Roark Luskin,27,"Santa Monica, CA",Social Worker,14th,White,F,False,False
-620,35,Alexandre Amico,24,"Los Angeles, CA",Celebrity Assistant,13th,White,M,False,False
-621,35,Jessica Johnston,29,"Louisville, KY",Nurse Practitioner,12th,White,F,False,False
-622,35,Desi Williams,27,"Newport News, VA",Physical Therapist,11th,African-American,F,False,False
-623,35,Cole Medders,24,"Little Rock, AR",Wilderness Therapy Guide,10th,White,M,False,False
-624,35,JP Hilsabeck,28,"Los Angeles, CA",Firefighter,9th,White,M,False,False
-625,35,Joe Mena,34,"Tolland, CT",Probation Officer,8th,Latin American,M,False,False
-626,35,Lauren Rimmer,35,"Beaufort, NC",Fisherwoman,7th,White,F,True,False
-627,35,Ashley Nolan,26,"Satellite Beach, FL",Lifeguard,6th,White,F,False,False
-628,35,Mike Zahalsky,43,"Parkland, FL",Urologist,5th,White,M,False,False
-629,35,Devon Pinto,24,"Solana Beach, CA",Surf Instructor,4th,Latin American,M,False,False
-630,35,Ryan Ulrich,23,"North Arlington, NJ",Bellhop,2nd Runner-up,White,M,False,False
-631,35,Chrissy Hofbeck,46,"Lebanon Township, NJ",Actuary,Runner-up,White,F,False,False
-632,35,Ben Driebergen,34,"Boise, ID",Marine,Winner,White,M,False,False
-633,36,Stephanie Gonzalez,26,"Ocala, FL",Graphic Saleswoman,20th,Latin American,F,False,False
-634,36,Jacob Derwin,22,"Merrick, NY",Music Teacher,19th,White,M,False,False
-635,36,Morgan Ricke,29,"Orlando, FL",Marine Animal Trainer,18th,White,F,False,False
-636,36,Brendan Shapiro,41,"Herndon, VA",Physical Education Teacher,17th,White,M,False,False
-637,36,Stephanie Johnson,34,"Chicago, IL",Yoga Instructor,16th,White,F,False,False
-638,36,James Lim,24,"New York, NY",Business Analyst,15th,Asian-American,M,False,False
-639,36,Bradley Kleihege,26,"Los Angeles, CA",Law Student,14th,White,M,False,False
-640,36,Chris Noble,27,"Brooklyn, NY",Male Model,13th,White,M,False,False
-641,36,Libby Vincek,24,"Nashville, TN",Social Media Strategist,12th,White,F,False,False
-642,36,Desiree Afuye,21,"Brooklyn, NY",Student,11th,African-American,F,False,False
-643,36,Jenna Bowman,23,"Venice Beach, CA",Advertising Account Executive,10th,White,F,False,False
-644,36,Michael Yerger,18,"Los Angeles, CA",Real Estate Agent,9th,White,M,False,False
-645,36,Chelsea Townsend,24,"Los Angeles, CA",EMT/Pro Cheerleader,8th,White,F,False,False
-646,36,Kellyn Bechtold,31,"Denver, CO",Career Counselor,7th,White,F,False,False
-647,36,Sebastian Noel,22,"Melbourne, FL",Fishing Guide,6th,White,M,False,False
-648,36,Donathan Hurley,26,"Kimper, KY",Caretaker,5th,White,M,True,True
-649,36,Angela Perkins,42,"Cincinnati, OH",Army Veteran,4th,White,F,False,False
-650,36,Laurel Johnson,29,"Minneapolis, MN",Financial Consultant,2nd Runner-up,African-American,F,False,False
-651,36,Domenick Abbate,38,"Nesconset, NY",Construction Supervisor,Runner-up,White,M,False,False
-652,36,Wendell Holland,33,"Philadelphia, PA",Furniture Company Owner,Winner,African-American,M,False,False
-653,37,Pat Cusack,41,"Cohoes, NY",Maintenance Manager,20th,White,M,False,False
-654,37,Jessica Peet,19,"Lakeland, FL",Waitress,19th,White,F,False,False
-655,37,Jeremy Crawford,40,"Clover, SC",Attorney,18th,African-American,M,True,False
-656,37,Bi Nguyen,28,"Houston, TX",Mixed Martial Arts Fighter,17th,Asian-American,F,False,False
-657,37,Natalia Azoqa,25,"Irvine, CA",Industrial Engineer,16th,Asian-American,F,False,False
-658,37,Natalie Cole,57,"Los Angeles, CA",Publishing CEO,15th,African-American,F,False,False
-659,37,Lyrsa Torres,36,"Boston, MA",Airline Agent,14th,Latin American,F,True,False
-660,37,Elizabeth Olson,31,"Longview, TX",Kitchen Staff Member,13th,White,F,False,False
-661,37,John Hennigan,38,"Los Angeles, CA",Professional Wrestler,12th,White,M,False,False
-662,37,Dan Rengering,27,"Lake Butler, FL",S.W.A.T. Officer,11th,White,M,False,False
-663,37,Alec Merlino,24,"San Clemente, CA",Bartender,10th,White,M,False,False
-664,37,Carl Boudreaux,41,"Beaumont, TX",Truck Driver,9th,African-American,M,False,False
-665,37,Gabby Pascuzzi,25,"St. Augustine, FL",Technical Writer,8th,Asian-American,F,True,False
-666,37,Christian Hubicki,32,"Tallahassee, FL",Robotics Scientist,7th,White,M,False,False
-667,37,Davie Rickenbacker,30,"Orangeburg, SC",Social Media Manager,6th,African-American,M,False,False
-668,37,Alison Raybould,28,"Chapel Hill, NC",Physician,5th,White,F,False,False
-669,37,Kara Kay,30,"San Diego, CA",Realtor,4th,White,F,False,False
-670,37,Angelina Keeley,28,"Sparks, NV",Financial Consultant,2nd Runner-up,Latin American,F,False,False
-671,37,Mike White,47,"Los Angeles, CA",Filmmaker,Runner-up,White,M,True,False
-672,37,Nick Wilson,27,"Williamsburg, KY",Public Defender,Winner,White,M,False,False
-673,38,Reem Daly,46,"Ashburn, VA",Sales Representative,18th,White,F,False,False
-674,38,Keith Sowell,19,"Durham, NC",Pre-Med Student,17th,African-American,M,False,False
-675,38,Aubry Bracco,32,"Los Angeles, CA",Marketing Director,16th,White,F,False,False
-676,38,Wendy Diaz,25,"Bell, CA",Small Business Owner,15th,Latin American,F,False,True
-677,38,Joe Anglim,29,"Ogden, UT",Multimedia Artist,14th,White,M,False,False
-678,38,Eric Hafemann,35,"Livermore, CA",Firefighter,13th,White,M,False,False
-679,38,Julia Carter,25,"Bethesda, MD",Medical Assistant,12th,African-American,F,False,False
-680,38,David Wright,44,"Sherman Oaks, CA",Television Writer,11th,White,M,False,False
-681,38,Kelley Wentworth,31,"Seattle, WA",Marketing Manager,10th,White,F,False,False
-682,38,Wardog DaSilva,38,"Los Angeles, CA",Law Student/Former Military,9th,White,M,False,False
-683,38,Ron Clark,46,"Atlanta, GA",Teacher,8th,White,M,True,False
-684,38,Aurora McCreary,32,"Orlando, FL",Divorce Attorney,7th,White,F,True,False
-685,38,Victoria Baamonde,23,"Bronx, NY",Waitress,6th,Latin American,F,False,False
-686,38,Lauren O'Connell,21,"Bakersfield, CA",Student,5th,White,F,False,False
-687,38,Rick Devens,33,"Blacksburg, VA",Morning News Anchor,4th,White,M,False,False
-688,38,Julie Rosenberg,46,"New York, NY",Toymaker,2nd Runner-up,White,F,False,False
-689,38,Gavin Whitson,23,"Erwin, TN",YMCA Program Director,Runner-up,White,M,False,False
-690,38,Chris Underwood,25,"Greenville, SC",District Sales Manager,Winner,Latin American,M,False,False
-691,39,Ronnie Bardah,35,"Henderson, NV",Poker Player,20th,Asian-American,M,False,False
-692,39,Molly Byman,27,"Durham, NC",Law Student,19th,White,F,False,False
-693,39,Vince Moua,27,"Palo Alto, CA",Admissions Counselor,18th,Asian-American,M,True,False
-694,39,Chelsea Walker,26,"Los Angeles, CA",Digital Content Creator,17th,White,F,False,False
-695,39,Tom Laidlaw,60,"Greenwich, CT",Former NHL Player,16th,White,M,False,False
-696,39,Jason Linden,32,"New York, NY",Personal Injury Attorney,15th,White,M,False,False
-697,39,Jack Nichting,23,"Harrisonburg, VA",Grad Student,14th,White,M,False,False
-698,39,Kellee Kim,29,"Philadelphia, PA",MBA Student,13th,Asian-American,F,False,False
-699,39,Jamal Shipman,33,"Providence, RI",College Administrator,12th,Latin American,M,False,False
-700,39,Aaron Meredith,36,"Warwick, RI",Gym Owner,11th,African-American,M,False,False
-701,39,Missy Byrd,24,"Tacoma, WA",Air Force Veteran,10th,African-American,F,True,False
-702,39,Elizabeth Beisel,26,"Saunderstown, RI",Olympic Medalist,9th,White,F,False,False
-703,39,Karishma Patel,37,"Houston, TX",Personal Injury Attorney,8th,Asian-American,F,False,False
-704,39,Elaine Stott,41,"Rockholds, KY",Factory Worker,7th,White,F,True,False
-705,39,Dan Spilo,48,"Los Angeles, CA",Talent Manager,6th,White,M,False,False
-706,39,Janet Carbin,59,"Palm Bay, FL",Chief Lifeguard,5th,White,F,False,False
-707,39,Lauren Beck,28,"Glendale, CA",Nanny,4th,African-American,F,False,False
-708,39,Noura Salman,36,"North Potomac, MD",Entrepreneur,2nd Runner-up,Asian-American,F,False,False
-709,39,Dean Kowalski,28,"New York, NY",Tech Sales,Runner-up,White,M,False,False
-710,39,Tommy Sheehan,26,"Long Beach, NY",4th Grade Teacher,Winner,White,M,False,False
-711,40,Amber Mariano,40,"Pensacola, FL",Director of Marketing & Communications,20th,White,F,False,False
-712,40,Danni Boatwright,43,"Shawnee, KS",Sideline Chic Owner,19th,White,F,False,False
-713,40,Ethan Zohn,45,"Hillsborough, NH",Keynote Speaker/Social Entrepreneur,18th,White,M,False,False
-714,40,Rob Mariano,43,"Pensacola, FL",Construction Worker,17th,White,M,False,False
-715,40,Parvati Shallow,36,"Los Angeles, CA",Life Coach/Speaker/Yoga Teacher,16th,White,F,True,False
-716,40,Sandra Diaz-Twine,44,"Riverview, FL",Case Manager,15th,Latin American,F,False,False
-717,40,Yul Kwon,44,"Los Altos, CA",Product Management,14th,Asian-American,M,False,False
-718,40,Wendell Holland,35,"Philadelphia, PA",Furniture Designer,13th,African-American,M,False,False
-719,40,Adam Klein,28,"Burlingame, CA",Host/Keynote Speaker,12th,White,M,False,False
-720,40,Tyson Apostol,39,"Mesa, AZ",Former Pro Cyclist/Shop Manager,11th,White,M,False,False
-721,40,Sophie Clarke,29,"Santa Monica, CA",Healthcare Consultant,10th,White,F,False,False
-722,40,Kim Spradlin-Wolfe,36,"San Antonio, TX",Interior Designer,9th,White,F,False,False
-723,40,Jeremy Collins,41,"Foxborough, MA",Firefighter,8th,African-American,M,False,False
-724,40,Nick Wilson,28,"Williamsburg, KY",Attorney,7th,White,M,False,False
-725,40,Denise Stapley,48,"Marion, IA",Sex Therapist,6th,White,F,False,False
-726,40,Ben Driebergen,36,"Boise, ID",Real Estate Agent/Stay-at-home Dad,5th,White,M,False,False
-727,40,Sarah Lacina,35,"Cedar Rapids, IA",Police Officer,4th,White,F,False,False
-728,40,Michele Fitzgerald,29,"Hoboken, NJ",Business Development Manager,2nd Runner-up,White,F,False,False
-729,40,Natalie Anderson,33,"Edgewater, NJ",CrossFit Trainer,Runner-up,Asian-American,F,False,False
-730,40,Tony Vlachos,45,"Allendale, NJ",Police Officer,Winner,White,M,False,False
-731,41,Eric Abraham,51,"San Antonio, TX",Cyber Security Analyst,18th,African-American,M,False,False
-732,41,Sara Wilson,24,"Boston, MA",Healthcare Consultant,17th,White,F,False,False
-733,41,David Voce,35,"Chicago, IL",Neurosurgeon,16th,White,M,False,False
-734,41,Brad Reese,50,"Shawnee, WY",Rancher,15th,White,M,False,False
-735,41,Jaison Robinson,20,"Oklahoma City, OK",College Student,14th,African-American,M,False,False
-736,41,Genie Chen,46,"Portland, OR",Grocery Clerk,13th,Asian-American,F,True,False
-737,41,Sydney Segal,26,"Brooklyn, NY",Law Student,12th,White,F,False,False
-738,41,Tiffany Seely,47,"Plainview, NY",Teacher,11th,White,F,False,False
-739,41,Naseer Muttalif,37,"Morgan Hill, CA",Sales Manager,10th,Asian-American,M,False,False
-740,41,Evvie Jagoda,28,"Arlington, MA",PhD Student,9th,White,N,True,False
-741,41,Shan Smith,34,"Washington, DC",Pastor,8th,African-Canadian,F,False,False
-742,41,Liana Wallace,20,"Washington, DC",College Student,7th,African-American,F,False,False
-743,41,Danny McCray,33,"Frisco, TX",Ex-NFL Player,6th,African-American,M,False,False
-744,41,Ricard Foyé,31,"Sedro-Woolley, WA",Flight Attendant,5th,Latin American,M,True,True
-745,41,Heather Aldret,52,"Charleston, SC",Stay-at-Home Mom,4th,White,F,False,False
-746,41,Xander Hastings,21,"Chicago, IL",App Developer,2nd Runner-up,White,M,False,False
-747,41,Deshawn Radden,26,"Miami, FL",Medical Student,Runner-up,African-American,M,True,False
-748,41,Erika Casupanan,32,"Toronto, ON (Canada)",Communications Manager,Winner,Asian-Canadian,F,True,False
-749,42,Jackson Fox,48,"Houston, TX",Healthcare Worker,18th,White,M,True,False
-750,42,Zach Wurtenberger,22,"St. Louis, MO",Student,17th,White,M,False,False
-751,42,Marya Sherron,47,"Noblesville, IN",Stay-at-Home Mom,16th,African-American,F,False,True
-752,42,Jenny Kim,43,"Brooklyn, NY",Creative Director,15th,Asian-American,F,False,False
-753,42,Swati Goel,19,"Palo Alto, CA",Ivy League Student,14th,Asian-American,F,False,False
-754,42,Daniel Strunk,30,"New Haven, CT",Law Clerk,13th,White,M,False,False
-755,42,Lydia Meredith,22,"Santa Monica, CA",Waitress,12th,White,F,True,False
-756,42,Chanelle Howell,29,"New York, NY",Executive Recruiter,11th,African-American,F,True,False
-757,42,Rocksroy Bailey,44,"Las Vegas, NV",Stay-at-Home Dad,10th,African-American,M,False,False
-758,42,Tori Meehan,25,"Rogers, AR",Therapist,9th,White,F,False,False
-759,42,Hai Giang,29,"New Orleans, LA",Data Scientist,8th,Asian-American,M,True,False
-760,42,Drea Wheeler,35,"Montreal, QC (Canada)",Fitness Consultant,7th,African-American,F,False,True
-761,42,Omar Zaheer,31,"Whitby, ON (Canada)",Veterinarian,6th,Asian-Canadian,M,False,False
-762,42,Lindsay Dolashewich,31,"Asbury Park, NJ",Dietitian,5th,White,F,False,False
-763,42,Jonathan Young,29,"Gulf Shores, AL",Beach Service Company Owner,4th,White,M,False,False
-764,42,Romeo Escobar,37,"Norwalk, CA",Pageant Coach,2nd Runner-up,Latin American,M,True,False
-765,42,Mike Turner,58,"Hoboken, NJ",Retired Firefighter,Runner-up,Latin American,M,False,False
-766,42,Maryanne Oketch,24,"Ajax, ON (Canada)",Seminary Student,Winner,African-Canadian,F,False,False
-767,43,Morriah Young,28,"Philadelphia, PA",Teacher,18th,African-American,F,False,False
-768,43,Justine Brennan,29,"Marina del Ray, CA",Cyber Security Saleswoman,17th,Asian-American,F,False,False
-769,43,Nneka Ejere,43,"Weatherford, TX",Pharmacist,16th,African-American,F,False,False
-770,43,Lindsay Carmine,42,"Downingtown, PA",Pediatric Nurse,15th,White,F,False,False
-771,43,Geo Bustamante,35,"Honolulu, HI",Project Manager,14th,Latin American,M,True,False
-772,43,Elie Scott,31,"Salt Lake City, UT",Clinical Psychologist,13th,Latin American,F,False,False
-773,43,Dwight Moore,22,"Collierville, TN",Graduate Student,12th,African-American,M,False,False
-774,43,Jeanine Zheng,24,"San Francisco, CA",UX Designer,11th,Asian-American,F,False,False
-775,43,James Jones,37,"Philadelphia, PA",Event Planner,10th,African-American,M,False,False
-776,43,Ryan Medrano,24,"El Paso, TX",Warehouse Associate,9th,Latin American,M,False,True
-777,43,Noelle Lambert,25,"Manchester, NH",Paralympian,8th,White,F,False,True
-778,43,Sami Layadi,19,"Las Vegas, NV",Pet Cremator,7th,African-American,M,False,False
-779,43,Cody Assenmacher,35,"Honolulu, HI",Elevator Salesman,6th,White,M,False,False
-780,43,Karla Cruz Godoy,28,"Newark, DE",Educational Project Manager,5th,Latin American,F,True,False
-781,43,Jesse Lopez,30,"Durham, NC",Political Science PhD,4th,Latin American,M,False,False
-782,43,Owen Knight,29,"New Orleans, LA",College Admissions Director,2nd Runner-up,Asian-American,M,False,False
-783,43,Cassidy Clark,26,"Austin, TX",Designer,Runner-up,White,F,True,False
-784,43,Mike Gabler,52,"Meridian, ID",Heart Valve Specialist,Winner,White,M,False,False
-785,44,Bruce Perreault,46,"West Warwick, RI",Insurance Agent,18th,African-American,M,False,False
-786,44,Maddy Pomilla,28,"Huntingtown, MD",Charity Projects Manager,17th,Latin American,F,False,False
-787,44,Helen Li,29,"San Francisco, CA",Product Manager,16th,Asian-American,F,False,False
-788,44,Claire Rafson,25,"Highland Park, IL",Tech Investor,15th,African-American,F,True,False
-789,44,Sarah Wade,27,"Rochester, MN",Management Consultant,14th,White,F,False,False
-790,44,Matthew Grinstead-Mayle,43,"Pickerington, OH",Barbershop Owner,13th,White,M,True,False
-791,44,Josh Wilder,34,"Cincinnati, OH",Surgical Podiatrist,12th,African-American,M,True,False
-792,44,Matt Blankinship,27,"Albany, CA",Security Software Engineer,11th,Asian-American,M,False,False
-793,44,Brandon Cottom,30,"Newtown, PA",Security Specialist,10th,African-American,M,False,False
-794,44,Kane Fritzler,25,"Moose Jaw, SK (Canada)",Law Student,9th,White,M,False,False
-795,44,Frannie Marin,23,"St. Paul, MN",Research Coordinator,8th,White,F,True,False
-796,44,Danny Massa,32,"Bronx, NY",Firefighter,7th,White,M,False,False
-797,44,Jaime Lynn Ruiz,35,"Mesa, AZ",Yogi,6th,Latin American,F,False,False
-798,44,Lauren Harpe,31,"Port Arthur, TX",Elementary School Teacher,5th,African-American,F,False,False
-799,44,Carson Garrett,20,"Atlanta, GA",NASA Engineering Student,4th,White,M,False,False
-800,44,Carolyn Wiger,35,"North St. Paul, MN",Drug Counselor,2nd Runner-up,White,F,True,False
-801,44,Heidi Lagares-Greenblatt,43,"Pittsburgh, PA",Engineering Manager,Runner-up,Latin American,F,False,False
-802,44,Yam Yam Arocho,36,"Bayamón, Puerto Rico",Salon Owner,Winner,Latin American,M,True,False
-803,45,Hannah Rose,33,"Baltimore, MD",Therapist,18th,White,F,False,False
-804,45,Brandon Donlon,26,"Sicklerville, NJ",Content Producer,17th,White,M,False,False
-805,45,Sabiyah Broderick,28,"Jacksonville, NC",Truck Driver,16th,African-American,F,True,False
-806,45,Sean Edwards,35,"Provo, UT",School Principal,15th,Asian-American,M,True,False
-807,45,Brando Meyer,23,"Seattle, WA",Software Developer,14th,Asian-American,M,False,False
-808,45,J. Maya,24,"Los Angeles, CA",Singer,13th,Asian-American,F,False,False
-809,45,Sifu Alsup,30,"O'Fallon, IL",Gym Owner,12th,African-American,M,False,False
-810,45,Kaleb Gebrewold,29,"Vancouver, BC (Canada)",Software Sales,11th,African-Canadian,M,False,False
-811,45,Kellie Nalbandian,29,"New York, NY",Critical Care Nurse,10th,White,F,True,False
-812,45,Kendra McQuarrie,31,"Steamboat Springs, CO",Bartender,9th,White,F,False,False
-813,45,Bruce Perreault,47,"West Warwick, RI",Insurance Agent,8th,African-American,M,False,False
-814,45,Emily Flippen,28,"Laurel, MD",Investment Analyst,7th,White,F,False,False
-815,45,Drew Basile,23,"Philadelphia, PA",Grad Student,6th,White,M,False,False
-816,45,Julie Alley,49,"Brentwood, TN",Estate Attorney,5th,White,F,False,False
-817,45,Katurah Topps,35,"Brooklyn, NY",Civil Rights Attorney,4th,African-American,F,True,False
-818,45,Jake O'Kane,26,"Boston, MA",Attorney,2nd Runner-up,White,M,False,False
-819,45,Austin Li Coon,26,"Chicago, IL",Grad Student,Runner-up,Asian-American,M,False,False
-820,45,Dee Valladares,26,"Miami, FL",Entrepreneur,Winner,Latin American,F,False,False
-821,46,David Jelinsky,22,"Las Vegas, NV",Slot Machine Salesman,18th,White,M,False,False
-822,46,Jessica Johnston,37,"San Francisco, CA",Software Engineer,17th,White,F,False,False
-823,46,Randen Montalvo,41,"Orlando, FL",Aerospace Tech,16th,Latin American,M,False,False
-824,46,Bhanu Gopal,41,"Acton, MA",IT Quality Analyst,15th,Asian-American,M,True,False
-825,46,Jem Hussain-Adams,31,"Chicago, IL",International Brand Mentor,14th,White,F,False,False
-826,46,Moriah Gaynor,28,"San Diego, CA",Program Coordinator,13th,White,F,True,False
-827,46,Tim Spicer,31,"Atlanta, GA",College Coach,12th,African-American,M,False,False
-828,46,Soda Thompson,27,"Lake Hopatcong, NJ",Special Ed Teacher,11th,African-American,F,False,False
-829,46,Tevin Davis,24,"Richmond, VA",Actor,10th,African-American,M,True,False
-830,46,Hunter McKnight,28,"French Camp, MS",Science Teacher,9th,White,M,False,False
-831,46,Tiffany Nicole Ervin,33,"Elizabeth, NJ",Artist,8th,African-American,F,False,False
-832,46,Venus Vafa,24,"Toronto, ON (Canada)",Data Analyst,7th,Asian-Canadian,F,False,False
-833,46,Q Burdette,29,"Memphis, TN",Real Estate Agent,6th,African-American,M,False,False
-834,46,Maria Shrime Gonzalez,48,"Dallas, TX",Parent Coach,5th,Asian-American,F,False,False
-835,46,Liz Wilcox,35,"Orlando, FL",Marketing Strategist,4th,White,F,False,False
-836,46,Ben Katzman,31,"Miami, FL",Musician,2nd Runner-up,White,M,False,False
-837,46,Charlie Davis,26,"Boston, MA",Law Student,Runner-up,White,M,False,False
-838,46,Kenzie Petty,29,"Charlotte, NC",Salon Owner,Winner,White,F,True,False
-839,47,Jon Lovett,42,"Los Angeles, CA",Podcast Host,18th,White,M,True,False
-840,47,TK Foster,31,"Upper Marlboro, MD",Athlete Marketing Manager,17th,African-American,M,False,False
-841,47,Aysha Welch,32,"Houston, TX",IT Consultant,16th,African-American,F,False,False
-842,47,Kishan Patel,28,"San Francisco, CA",ER Doctor,15th,Asian-American,M,True,False
-843,47,Anika Dhar,26,"Los Angeles, CA",Marketing Manager,14th,Asian-American,F,False,False
-844,47,Rome Cooney,30,"Phoenix, AZ",E-Sports Commentator,13th,African-American,M,False,False
-845,47,Tiyana Hallums,27,"Aiea, HI",Flight Attendant,12th,White,F,False,False
-846,47,Sierra Wright,27,"Phoenixville, PA",Nurse,11th,White,F,False,False
-847,47,Sol Yi,43,"Norwalk, CT",Medical Device Sales,10th,Asian-American,M,False,False
-848,47,Gabe Ortis,26,"Baltimore, MD",Radio Host,9th,Latin American,M,False,False
-849,47,Kyle Ostwald,31,"Cheboygan, MI",Construction Worker,8th,White,M,False,False
-850,47,Caroline Vidmar,27,"Chicago, IL",Strategy Consultant,7th,White,F,False,False
-851,47,Andy Rueda,31,"Brooklyn, NY",AI Research Assistant,6th,Asian-American,M,True,False
-852,47,Genevieve Mushaluk,33,"Winnipeg, MB (Canada)",Corporate Lawyer,5th,White,F,False,False
-853,47,Teeny Chirichillo,24,"Manahawkin, NJ",Freelance Writer,4th,White,N,True,False
-854,47,Sue Smey,59,"Putnam Valley, NY",Flight School Owner,2nd Runner-up,White,F,False,False
-855,47,Sam Phalen,24,"Nashville, TN",Sports Reporter,Runner-up,White,M,False,False
-856,47,Rachel LaMont,34,"Southfield, MI",Graphic Designer,Winner,Asian-American,F,False,False
-857,48,Bianca Roses,33,"Arlington, VA",PR Consultant,,White,F,False,False
-858,48,Cedrek McFadden,45,"Greenville, SC",Surgeon,,African-American,M,False,False
-859,48,Charity Nelms,34,"St. Petersburg, FL",Flight Attendant,,White,F,False,False
-860,48,Chrissy Sarnowsky,55,"Chicago, IL",Fire Lieutenant,,White,F,False,False
-861,48,David Kinne,39,"Buena Park, CA",Stunt Performer,,White,M,False,False
-862,48,Eva Erickson,24,"Providence, RI",PhD Candidate,,White,F,False,True
-863,48,Joe Hunter,45,"Sacramento, CA",Fire Captain,,White,M,False,False
-864,48,Justin Pioppi,29,"Winthrop, MA",Pizzeria Manager,,White,M,False,False
-865,48,Kamilla Karthigesu,31,"Foster City, CA",Software Engineer,,Asian-Canadian,F,False,False
-866,48,Kevin Leung,34,"Livermore, CA",Finance Manager,,Asian-American,M,False,False
-867,48,Kyle Fraser,31,"Brooklyn, NY",Attorney,,African-American,M,False,False
-868,48,Mary Zheng,31,"Philadelphia, PA",Substance Abuse Counselor,,Asian-American,F,False,False
-869,48,Mitch Guerra,34,"Waco, TX",P.E. Coach,,Latin American,M,False,True
-870,48,Sai Hughley,30,"Simi Valley, CA",Marketing Professional,,African-American,F,False,False
-871,48,Shauhin Davari,38,"Costa Mesa, CA",Debate Professor,,Asian-American,M,False,False
-872,48,Star Toomey,28,"Augusta, GA",Sales Expert,,African-American,F,True,False
-873,48,Stephanie Berger,38,"Brooklyn, NY",Tech Product Lead,,White,F,False,False
-874,48,Thomas Krottinger,34,"Los Angeles, CA",Music Executive,,White,M,True,False
+Season,Name,Age,Hometown,Profession,Finish,Ethnicity,Gender,Lgbt,Has Disability
+1,Sonja Christopher,63,"Walnut Creek, CA",Gym Teacher / Retired,16th,White,F,True,False
+1,B.B. Andersen,64,"Mission Hills, KS",Real Estate Developer,15th,White,M,False,False
+1,Stacey Stillman,27,"San Francisco, CA",Attorney,14th,White,F,False,False
+1,Ramona Gray,29,"Edison, NJ",Biochemist,13th,African-American,F,False,False
+1,Dirk Been,23,"Spring Green, WI",Dairy Farmer,12th,White,M,False,False
+1,Joel Klug,27,"Sherwood, AR",Health Club Consultant,11th,White,M,False,False
+1,Gretchen Cordy,38,"Clarksville, TN",Teacher,10th,White,F,False,False
+1,Greg Buis,24,"Gold Hill, CO",Ivy League Graduate,9th,White,M,False,False
+1,Jenna Lewis,22,"Franklin, NH",Student,8th,White,F,False,False
+1,Gervase Peterson,30,"Willingboro, NJ",YMCA Basketball Coach,7th,African-American,M,False,False
+1,Colleen Haskell,23,"Miami Beach, FL",Student,6th,White,F,False,False
+1,Sean Kenniff,30,"Carle Place, NY",Neurologist,5th,White,M,False,False
+1,Susan Hawk,38,"Palmyra, WI",Truck Driver,4th,White,F,False,False
+1,Rudy Boesch,72,"Virginia Beach, VA",Retired NAVY Seal,3rd,White,M,False,False
+1,Kelly Wiglesworth,22,"Kernville, CA",River Rafting Guide,Runner-up,White,F,False,False
+1,Richard Hatch,39,"Newport, RI",Corporate Trainer,Winner,White,M,True,False
+2,Debb Eaton,45,"Milan, NH",Corrections Officer,16th,White,F,False,False
+2,Kel Gleason,32,"Fort Hood, TX",Army Intelligence Officer,15th,Latin American,M,False,False
+2,Maralyn Hershey,51,"Wakefield, VA",Retired Police Officer,14th,White,F,False,False
+2,Mitchell Olson,23,"Union City, NJ",Singer/Songwriter,13th,White,M,True,False
+2,Kimmi Kappenberg,28,"Ronkonkoma, NY",Bartender,12th,White,F,False,False
+2,Michael Skupin,38,"White Lake, MI",Software Publisher,11th,White,M,False,False
+2,Jeff Varner,34,"New York, NY",Internet Projects Manager,10th,White,M,True,False
+2,Alicia Calaway,32,"New York, NY",Personal Trainer,9th,African-American,F,False,False
+2,Jerri Manthey,30,"Los Angeles, CA",Aspiring Actress,8th,White,F,False,False
+2,Nick Brown,23,"Steilacoom, WA",Law Student,7th,African-American,M,False,False
+2,Amber Mariano,22,"Beaver, PA",Administrative Assistant,6th,White,F,False,False
+2,Rodger Bingham,53,"Crittenden, KY",Teacher/Farmer,5th,White,M,False,False
+2,Elisabeth Filarski,23,"Newton, MA",Footwear Designer,4th,White,F,False,False
+2,Keith Famie,40,"West Bloomfield, MI",Chef,3rd,White,M,False,False
+2,Colby Donaldson,26,"Dallas, TX",Auto Customizer,Runner-up,White,M,False,False
+2,Tina Wesson,39,"Knoxville, TN",Personal Nurse,Winner,White,F,False,False
+3,Diane Ogden,42,"Lincoln, NE",Mail Carrier,16th,White,F,False,False
+3,Jessie Camacho,27,"Orlando, FL",Sheriff,15th,Latin American,F,False,False
+3,Carl Bilancione,46,"Winter Springs, FL",Dentist,14th,White,M,False,False
+3,Linda Spencer,44,"Boston, MA",Career Counselor,13th,African-American,F,False,False
+3,Silas Gaither,23,"Los Angeles, CA",Bartender,12th,White,M,False,False
+3,Lindsey Richter,27,"Portland, OR",Advertising Executive,11th,White,F,False,False
+3,Clarence Black,24,"Detroit, MI",Basketball Coach,10th,African-American,M,False,False
+3,Kelly Goldsmith,22,"San Diego, CA",Behavior Analyst,9th,White,F,False,False
+3,Brandon Quinton,25,"Dallas, TX",Bartender,8th,White,M,True,False
+3,Frank Garrison,43,"Odessa, NY",Telephone Technician,7th,White,M,False,False
+3,Kim Powers,29,"Conshohocken, PA",Freelance Marketer,6th,White,F,False,False
+3,Teresa Cooper,42,"Jackson, GA",Flight Attendant,5th,White,F,False,False
+3,Tom Buchanan,46,"Rich Valley, VA",Goat Farmer,4th,White,M,False,False
+3,Lex van den Berghe,38,"Santa Cruz, CA",Marketing Manager,3rd,White,M,False,False
+3,Kim Johnson,57,"Oyster Bay, NY",Retired Teacher,Runner-up,White,F,False,False
+3,Ethan Zohn,27,"New York, NY",Professional Soccer Player,Winner,White,M,False,False
+4,Peter Harkey,45,"Millis, MA",Bowling Alley Owner,16th,White,M,False,False
+4,Patricia Jackson,49,"Lugoff, SC",Truck Assembler,15th,White,F,False,False
+4,Hunter Ellis,33,"La Jolla, CA",Ex-Navy Fighter Pilot,14th,White,M,False,False
+4,Sarah Jones,24,"Newport Beach, CA",Account Manager,13th,White,F,False,False
+4,Gabriel Cade,23,"Hollywood, CA",Bartender,12th,White,M,False,False
+4,Gina Crews,28,"Gainesville, FL",Nature Guide,11th,White,F,False,False
+4,Rob Mariano,26,"Canton, MA",Construction Worker,10th,White,M,False,False
+4,John Carroll,36,"Omaha, NE",Nurse,9th,White,M,True,False
+4,Zoe Zanidakis,35,"Monhegan Island, ME",Fishing Boat Captain,8th,White,F,False,False
+4,Tammy Leitner,29,"Mesa, AZ",Crime Reporter,7th,White,F,False,False
+4,Robert DeCanio,38,"College Point, NY",Limousine Driver,6th,White,M,False,False
+4,Sean Rector,30,"Los Angeles, CA",Teacher,5th,African-American,M,False,False
+4,Paschal English,57,"Thomaston, GA",Judge,4th,White,M,False,False
+4,Kathy Vavrick-O'Brien,47,"Burlington, VT",Real Estate Agent,3rd,White,F,False,False
+4,Neleh Dennis,21,"Layton, UT",Student,Runner-up,White,F,False,False
+4,Vecepia Towery,36,"Hayward, CA",Office Manager,Winner,African-American,F,False,False
+5,John Raymond,40,"Slidell, LA",Pastor,16th,White,M,False,False
+5,Tanya Vance,27,"Kingsport, TN",Social Worker,15th,White,F,False,False
+5,Jed Hildebrand,25,"Dallas, TX",Dental Student,14th,White,M,False,False
+5,Ghandia Johnson,33,"Denver, CO",Legal Secretary,13th,African-American,F,False,False
+5,Stephanie Dill,29,"Fayetteville, AR",Firefighter,12th,White,F,False,False
+5,Robb Zbacnik,23,"Scottsdale, AZ",Bartender,11th,White,M,False,False
+5,Shii Ann Huang,28,"New York, NY",Executive Recruiter,10th,Asian-American,F,False,False
+5,Erin Collins,26,"Austin, TX",Real Estate Agent,9th,White,F,False,False
+5,Ken Stafford,30,"Brooklyn, NY",Police Officer,8th,White,M,False,False
+5,Penny Ramsey,27,"Plano, TX",Pharmaceutical Saleswoman,7th,White,F,False,False
+5,Jake Billingsley,61,"McKinney, TX",Land Broker,6th,White,M,False,False
+5,"Ted Rogers, Jr.",37,"Durham, NC",Software Developer,5th,African-American,M,False,False
+5,Helen Glover,47,"Middletown, RI",Navy Swim Instructor,4th,White,F,False,False
+5,Jan Gentry,53,"Tampa, FL",Teacher,3rd,White,F,False,False
+5,Clay Jordan,46,"Monroe, LA",Restaurant Owner,Runner-up,White,M,False,False
+5,Brian Heidik,34,"Quartz Hill, CA",Used Car Salesman,Winner,White,M,False,False
+6,Ryan Aiken,23,"Ellicott City, MD",Model,16th,White,M,False,False
+6,Janet Koth,47,"Manchester, MO",Homemaker,15th,White,F,False,False
+6,Daniel Lue,27,"Houston, TX",Tax Accountant,14th,Asian-American,M,False,False
+6,JoAnna Ward,31,"Orangeburg, SC",Guidance Counselor,13th,African-American,F,False,False
+6,Jeanne Hebert,41,"North Attleborough, MA",Marketing Director,12th,White,F,False,False
+6,Shawna Mitchell,23,"Redwood City, CA",Retail Saleswoman,11th,White,F,False,False
+6,Roger Sexton,56,"Valencia, CA",Construction Company Vice President,10th,White,M,False,False
+6,Dave Johnson,24,"Pasadena, CA",Rocket Scientist,9th,White,M,False,False
+6,Deena Bennett,35,"Riverside, CA",Deputy District Attorney,8th,Latin American,F,False,False
+6,Alex Bell,32,"Los Angeles, CA",Triathlon Coach,7th,White,M,False,False
+6,Christy Smith,24,"Basalt, CO",Children's Adventure Guide,6th,White,F,False,True
+6,Heidi Strobel,24,"Jefferson City, MO",Gym Teacher,5th,White,F,False,False
+6,Butch Lockley,50,"Olney, IL",School Principal,4th,White,M,False,False
+6,Rob Cesternino,24,"Wantagh, NY",Computer Projects Coordinator,3rd,White,M,False,False
+6,Matthew von Ertfelda,33,"Washington, D.C.",Restaurant Designer,Runner-up,White,M,False,False
+6,Jenna Morasca,21,"Pittsburgh, PA",Swimsuit Model,Winner,White,F,False,False
+7,Nicole Delma,24,"Hermosa Beach, CA",Massage Therapist,16th,White,F,False,False
+7,Ryan Shoulders,23,"Clarksville, TN",Produce Clerk,15th,White,M,False,False
+7,Michelle Tesauro,22,"Pittstown, NJ",Student,14th,White,F,False,False
+7,Trish Dunn,42,"Annapolis, MD",Sales Executive,13th,White,F,False,False
+7,Shawn Cohen,28,"New York, NY",Advertising Salesman,12th,White,M,False,False
+7,Osten Taylor,27,"Boston, MA",Equity Trade Manager,11th,African-American,M,False,False
+7,Andrew Savage,40,"Chicago, IL",Attorney,10th,White,M,False,False
+7,Ryan Opray,31,"Los Gatos, CA",Electrician,9th,White,M,False,False
+7,Rupert Boneham,39,"Indianapolis, IN",Troubled Teens Mentor,8th,White,M,False,False
+7,Tijuana Bradley,27,"St. Louis, MO",Pharmaceutical Saleswoman,7th,African-American,F,False,False
+7,Christa Hastie,24,"Los Angeles, CA",Computer Programmer,6th,White,F,False,False
+7,Burton Roberts,31,"San Francisco, CA",Marketing Executive,5th,White,M,False,False
+7,Darrah Johnson,22,"Liberty, MS",Mortician,4th,White,F,False,False
+7,Jon Dalton,29,"Danville, VA",Art Consultant,3rd,White,M,False,False
+7,Lillian Morris,51,"Cincinnati, OH",Scoutmaster,Runner-up,White,F,False,False
+7,Sandra Diaz-Twine,29,"Fort Lewis, WA",Office Assistant,Winner,Latin American,F,False,False
+8,Tina Wesson,42,"Knoxville, TN",Motivational Speaker,18th,White,F,False,False
+8,Rudy Boesch,75,"Virginia Beach, VA",Retired Navy Seal,17th,White,M,False,False
+8,Jenna Morasca,22,"Pittsburgh, PA",Swimsuit Model,16th,White,F,False,False
+8,Rob Cesternino,25,"Wantagh, NY",Computer Projects Coordinator,15th,White,M,False,False
+8,Richard Hatch,42,"Newport, RI",Corporate Trainer,14th,White,M,True,False
+8,Susan Hawk,42,"Palmyra, WI",Waitress/Bartender,13th,White,F,False,False
+8,Colby Donaldson,29,"Dallas, TX",Actor,12th,White,M,False,False
+8,Ethan Zohn,30,"Lexington, MA",Motivational Speaker,11th,White,M,False,False
+8,Jerri Manthey,33,"Los Angeles, CA",Actress,10th,White,F,False,False
+8,Lex van den Berghe,40,"Santa Cruz, CA",Freelance Writer,9th,White,M,False,False
+8,Kathy Vavrick-O'Brien,49,"Burlington, VT",Real Estate Agent,8th,White,F,False,False
+8,Alicia Calaway,35,"New York, NY",Health and Fitness Reporter,7th,African-American,F,False,False
+8,Shii Ann Huang,30,"New York, NY",Executive Recruiter,6th,Asian-American,F,False,False
+8,Tom Buchanan,48,"Rich Valley, VA",Goat Farmer,5th,White,M,False,False
+8,Rupert Boneham,40,"Indianapolis, IN",Troubled Teens Mentor,4th,White,M,False,False
+8,Jenna Lewis,26,"Franklin, NH",Actress,3rd,White,F,False,False
+8,Rob Mariano,28,"Canton, MA",Construction Worker,Runner-up,White,M,False,False
+8,Amber Mariano,25,"Beaver, PA",Administrative Assistant,Winner,White,F,False,False
+9,Brook Geraghty,33,"Huntington Beach, CA",Document Manager,18th,White,M,False,False
+9,Dolly Neely,25,"Mercer, PA",Sheep Farmer,17th,White,F,False,False
+9,John Palyok,31,"Los Angeles, CA",Sales Manager,16th,White,M,False,False
+9,Mia Galeotalanza,30,"Toms River, NJ",Bookkeeper,15th,White,F,False,False
+9,Brady Finta,33,"Huntington Beach, CA",FBI Agent,14th,White,M,False,False
+9,Travis Sampson,33,"Blountville, TN",Security Officer,13th,White,M,False,False
+9,Lisa Keiffer,44,"New Orleans, LA",Real State Agent,12th,White,F,False,False
+9,John Kenney,22,"Los Angeles, CA",Mechanical Bull Operator/Model,11th,White,M,False,False
+9,Rory Freeman,35,"Des Moines, IA",Housing Case Manager,10th,African-American,M,False,False
+9,Lea Masters,40,"Columbia, SC",Drill Sergeant,9th,White,M,False,False
+9,Chad Crittenden,35,"Oakland, CA",Teacher,8th,White,M,False,True
+9,Leann Slaby,35,"Kansasville, WI",Equity Research Assistant,7th,White,F,False,False
+9,Ami Cusack,31,"Lakewood, CO",Coffee Barista,6th,White,F,True,False
+9,Julie Berry,23,"Gorham, ME",Youth Mentor,5th,White,F,False,False
+9,Eliza Orlins,21,"Syracuse, NY",Pre-Law Student,4th,White,F,False,False
+9,Scout Cloud Lee,59,"Stillwater, OK",Rancher,3rd,White,F,True,False
+9,Twila Tanner,41,"Marshall, MO",Highway Repair Worker,Runner-up,White,F,False,False
+9,Chris Daugherty,33,"South Vienna, OH",Highway Construction Worker,Winner,White,M,False,False
+10,Jonathan Libby,23,"Dallas, TX",Sales & Marketing Associate,20th,White,M,False,False
+10,Wanda Shirk,55,"Ulysses, PA",English Teacher,19th,White,F,False,False
+10,Jolanda Jones,39,"Houston, TX",Attorney,18th,African-American,F,True,False
+10,Ashlee Ashby,22,"Easley, SC",Student,17th,White,F,False,False
+10,Jeff Wilson,21,"Ventura, CA",Personal Trainer,16th,White,M,False,False
+10,Kim Mullen,25,"Huber Heights, OH",Graduate Student,15th,White,F,False,False
+10,Willard Smith,57,"Bellevue, WA",Attorney,14th,White,M,False,False
+10,Angie Jakusz,24,"New Orleans, LA",Bartender,13th,White,F,False,False
+10,James Miller,33,"Mobile, AL",Steelworker,12th,White,M,False,False
+10,Ibrehem Rahman,27,"Birmingham, AL",Model,11th,African-American,M,False,False
+10,Bobby Jon Drinkard,27,"Troy, AL",Waiter,10th,White,M,False,False
+10,Coby Archa,32,"Dallas, TX",Hairdresser,9th,White,M,True,False
+10,Janu Tornell,39,"Las Vegas, NV",Vegas Showgirl,8th,Latin American,F,False,False
+10,Stephenie LaGrossa,25,"Glenolden, PA",Pharmaceutical Sales Representative,7th,White,F,False,False
+10,Gregg Carey,27,"Chicago, IL",Business Consultant,6th,White,M,False,False
+10,Caryn Groedel,46,"Solon, OH",Civil Rights Attorney,5th,White,F,False,False
+10,Jenn Lyon,32,"Encino, CA",Nanny,4th,White,F,False,False
+10,Ian Rosenberger,23,"Key Largo, FL",Dolphin Trainer,3rd,White,M,False,False
+10,Katie Gallagher,29,"Merced, CA",Advertising Executive,Runner-up,White,F,False,False
+10,Tom Westman,41,"Sayville, NY",Firefighter,Winner,White,M,False,False
+11,Jim Lynch,63,"Northglenn, CO",Retired Fire Captain,18th,White,M,False,False
+11,Morgan McDevitt,21,"Decatur, IL",Magician's Assistant,17th,White,F,False,False
+11,Brianna Varela,21,"Edmonds, WA",Retail Salesperson,16th,Latin American,F,False,False
+11,Brooke Struck,26,"Hood River, OR",Law Student,15th,White,F,False,False
+11,Blake Towsley,24,"Dallas, TX",Real Estate Broker,14th,White,M,False,False
+11,Margaret Bobonich,43,"Chardon, OH",Nursing Practitioner,13th,White,F,False,False
+11,Brian Corridan,22,"New York, NY",Ivy League Student,12th,White,M,True,False
+11,Amy O'Hara,39,"Revere, MA",Police Sergeant,11th,White,F,False,False
+11,Brandon Bellinger,22,"Manhattan, KS",Farmer,10th,White,M,False,False
+11,Bobby Jon Drinkard,27,"Troy, AL",Waiter,9th,White,M,False,False
+11,Jamie Newton,24,"North Hollywood, CA",Water Skiing Instructor,8th,White,M,False,False
+11,Gary Hogeboom,46,"Grand Haven, MI",Former NFL Quarterback,7th,White,M,False,False
+11,Judd Sergeant,34,"Ridgefield, NJ",Hotel Doorman,6th,White,M,False,False
+11,Cindy Hall,31,"Naples, FL",Zookeeper,5th,White,F,False,False
+11,Lydia Morales,42,"Lakewood, WA",Fishmonnger,4th,Latin American,F,False,False
+11,Rafe Judkins,22,"Providence, RI",Wilderness Guide,3rd,White,M,True,False
+11,Stephenie LaGrossa,25,"Philadelphia, PA",Pharmaceutical Sales Representative,Runner-up,White,F,False,False
+11,Danni Boatwright,30,"Tonganoxie, KS",Sports Radio Host,Winner,White,F,False,False
+12,Tina Scheer,45,"Hayward, WI",Lumberjill,16th,White,F,False,False
+12,Melinda Hyder,32,"Sevierville, TN",Singer/Entertainer,15th,White,F,False,False
+12,Misty Giles,24,"Dallas, TX",Missile Engineer,14th,White,F,False,False
+12,Ruth Marie Milliman,48,"Greenville, SC",Property Developer,13th,White,F,False,False
+12,Bobby Mason,32,"Los Angeles, CA",Attorney,12th,African-American,M,False,False
+12,Dan Barry,52,"South Hadley, MA",Astronaut,11th,White,M,False,False
+12,Nick Stanbury,25,"Tempe, AZ",Financial Salesman,10th,White,M,False,False
+12,Austin Carty,24,"High Point, NC",Writer,9th,White,M,False,False
+12,Sally Schumann,27,"Chicago, IL",Social Worker,8th,White,F,False,False
+12,Bruce Kanegai,58,"Simi Valley, CA",Art Teacher,7th,Asian-American,M,False,False
+12,Courtney Marit,31,"Los Angeles, CA",Fire Dancer,6th,White,F,False,False
+12,Shane Powers,35,"Los Angeles, CA",Marketing Executive,5th,White,M,False,False
+12,Cirie Fields,34,"Walterboro, SC",Nurse,4th,African-American,F,False,False
+12,Terry Deitz,46,"Simsbury, CT",Pilot,3rd,White,M,False,False
+12,Danielle DiLorenzo,24,"Pompano Beach, FL",Medical Sales Representative,Runner-up,White,F,False,False
+12,Aras Baskauskas,24,"Santa Monica, CA",Yoga Instructor,Winner,White,M,False,False
+13,Sekou Bunch,46,"Los Angeles, CA",Jazz Musician,20th,African-American,M,False,False
+13,Billy Garcia,36,"New York, NY",Heavy Metal Musician,19th,Latin American,M,False,False
+13,Cecilia Mansilla,29,"Oakland, CA",Risk Consultant,18th,Latin American,F,False,False
+13,J.P. Calderon,30,"Marina Del Rey, CA",Profession Volleyball Player,17th,Latin American,M,True,False
+13,Stephannie Favor,35,"Columbia, SC",Nursing Student,16th,African-American,F,False,False
+13,Cao Boi Bui,42,"Christiansburg, VA",Nail Salon Manager,15th,Asian-American,M,False,False
+13,Cristina Coria,35,"Los Angeles, CA",Police Officer,14th,Latin American,F,False,False
+13,Jessica Smith,27,"Chico, CA",Roller Girl,13th,White,F,False,False
+13,Brad Virata,27,"Los Angeles, CA",Fashion Director,12th,Asian-American,M,True,False
+13,Rebecca Borman,34,"Laurelton, NY",Makeup Artist,11th,African-American,F,False,False
+13,Jenny Guzon-Bae,36,"Lake Forest, IL",Real Estate Agent,10th,Asian-American,F,False,False
+13,Nate Gonzalez,26,"Los Angeles, CA",Shoe Salesman,9th,Latin American,M,False,False
+13,Candice Cody,23,"Fayetteville, NC",Pre-Med Student,8th,White,F,False,False
+13,Jonathan Penner,44,"Los Angeles, CA",Writer,7th,White,M,False,False
+13,Parvati Shallow,24,"Los Angeles, CA",Boxer,6th,White,F,True,False
+13,Adam Gentry,28,"San Diego, CA",Copier Sales Executive,5th,White,M,False,False
+13,Sundra Oakley,31,"Los Angeles, CA",Actress,4th,African-American,F,False,False
+13,Becky Lee,28,"Washington, D.C.",Attorney,2nd Runner-up,Asian-American,F,False,False
+13,Ozzy Lusth,25,"Venice, CA",Waiter,Runner-up,Latin American,M,True,False
+13,Yul Kwon,31,"San Mateo, CA",Management Consultant,Winner,Asian-American,M,False,False
+14,Jessica deBen,27,"Los Angeles, CA",Fashion Stylist,19th,White,F,False,False
+14,Erica Durousseau,27,"Lake Charles, LA",Non-Profit Fundraiser,18th,African-American,F,False,False
+14,Sylvia Kwan,52,"Ross, CA",Architect,17th,Asian-American,F,False,False
+14,Gary Stritesky,55,"Ramsey, MN",School Bus Driver,16th,White,M,False,False
+14,Liliana Gomez,25,"Oxnard, CA",Loan Officer,15th,Latin American,F,False,False
+14,Rita Verreos,38,"San Antonio, TX",Single Mother,14th,Latin American,F,False,False
+14,Anthony Robinson,32,"Compton, CA",Expert Witness Locator,13th,African-American,M,False,False
+14,Rocky Reid,28,"Los Angeles, CA",Bartender,12th,White,M,False,False
+14,Lisi Linares,36,"Los Angeles, CA",Customer Service Representative,11th,Latin American,F,False,False
+14,Michelle Yi,23,"Cincinnati, OH",Student,10th,Asian-American,F,False,False
+14,Edgardo Rivera,28,"Miami Beach, FL",Advertising Executive,9th,Latin American,M,False,False
+14,Mookie Lee,25,"Chicago, IL",Business Consultant,8th,Asian-American,M,False,False
+14,Alex Angarita,28,"Los Angeles, CA",Attorney,7th,Latin American,M,False,False
+14,Stacy Kimball,27,"Boulder, CO",Web Producer,6th,Asian-American,F,False,False
+14,Boo Bernis,34,"Lafayette, LA",Construction Worker,5th,White,M,False,False
+14,Yau-Man Chan,54,"Martinez, CA",Internet Technology Director,4th,Asian-American,M,False,False
+14,Cassandra Franklin,42,"Los Angeles, CA",College Administrator,Co-runner up,African-American,F,False,False
+14,Dreamz Herd,25,"Wilmington, NC",Cheerleading Coach,Co-runner up,African-American,M,False,False
+14,Earl Cole,35,"Santa Monica, CA",Advertising Executive,Winner,African-American,M,False,False
+15,Chicken Morris,47,"Marion, VA",Chicken Farmer,16th,White,M,False,False
+15,Ashley Massaro,28,"East Northport, NY",Professional Wrestler,15th,White,F,False,False
+15,Leslie Nease,38,"Tega Cay, SC",Christian Radio Host,14th,White,F,False,False
+15,Dave Cruser,37,"Simi Valley, CA",Former Model,13th,White,M,False,False
+15,Aaron Reisberger,32,"Venice, CA",Surfing Instructor,12th,White,M,False,False
+15,Sherea Lloyd,26,"Atlanta, GA",Elementary Teacher,11th,African-American,F,False,False
+15,Jaime Dugan,22,"Columbia, SC",Student,10th,White,F,False,False
+15,Jean-Robert Bellande,36,"Las Vegas, NV",Profession Poker Player,9th,White,M,False,False
+15,Frosti Zernow,20,"Chicago, IL",Student/Athlete,8th,Asian-American,M,False,False
+15,James Clement,30,"Lafayette, LA",Gravedigger,7th,African-American,M,False,False
+15,Erik Huffman,26,"Nashville, TN",Musician,6th,White,M,False,False
+15,Peih-Gee Law,29,"Marina Del Rey, CA",Jeweler,5th,Asian-American,F,False,False
+15,Denise Martin,40,"Douglas, MA",School Lunch Lady,4th,White,F,False,False
+15,Amanda Kimmel,23,"Kalispell, MT",Hiking Guide,2nd Runner-up,White,F,False,False
+15,Courtney Yates,26,"New York, NY",Waitress,Runner-up,White,F,False,False
+15,Todd Herzog,22,"Pleasant Grove, UT",Flight Attendant,Winner,White,M,True,False
+16,Jon Dalton,33,"Danville, VA",Art Consultant,20th,White,M,False,False
+16,Mary Sartain,29,"Emeryville, CA",Real Estate Manager,19th,White,F,False,False
+16,Yau-Man Chan,55,"Martinez, CA",Internet Technology Director,18th,Asian-American,M,False,False
+16,Mikey Bortone,34,"Los Angeles, CA",Aspiring Writer,17th,White,M,False,False
+16,Joel Anderson,32,"Avondale, AZ",Firefighter,16th,White,M,False,False
+16,Jonathan Penner,45,"Los Angeles, CA",Writer,15th,White,M,False,False
+16,Chet Welch,48,"Ford City, PA",Pageant Coach,14th,White,M,True,False
+16,Kathy Sleckman,45,"Glen Ellyn, IL",Golf Course Vendor,13th,White,F,False,False
+16,Tracy Hughes-Wolf,43,"Fredericksburg, VA",Residential Builder,12th,White,F,False,False
+16,Ami Cusack,34,"Golden, CO",Nanny,11th,White,F,True,False
+16,Eliza Orlins,25,"New York, NY",Law School Student,10th,White,F,False,False
+16,Ozzy Lusth,26,"Venice, CA",Photographer,9th,Latin American,M,True,False
+16,Jason Siska,22,"Fox River Grove, IL",Gymnastics Coach,8th,White,M,False,False
+16,James Clement,30,"Lafayette, LA",Gravedigger,7th,African-American,M,False,False
+16,Alexis Jones,24,"Beverly Hills, CA",Motivational Speaker,6th,Latin American,F,False,False
+16,Erik Reichenbach,22,"Pinckney, MI",Ice Cream Scooper,5th,White,M,False,False
+16,Natalie Bolton,32,"Los Angeles, CA",Personal Trainer,4th,Asian-American,F,True,False
+16,Cirie Fields,37,"Norwalk, CT",Nurse,3rd,African-American,F,False,False
+16,Amanda Kimmel,23,"Los Angeles, CA",Aspiring Designer,Runner-up,White,F,False,False
+16,Parvati Shallow,25,"Los Angeles, CA",Charity Organizer,Winner,White,F,True,False
+17,Michelle Chase,24,"Los Angeles, CA",Music Producer,18th,White,F,False,False
+17,Gillian Larson,61,"Temecula, CA",Retired Nurse,17th,White,F,False,False
+17,Paloma Soto-Castillo,24,"Downey, CA",Student,16th,Latin American,F,False,False
+17,Jacquie Berg,25,"Santa Barbara, CA",Medical Saleswoman,15th,White,F,False,False
+17,GC Brown,26,"Portland, OR",Maintenance Man,14th,African-American,M,False,False
+17,Kelly Czarnecki,22,"Buffalo Grove, IL",Retail Saleswoman,13th,White,F,False,False
+17,Ace Gordon,27,"Naples, FL",Jewelry Salesman/Photographer,12th,White,M,False,False
+17,Dan Kay,32,"Boston, MA",Attorney,11th,White,M,False,False
+17,Marcus Lehman,28,"Atlanta, GA",Doctor,10th,Latin American,M,False,False
+17,Charlie Herschel,29,"New York, NY",Attorney,9th,White,M,True,False
+17,Randy Bailey,49,"Eagle Rock, MO",Wedding Videographer,8th,White,M,False,False
+17,Corinne Kaplan,29,"Los Angeles, CA",Pharmaceutical Saleswoman,7th,White,F,False,False
+17,Crystal Cox,29,"Durham, NC",Olympic Gold Medalist,6th,African-American,F,False,False
+17,Ken Hoang,22,"Westminster, CA",Professional Gamer,5th,Asian-American,M,False,False
+17,Matty Whitmore,29,"Pacific Palisades, CA",Personal Trainer,4th,White,M,False,False
+17,Sugar Kiper,29,"Brooklyn, NY",Pin-Up Model,2nd Runner-up,White,F,False,False
+17,Jessica Smith,47,"Charles City, IA",Hairdresser,Runner-up,White,F,False,False
+17,Bob Crowley,57,"Portland, ME",Physics Teacher,Winner,White,M,False,False
+18,Carolina Eastwood,26,"West Hollywood, CA",Bartender,16th,Latin American,F,False,False
+18,Candace Smith,31,"Dayton, OH",Attorney,15th,African-American,F,False,False
+18,Jerry Sims,49,"Rock Hill, SC",U.S. Army Sergeant,14th,African-American,M,False,False
+18,Sandy Burgin,53,"Louisville, KY",Bus Driver,13th,White,F,False,False
+18,Spencer Duhm,19,"Lakeland, FL",Student,12th,White,M,True,False
+18,Sydney Wheeler,24,"Raleigh, NC",Model,11th,White,F,False,False
+18,Joe Dowdle,26,"Austin, TX",Real Estate Salesman,10th,White,M,False,False
+18,Brendan Synnott,30,"New York, NY",Entrepreneur,9th,White,M,False,False
+18,Tyson Apostol,29,"Lindon, UT",Professional Cyclist,8th,White,M,False,False
+18,Sierra Reed,23,"Los Angeles, CA",Model,7th,White,F,False,False
+18,Debbie Beebe,46,"Auburn, AL",School Principal,6th,White,F,False,False
+18,Coach Wade,37,"Bolivar, MO",Soccer Coach/Musician,5th,White,M,False,False
+18,Taj Johnson-George,37,"Nashville, TN",Former Pop Star,4th,African-American,F,False,False
+18,Erinn Lobdell,26,"Waukesha, WI",Hairdresser,3rd,White,F,False,False
+18,Stephen Fishbach,29,"New York, NY",Corporate Consultant,Runner-up,White,M,False,False
+18,J.T. Thomas,24,"Samson, AL",Cattle Rancher,Winner,White,M,False,False
+19,Marisa Calihan,26,"Cincinnati, OH",Student,20th,White,F,False,False
+19,Mike Borassi,62,"Marina del Rey, CA",Personal Chef,19th,White,M,False,False
+19,Betsy Bolan,48,"Campton, NH",Police Officer,18th,White,F,False,False
+19,Ben Browning,28,"Los Angeles, CA",Bar Manager,17th,White,M,False,False
+19,Yasmin Giles,33,"Los Angeles, CA",Hairstylist,16th,African-American,F,False,False
+19,Ashley Trainer,22,"Maple Grove, MN",Spa Saleswoman,15th,White,F,False,False
+19,Russell Swan,42,"Glenside, PA",Attorney,14th,African-American,M,False,False
+19,Elizabeth Beisel,33,"New York, NY",Urban Planner,13th,White,F,False,False
+19,Erik Cardona,28,"Ontario, CA",Bartender,12th,Latin American,M,False,False
+19,Kelly Sharbaugh,25,"Los Angeles, CA",Hairstylist,11th,White,F,False,False
+19,Laura Morett,39,"Salem, OR",Office Manager,10th,White,F,False,False
+19,John Fincher,25,"Los Angeles, CA",Rocket Scientist,9th,Latin American,M,False,False
+19,Dave Ball,38,"Los Angeles, CA",Fitness Instructor,8th,White,M,False,False
+19,Monica Padilla,25,"San Diego, CA",Law Student,7th,Latin American,F,False,False
+19,Shambo Waters,45,"Renton, WA",Saleswoman,6th,White,F,True,False
+19,Jaison Robinson,28,"Chicago, IL",Law Student,5th,African-American,M,False,False
+19,Brett Clouser,23,"Los Angeles, CA",T-shirt Designer,4th,White,M,False,False
+19,Mick Trimming,33,"Los Angeles, CA",Doctor,2nd Runner-up,White,M,False,False
+19,Russell Hantz,36,"Dayton, TX",Oil Company Owner,Runner-up,White,M,False,False
+19,Natalie White,26,"Van Buren, AR",Pharmaceutical Saleswoman,Winner,White,F,False,False
+20,Sugar Kiper,30,"Los Angeles, CA",Pin-Up Model,20th,White,F,False,False
+20,Stephenie LaGrossa,29,"Philadelphia, PA",Pharmaceutical Sales Representative,19th,White,F,False,False
+20,Randy Bailey,50,"Eagle Rock, MO",Wedding Videographer,18th,White,M,False,False
+20,Cirie Fields,39,"Norwalk, CT",Nurse,17th,African-American,F,False,False
+20,Tom Westman,45,"Sayville, NY",Motivational Speaker,16th,White,M,False,False
+20,Tyson Apostol,29,"Lindon, UT",Former Professional Cyclist,15th,White,M,False,False
+20,James Clement,32,"Lafayette, LA",Gravedigger,14th,African-American,M,False,False
+20,Rob Mariano,33,"Pensacola, FL",Construction Worker,13th,White,M,False,False
+20,Coach Wade,38,"Los Angeles, CA",Soccer Coach/Musician,12th,White,M,False,False
+20,Courtney Yates,29,"New York, NY",Waitress,11th,White,F,False,False
+20,J.T. Thomas,25,"Samson, AL",Cattle Rancher,10th,White,M,False,False
+20,Amanda Kimmel,25,"Los Angeles, CA",Aspiring Designer,9th,White,F,False,False
+20,Candice Cody,27,"Washington, DC",Physician,8th,White,F,False,False
+20,Danielle DiLorenzo,28,"Pompano Beach, FL",Medical Sales Representative,7th,White,F,False,False
+20,Rupert Boneham,45,"Indianapolis, IN",Troubled Teens Mentor,6th,White,M,False,False
+20,Colby Donaldson,35,"Dallas, TX",Actor,5th,White,M,False,False
+20,Jerri Manthey,38,"Los Angeles, CA",Actress,4th,White,F,False,False
+20,Russell Hantz,36,"Dayton, TX",Oil Company Owner,2nd Runner-up,White,M,False,False
+20,Parvati Shallow,27,"Los Angeles, CA",Charity Organizer,Runner-up,White,F,True,False
+20,Sandra Diaz-Twine,35,"Fayetteville, NC",Office Assistant,Winner,Latin American,F,False,False
+21,Wendy DeSmidt-Kohlhoff,48,"Fromberg, MT",Goat Rancher,20th,White,F,False,False
+21,Shannon Elkins,30,"Lafayette, LA",Pest Control Company Owner,19th,White,M,False,False
+21,Jimmy Johnson,67,"Islamorada, FL",Former NFL Coach,18th,White,M,False,False
+21,Jimmy Tarantino,48,"Gloucester, MA",Commercial Fisherman,17th,White,M,False,False
+21,Tyrone Davis,42,"Inglewood, CA",Firefighter,16th,African-American,M,False,False
+21,Kelly Bruno,26,"Durham, NC",Medical Student,15th,White,F,False,True
+21,Yve Rojas,41,"Kansas City, MO",Homemaker,14th,Latin American,F,False,False
+21,Jill Behm,43,"Erie, PA",ER Doctor,13th,White,F,False,False
+21,Alina Wilson,23,"Downey, CA",Art Student,12th,White,F,False,False
+21,Marty Piombo,48,"Mill Valley, CA",Technology Executive,11th,White,M,False,False
+21,Brenda Lowe,27,"Miami, FL",Paddleboard Company Owner,10th,Latin American,F,False,False
+21,NaOnka Mixon,27,"Los Angeles, CA",P.E. Teacher,9th,African-American,F,False,False
+21,Kelly Shinn,20,"Mesa, AZ",Nursing Student,8th,White,F,False,False
+21,Benry Henry,24,"Los Angeles, CA",Club Promoter,7th,White,M,False,False
+21,Jane Bright,56,"Jackson Springs, NC",Dog Trainer,6th,White,F,False,False
+21,Dan Lembo,63,"Watermill, NY",Real Estate Executive,5th,White,M,False,False
+21,Holly Hoffman,44,"Eureka, SD",Swim Coach,4th,White,F,False,False
+21,Sash Lenahan,30,"New York, NY",Real Estate Broker,2nd Runner-up,African-American,M,False,False
+21,Chase Rice,24,"Fairview, NC",Professional Racecar Jackman,Runner-up,White,M,False,False
+21,Fabio Birza,21,"Venice, CA",Student,Winner,White,M,False,False
+22,Francesca Hogi,36,"Washington, DC",Attorney,18th,African-American,F,False,False
+22,Russell Hantz,38,"Dayton, TX",Oil Company Owner,17th,White,M,False,False
+22,Kristina Kell,46,"Malibu, CA",Law Student,16th,White,F,False,False
+22,Krista Klumpp,25,"Columbia, SC",Pharmaceutical Representative,15th,White,F,False,False
+22,Stephanie Valencia,26,"Long Beach, CA",Waitress,14th,Latin American,F,False,False
+22,Sarita White,36,"Santa Monica, CA",Visual Effects Producer,13th,White,F,False,False
+22,David Murphy,31,"West Hollywood, CA",Defense Attorney,12th,White,M,False,False
+22,Julie Wolfe,50,"Oceanside, CA",Firefighter,11th,White,F,False,False
+22,Steve Wright,51,"Huntington Beach, CA",Ex-NFL Player,10th,White,M,False,False
+22,Ralph Kiser,45,"Lebanon, VA",Farmer,9th,White,M,False,False
+22,Grant Mattos,29,"West Hollywood, CA",Ex-NFL Player,8th,White,M,False,False
+22,Matt Elrod,22,"Nashville, TN",Pre-Med Student,7th,White,M,False,False
+22,Mike Chiesl,31,"Del Mar, CA",Iraq War Veteran,6th,White,M,False,False
+22,Andrea Boehlke,21,"Random Lake, WI",Student,5th,White,F,False,False
+22,Ashley Underwood,25,"Benton, ME",Nurse,4th,White,F,False,False
+22,Natalie Tenerelli,19,"Acton, CA",Professional Dancer,2nd Runner-up,White,F,False,False
+22,Phillip Sheppard,52,"Santa Monica, CA",Former Federal Agent?,Runner-up,African-American,M,False,False
+22,Rob Mariano,34,"Pensacola, FL",Construction Worker,Winner,White,M,False,False
+23,Semhar Tadesse,24,"Los Angeles, CA",Spoken Word Artist,18th,African-American,F,False,False
+23,Mark Caruso,48,"Forest Hills, NY",Retired NYPD Detective,17th,White,M,True,False
+23,Stacey Powell,44,"Grand Prairie, TX",Mortician,16th,African-American,F,False,False
+23,Elyse Umemoto,27,"Las Vegas, NV",Dance Team Manager,15th,Latin American,F,False,False
+23,Mikayla Wingle,22,"Tampa, FL",Lingerie Football Player,14th,White,F,False,False
+23,Christine Shields Markoski,39,"Merrick, NY",Teacher,13th,Latin American,F,False,False
+23,Jim Rice,35,"Denver, CO",Medical Marijuana Dispenser,12th,White,M,False,False
+23,Keith Tollefson,26,"Edina, MN",Water Treatment Technician,11th,White,M,False,False
+23,Dawn Meehan,41,"South Jordan, UT",English Profressor,10th,White,F,False,False
+23,Whitney Duncan,26,"Nashville, TN",Country Music Singer,9th,White,F,False,False
+23,John Cochran,24,"Washington, D.C.",Harvard Law Student,8th,White,M,False,False
+23,Edna Ma,35,"Los Angeles, CA",Anesthesiologist,7th,Asian-American,F,False,False
+23,Brandon Hantz,19,"Katy, TX",Oil Tanker Crewman,6th,White,M,False,False
+23,Rick Nelson,51,"Aurora, UT",Rancher,5th,White,M,False,False
+23,Ozzy Lusth,30,"Venice, CA",Photographer,4th,Latin American,M,True,False
+23,Albert Destrade,26,"Plantation, FL",Baseball/Dating Coach,2nd Runner-up,Latin American,M,False,False
+23,Coach Wade,39,"Susanville, CA",Soccer Coach/Musician,Runner-up,White,M,False,False
+23,Sophie Clarke,22,"Willsboro, NY",Medical Student,Winner,White,F,False,False
+24,Kourtney Moon,29,"Austin, TX",Motorcycle Repairwoman,18th,White,F,False,False
+24,Nina Acosta,51,"Clovis, CA",Retired LAPD Officer,17th,White,F,False,False
+24,Matt Quinlan,33,"San Francisco, CA",Attorney,16th,White,M,False,False
+24,Bill Posley,28,"Venice, CA",Stand-Up Comedian,15th,African-American,M,True,False
+24,Monica Culpepper,41,"Tampa, FL",Ex-NFL Player's Wife,14th,White,F,False,False
+24,Colton Cumbie,21,"Monroeville, AL",Student,13th,White,M,True,False
+24,Jonas Otsuji,37,"Lehi, UT",Sushi Chef,12th,Asian-American,M,False,False
+24,Michael Jefferson,30,"Seattle, WA",Banker,11th,White,M,False,False
+24,Jay Byars,25,"Gaffney, SC",Model,10th,White,M,False,False
+24,Leif Manson,27,"San Diego, CA",Phlebotomist,9th,White,M,False,True
+24,Troyzan Robertson,50,"Miami, FL",Swimsuit Photographer,8th,White,M,False,False
+24,Kat Edorsson,22,"Orlando, FL",Timeshare Representative,7th,White,F,False,False
+24,Tarzan Smith,64,"Houston, TX",Plastic Surgeon,6th,White,M,False,False
+24,Alicia Rosa,25,"Chicago, IL",Special Education Teacher,5th,Latin American,F,False,False
+24,Christina Cha,29,"West Hollywood, CA",Career Consultant,4th,Asian-American,F,False,False
+24,Chelsea Meissner,26,"Charleston, SC",Medical Saleswoman,2nd Runner-up,White,F,False,False
+24,Sabrina Thompson,33,"Brooklyn, NY",High School Teacher,Runner-up,African-American,F,False,False
+24,Kim Spradlin-Wolfe,29,"San Antonio, TX",Bridal Shop Owner,Winner,White,F,False,False
+25,Zane Knight,28,"Danville, VA",Tire Repairman,18th,White,M,False,False
+25,Roxy Morris,28,"Brooklyn, NY",Seminary Student,17th,African-American,F,False,False
+25,Angie Layton,20,"Provo, UT",Model/Student,16th,White,F,False,False
+25,Russell Swan,45,"Glenside, PA",Attorney,15th,African-American,M,False,False
+25,Dana Lambert,32,"Winston-Salem, NC",Cosmetologist,14th,White,F,True,False
+25,Sarah Dawson,28,"Silver Spring, MD",Insurance Saleswoman,13th,African-American,F,False,False
+25,Katie Hanson,22,"Newark, DE",Former Miss Delaware,12th,White,F,False,False
+25,RC Saint-Amour,27,"New York, NY",Investment Banker,11th,White,F,False,False
+25,Jeff Kent,44,"Austin, TX",Former MLB Player,10th,White,M,False,False
+25,Artis Silvester,53,"Terrytown, LA",Computer Engineer,9th,African-American,M,False,False
+25,Pete Yurkowski,24,"Holmdel, NJ",Engineer Graduate/Model,8th,White,M,False,False
+25,Jonathan Penner,50,"Los Angeles, CA",Writer,7th,White,M,False,False
+25,Carter Williams,24,"Shawnee, KS",Track Coach,6th,White,M,False,False
+25,Abi-Maria Gomes,32,"Los Angeles, CA",Business Student,5th,Latin American,F,False,False
+25,Malcolm Freberg,25,"Hermosa Beach, CA",Bartender,4th,White,M,False,False
+25,Lisa Whelchel,49,"Dallas, TX",Former TV Teen Star,Co-runner up,White,F,False,False
+25,Michael Skupin,50,"White Lake, MI",Professional Speaker,Co-runner up,White,M,False,False
+25,Denise Stapley,41,"Cedar Rapids, IA",Sex Therapist,Winner,White,F,False,False
+26,Francesca Hogi,38,"Brooklyn, NY",Attorney,20th,African-American,F,False,False
+26,Allie Pohevitz,25,"Oceanside, NY",Bartender,19th,White,F,False,False
+26,Hope Driskill,23,"Jefferson City, MO",Pre-Law Student,18th,White,F,False,False
+26,Shamar Thomas,27,"Brooklyn, NY",Iraq War Veteran,17th,African-American,M,False,False
+26,Laura Alexander,23,Washington DC,Administrative Officer,16th,White,F,False,False
+26,Brandon Hantz,21,"Katy, TX",Chemical Disposal,15th,White,M,False,False
+26,Matt Bischoff,38,"Cincinnati, OH",BMX Bike Salesman,14th,White,M,False,False
+26,Julia Landauer,21,"Stanford, CA",Racecar Driver,13th,White,F,False,False
+26,Corinne Kaplan,33,"Los Angeles, CA",Pharmaceutical Sales,12th,White,F,False,False
+26,Michael Snow,44,"New York, NY",Event Planner,11th,White,M,True,False
+26,Phillip Sheppard,54,"Santa Monica, CA",Software Sales,10th,African-American,M,False,False
+26,Malcolm Freberg,26,"Hermosa Beach, CA",Bartender,9th,White,M,False,False
+26,Reynold Toepfer,30,"San Francisco, CA",Real Estate Salesman,8th,White,M,False,False
+26,Andrea Boehlke,23,"New York, NY",Entertainment Host and Writer,7th,White,F,False,False
+26,Brenda Lowe,30,"Miami, FL",Paddleboard Company Owner,6th,Latin American,F,False,False
+26,Erik Reichenbach,27,"Santa Clarita, CA",Comic Book Artist,5th,White,M,False,False
+26,Eddie Fox,23,"East Brunswick, NJ",Fireman/EMT,4th,White,M,False,False
+26,Sherri Biethman,41,"Boise, ID",Fast Food Franchisee,Co-runner up,White,F,False,False
+26,Dawn Meehan,42,"South Jordan, UT",English professor,Co-runner up,White,F,False,False
+26,John Cochran,25,Washington DC,Harvard Law Student,Winner,White,M,False,False
+27,Rupert Boneham,49,"Indianapolis, IN",Troubled Teens Mentor,20th,White,M,False,False
+27,Colton Cumbie,22,"Monroeville, AL",Student Teacher,19th,White,M,True,False
+27,Rachel Foulger,33,"Orem, UT",Cocktail Waitress/Graphic Designer,18th,White,F,False,False
+27,Marissa Peterson,21,"Chapel Hill, NC",Student,17th,African-American,F,False,False
+27,Candice Cody,30,Washington DC,Physician,16th,White,F,False,False
+27,Brad Culpepper,44,"Tampa, FL",Attorney/Retired NFL Player,15th,White,M,False,False
+27,Kat Edorsson,23,"Orlando, FL",Full-Time Student/Sales,14th,White,F,False,False
+27,John Cody,30,Washington DC,Physician/Army Orthopedic Surgery Resident,13th,White,M,False,False
+27,Laura Boneham,44,"Indianapolis, IN",Merchandiser,12th,White,F,False,False
+27,Aras Baskauskas,31,"Santa Monica, CA",Musician,11th,White,M,False,False
+27,Vytas Baskauskas,33,"Santa Monica, CA",Yoga Instructor/Math Instructor,10th,White,M,False,False
+27,Caleb Bankston,26,"Crossville, AL",Post Office Manager/Farmer,9th,White,M,True,False
+27,Katie Collins,25,"New York, NY",Hedge Fund Support,8th,White,F,False,False
+27,Hayden Moss,27,"Tempe, AZ",Real Estate,7th,White,M,False,False
+27,Laura Morett,43,"Salem, OR",Fitness Instructor,6th,White,F,False,False
+27,Ciera Eastin,24,"Salem, OR",Cosmetology Student,5th,White,F,False,False
+27,Tina Wesson,52,"Knoxville, TN",Motivational Speaker,4th,White,F,False,False
+27,Gervase Peterson,43,"Willingboro, NJ",Cigar Lounge Owner,2nd Runner-up,African-American,M,False,False
+27,Monica Culpepper,42,"Tampa, FL",Homemaker,Runner-up,White,F,False,False
+27,Tyson Apostol,34,"Heber, UT",Former Pro Cyclist/Shop Manager,Winner,White,M,False,False
+28,David Samson,45,"Plantation, FL",Miami Marlins President,18th,White,M,False,False
+28,Garrett Adelstein,27,"Santa Monica, CA",Professional Poker Player,17th,White,M,False,False
+28,Brice Johnston,27,"Philadelphia, PA",Social Worker,16th,African-American,M,True,False
+28,J'Tia Taylor,31,"Chicago, IL",Nuclear Engineer,15th,African-American,F,False,False
+28,Cliff Robinson,46,"Newark, NJ",Former NBA All-Star,14th,African-American,M,False,False
+28,Lindsey Ogle,29,"Kokomo, IN",Hairstylist,13th,White,F,False,False
+28,Alexis Maxwell,21,"Addison, IL",Student,12th,Latin American,F,False,False
+28,Sarah Lacina,29,"Cedar Rapids, IA",Police Officer,11th,White,F,False,False
+28,Morgan McLeod,21,"San Jose, CA",Ex-NFL Cheerleader,10th,White,F,False,False
+28,LJ McKanas,34,"Boston, MA",Horse Trainer,9th,White,M,False,False
+28,Jeremiah Wood,34,"Dobson, NC",Male Model,8th,White,M,False,False
+28,Jefra Bland,22,"Campbellsville, KY",Miss Kentucky Teen USA,7th,White,F,False,False
+28,Tasha Fox,37,"St. Louis, MO",Accountant,6th,African-American,F,False,False
+28,Trish Hegarty,48,"Needham, MA",Pilates Teacher,5th,White,F,False,False
+28,Spencer Bledsoe,21,"Chicago, IL",Economics Student,4th,White,M,False,False
+28,Kass McQuillen,41,"Tehachapi, CA",Attorney,3rd,White,F,False,False
+28,Woo Hwang,29,"Newport Beach, CA",Martial Arts Instructor,Runner-up,Asian-American,M,False,False
+28,Tony Vlachos,39,"Jersey City, NJ",Police Officer,Winner,White,M,False,False
+29,Nadiya Anderson,28,"Edgewater, NJ",Crossfit Coach/Project Coordinator,18th,Asian-American,F,False,False
+29,Val Collins,35,"Foxborough, MA",Police Officer,17th,African-American,F,False,False
+29,John Rocker,39,"Atlanta, GA",Former MLB Player,16th,White,M,False,False
+29,Drew Christy,25,"Winter Park, FL",Traveling Sales Representative,15th,White,M,False,False
+29,Kelley Wentworth,28,"Seattle, WA",Marketing Manager,14th,White,F,False,False
+29,Dale Wentworth,55,"Ephrata, WA",Farmer,13th,White,M,False,False
+29,Julie McGee,34,"Atlanta, GA",Model/Spray Tan Business Owner,12th,White,F,False,False
+29,Josh Canfield,32,"New York, NY",Singer/Actor/Writer,11th,White,M,True,False
+29,Jeremy Collins,36,"Foxborough, MA",Firefighter,10th,African-American,M,False,False
+29,Wes Nale,24,"Shreveport, LA",Firefighter,9th,White,M,False,False
+29,Reed Kelly,31,"New York, NY",Broadway Performer/Model/Aerialist,8th,White,M,True,False
+29,Alec Christy,22,"Winter Park, FL",Student,7th,White,M,False,False
+29,Jon Misch,26,"Waterford, MI",Financial Assistant,6th,White,M,False,False
+29,Baylor Wilson,20,"Nashville, TN",Student,5th,White,F,False,False
+29,Keith Nale,53,"Shreveport, LA",Firefighter,4th,White,M,False,False
+29,Missy Payne,47,"Dallas, TX",Competitive Cheerleading Gym Owner,2nd Runner-up,White,F,False,False
+29,Jaclyn Schultz,25,"Wyandotte, MI",Media Buyer,Runner-up,White,F,False,False
+29,Natalie Anderson,28,"Edgewater, NJ",Crossfit Coach/Physical Therapy Student,Winner,Asian-American,F,False,False
+30,Charlotte Schou,31,"Long Beach, CA",Retail Buyer,18th,White,F,False,False
+30,Vince S.,32,"Santa Monica, CA",Coconut Vendor,17th,White,M,False,False
+30,Nina Poersch,51,"Palmdale, CA",Hearing Advocate,16th,Asian-American,F,False,True
+30,Lindsey Cascaddan,24,"College Park, FL",Hairdresser,15th,White,F,False,False
+30,Max Dawson,37,"Topanga, CA",Media Consultant,14th,White,M,False,False
+30,Joaquin Souberbielle,27,"Valley Stream, NY",Marketing Director,13th,Latin American,M,False,False
+30,Kelly Remington,44,"Grand Island, NY",State Trooper,12th,White,F,True,False
+30,Hali Ford,25,"San Francisco, CA",Law Student,11th,White,F,False,False
+30,Joe Anglim,25,"Scottsdale, AZ",Jewelry Designer,10th,White,M,False,False
+30,Jenn Brown,22,"Long Beach, CA",Sailing Instructor,9th,White,F,False,False
+30,Shirin Oskooi,31,"San Francisco, CA",Yahoo! Executive,8th,Asian-American,F,False,False
+30,Tyler Fredrickson,33,"Los Angeles, CA",Ex-Talent Agent Assistant,7th,White,M,False,False
+30,Dan Foley,47,"Gorham, ME",Postal Worker,6th,White,M,False,False
+30,Sierra Dawn Thomas,27,"Roy, UT",Barrel Racer,5th,White,F,False,False
+30,Rodney Lavoie Jr.,24,"Boston, MA",General Contractor,4th,White,M,False,False
+30,Will Sims II,41,"Sherman Oaks, CA",YouTube Sensation,Co-runner up,African-American,M,False,False
+30,Carolyn Rivera,52,"Tampa, FL",Corporate Executive,Co-runner up,White,F,False,False
+30,Mike Holloway,38,"North Richland Hills, TX",Oil Driller,Winner,White,M,False,False
+31,Vytas Baskauskas,35,"Santa Monica, CA",Yoga Instructor/Math Professor,20th,White,M,False,False
+31,Shirin Oskooi,32,"San Francisco, CA",Yahoo! Executive,19th,Asian-American,F,False,False
+31,Peih-Gee Law,37,"San Francisco, CA",Jeweler,18th,Asian-American,F,False,False
+31,Jeff Varner,49,"Greensboro, NC",Internet Projects Manager,17th,White,M,True,False
+31,Monica Padilla,30,"Queens, NY",Law Student,16th,Latin American,F,False,False
+31,Terry Deitz,55,"Simsbury, CT",Pilot,15th,White,M,False,False
+31,Woo Hwang,31,"Newport Beach, CA",Martial Arts Instructor,14th,Asian-American,M,False,False
+31,Kass McQuillen,42,"Tehachapi, CA",Attorney,13th,White,F,False,False
+31,Andrew Savage,51,"San Jose, CA",Attorney,12th,White,M,False,False
+31,Kelly Wiglesworth,37,"Greensboro, NC",River Guide,11th,White,F,False,False
+31,Ciera Eastin,26,"Salem, OR",Cosmetology Student,10th,White,F,False,False
+31,Stephen Fishbach,36,"New York, NY",Corporate Consultant,9th,White,M,False,False
+31,Joe Anglim,25,"Scottsdale, AZ",Jewelry Designer,8th,White,M,False,False
+31,Abi-Maria Gomes,35,"Los Angeles, CA",Business Student,7th,Latin American,F,False,False
+31,Kimmi Kappenberg,42,"The Woodlands, TX",Bartender,6th,White,F,False,False
+31,Keith Nale,54,"Keithville, LA",Firefighter,5th,White,M,False,False
+31,Kelley Wentworth,29,"Seattle, WA",Marketing Manager,4th,White,F,False,False
+31,Spencer Bledsoe,22,"Chicago, IL",Economics Student,Co-runner up,White,M,False,False
+31,Tasha Fox,39,"St. Louis, MO",Accountant,Co-runner up,African-American,F,False,False
+31,Jeremy Collins,37,"Foxborough, MA",Firefighter,Winner,African-American,M,False,False
+32,Darnell Hamilton,27,"Chicago, IL",Postal Worker,18th,African-American,M,False,False
+32,Jennifer Lanzetti,38,"Salt Lake City, UT",Contractor,17th,White,F,False,False
+32,Elisabeth Filarski,27,"Brooklyn, NY",Quantitative Strategist,16th,White,F,False,False
+32,Caleb Reynolds,28,"Hopkinsville, KY",Army Veteran,15th,White,M,False,False
+32,Alecia Holden,24,"Dallas, TX",Real Estate Agent,14th,White,F,False,False
+32,Anna Khait,26,"Brooklyn, NY",Professional Poker Player,13th,White,F,False,False
+32,Peter Baggenstos,34,"Minneapolis, MN",ER Doctor,12th,African-American,M,False,False
+32,Neal Gottlieb,38,"Sausalito, CA",Ice Cream Entrepreneur,11th,White,M,False,False
+32,Nick Maiorano,30,"Redondo Beach, CA",Personal Trainer,10th,White,M,False,False
+32,Debbie Wanner,49,"Reading, PA",Chemist,9th,White,F,False,False
+32,Scot Pollard,40,"Carmel, IN",Former NBA Player,8th,White,M,False,False
+32,Julia Sokolowski,19,"Boston, MA",College Student,7th,White,F,False,False
+32,Kyle Jason,31,"Detroit, MI",Bounty Hunter,6th,White,M,False,False
+32,Joe del Campo,71,"Vero Beach, FL",Former FBI Agent,5th,White,M,False,False
+32,Cydney Gillon,23,"Douglasville, GA",Bodybuilder,4th,African-American,F,False,False
+32,Tai Trang,51,"San Francisco, CA",Gardener,2nd Runner-up,Asian-American,M,True,False
+32,Aubry Bracco,29,"Cambridge, MA",Social Media Marketer,Runner-up,White,F,False,False
+32,Michele Fitzgerald,24,"Freehold, NJ",Bartender,Winner,White,F,False,False
+33,Rachel Ako,37,"Los Angeles, CA",Recruiting Director,20th,Asian-American,F,False,False
+33,Mari Takahashi,31,"Los Angeles, CA",Gamer,19th,Asian-American,F,True,False
+33,Paul Wachter,52,"Sugarloaf Key, FL",Boat Mechanic,18th,White,M,False,False
+33,Lucy Huang,42,"Diamond Bar, CA",Dietitian,17th,Asian-American,F,False,False
+33,CeCe Taylor,39,"Granada Hills, CA",Insurance Adjuster,16th,African-American,F,False,False
+33,Figgy Figueroa,23,"Nashville, TN",Bartender,15th,Latin American,F,False,False
+33,Michaela Bradshaw,25,"Fort Worth, TX",Vacation Club Saleswoman,14th,African-American,F,False,False
+33,Michelle Schubert,28,"Yakima, WA",Missionary Recruiter,13th,White,F,False,False
+33,Taylor Stocker,24,"Post Falls, ID",Snowboard Instructor,12th,White,M,False,False
+33,Chris Hammons,38,"Moore, OK",Trial Attorney,11th,White,M,False,False
+33,Jessica Lewis,37,"Voorheesville, NY",Assistant District Attorney,10th,White,F,False,False
+33,Zeke Smith,28,"Brooklyn, NY",Asset Manager,9th,White,M,True,False
+33,Will Wahl,18,"Long Valley, NJ",High School Student,8th,White,M,False,False
+33,Sunday Burquest,45,"Otsego, MN",Youth Pastor,7th,White,F,False,False
+33,Jay Starrett,27,"Fort Lauderdale, FL",Real Estate Agent,6th,Latin American,M,False,False
+33,Bret LaBelle,42,"Dedham, MA",Police Sergeant,5th,White,M,True,False
+33,David Wright,42,"Sherman Oaks, CA",Television Writer,4th,White,M,False,False
+33,Hannah Shapiro,24,"West Hollywood, CA",Barista,Co-runner up,White,F,True,False
+33,Ken McNickle,33,"Denver, CO",Model,Co-runner up,White,M,False,False
+33,Adam Klein,25,"San Francisco, CA",Homeless Shelter Manager,Winner,White,M,False,False
+34,Ciera Eastin,27,"Salem, OR",Cosmetology Student,20th,White,F,False,False
+34,Tony Vlachos,42,"Jersey City, NJ",Police Officer,19th,White,M,False,False
+34,Caleb Reynolds,28,"Hopkinsville, KY",Army Veteran,18th,White,M,False,False
+34,Malcolm Freberg,29,"Hermosa Beach, CA",Bartender,17th,White,M,False,False
+34,J.T. Thomas,31,"Mobile, AL",Cattle Rancher,16th,White,M,False,False
+34,Sandra Diaz-Twine,42,"Fayetteville, NC",Office Assistant,15th,Latin American,F,False,False
+34,Jeff Varner,50,"High Point, NC",Internet Project Manager,14th,White,M,True,False
+34,Hali Ford,26,"Knoxville, TN",Law Student,13th,White,F,False,False
+34,Ozzy Lusth,34,"Venice, CA",Photographer,12th,Latin American,M,True,False
+34,Debbie Wanner,51,"Reading, PA",Chemist,11th,White,F,False,False
+34,Zeke Smith,28,"Brooklyn, NY",Asset Manager,10th,White,M,True,False
+34,Sierra Dawn Thomas,29,"Roy, UT",Barrel Racer,9th,White,F,False,False
+34,Andrea Boehlke,27,"New York, NY",Entertainment Host/Writer,8th,White,F,False,False
+34,Michaela Bradshaw,25,"Fort Worth, TX",Vacation Club Sales,7th,African-American,F,False,False
+34,Cirie Fields,45,"Norwalk, CT",Nurse,6th,African-American,F,False,False
+34,Aubry Bracco,30,"Cambridge, MA",Social Media Marketer,5th,White,F,False,False
+34,Tai Trang,52,"San Francisco, CA",Gardener,4th,Asian-American,M,True,False
+34,Troyzan Robertson,54,"Miami, FL",Swimsuit Photographer,2nd Runner-up,White,M,False,False
+34,Brad Culpepper,47,"Tampa, FL",Attorney/Former NFL Player,Runner-up,White,M,False,False
+34,Sarah Lacina,32,"Marion, IA",Police Officer,Winner,White,F,False,False
+35,Katrina Radke,46,"Excelsior, MN",Olympian,18th,White,F,False,False
+35,Simone Nguyen,25,"New York, NY",Diversity Advocate,17th,Asian-American,F,True,False
+35,Patrick Bolton,24,"Auburn, AL",Small Business Owner,16th,White,M,False,False
+35,Alan Ball,31,"Houston, TX",NFL Player,15th,African-American,M,False,False
+35,Roark Luskin,27,"Santa Monica, CA",Social Worker,14th,White,F,False,False
+35,Alexandre Amico,24,"Los Angeles, CA",Celebrity Assistant,13th,White,M,False,False
+35,Jessica Johnston,29,"Louisville, KY",Nurse Practitioner,12th,White,F,False,False
+35,Desi Williams,27,"Newport News, VA",Physical Therapist,11th,African-American,F,False,False
+35,Cole Medders,24,"Little Rock, AR",Wilderness Therapy Guide,10th,White,M,False,False
+35,JP Hilsabeck,28,"Los Angeles, CA",Firefighter,9th,White,M,False,False
+35,Joe Mena,34,"Tolland, CT",Probation Officer,8th,Latin American,M,False,False
+35,Lauren Rimmer,35,"Beaufort, NC",Fisherwoman,7th,White,F,True,False
+35,Ashley Nolan,26,"Satellite Beach, FL",Lifeguard,6th,White,F,False,False
+35,Mike Zahalsky,43,"Parkland, FL",Urologist,5th,White,M,False,False
+35,Devon Pinto,24,"Solana Beach, CA",Surf Instructor,4th,Latin American,M,False,False
+35,Ryan Ulrich,23,"North Arlington, NJ",Bellhop,2nd Runner-up,White,M,False,False
+35,Chrissy Hofbeck,46,"Lebanon Township, NJ",Actuary,Runner-up,White,F,False,False
+35,Ben Driebergen,34,"Boise, ID",Marine,Winner,White,M,False,False
+36,Stephanie Gonzalez,26,"Ocala, FL",Graphic Saleswoman,20th,Latin American,F,False,False
+36,Jacob Derwin,22,"Merrick, NY",Music Teacher,19th,White,M,False,False
+36,Morgan Ricke,29,"Orlando, FL",Marine Animal Trainer,18th,White,F,False,False
+36,Brendan Shapiro,41,"Herndon, VA",Physical Education Teacher,17th,White,M,False,False
+36,Stephanie Johnson,34,"Chicago, IL",Yoga Instructor,16th,White,F,False,False
+36,James Lim,24,"New York, NY",Business Analyst,15th,Asian-American,M,False,False
+36,Bradley Kleihege,26,"Los Angeles, CA",Law Student,14th,White,M,False,False
+36,Chris Noble,27,"Brooklyn, NY",Male Model,13th,White,M,False,False
+36,Libby Vincek,24,"Nashville, TN",Social Media Strategist,12th,White,F,False,False
+36,Desiree Afuye,21,"Brooklyn, NY",Student,11th,African-American,F,False,False
+36,Jenna Bowman,23,"Venice Beach, CA",Advertising Account Executive,10th,White,F,False,False
+36,Michael Yerger,18,"Los Angeles, CA",Real Estate Agent,9th,White,M,False,False
+36,Chelsea Townsend,24,"Los Angeles, CA",EMT/Pro Cheerleader,8th,White,F,False,False
+36,Kellyn Bechtold,31,"Denver, CO",Career Counselor,7th,White,F,False,False
+36,Sebastian Noel,22,"Melbourne, FL",Fishing Guide,6th,White,M,False,False
+36,Donathan Hurley,26,"Kimper, KY",Caretaker,5th,White,M,True,True
+36,Angela Perkins,42,"Cincinnati, OH",Army Veteran,4th,White,F,False,False
+36,Laurel Johnson,29,"Minneapolis, MN",Financial Consultant,2nd Runner-up,African-American,F,False,False
+36,Domenick Abbate,38,"Nesconset, NY",Construction Supervisor,Runner-up,White,M,False,False
+36,Wendell Holland,33,"Philadelphia, PA",Furniture Company Owner,Winner,African-American,M,False,False
+37,Pat Cusack,41,"Cohoes, NY",Maintenance Manager,20th,White,M,False,False
+37,Jessica Peet,19,"Lakeland, FL",Waitress,19th,White,F,False,False
+37,Jeremy Crawford,40,"Clover, SC",Attorney,18th,African-American,M,True,False
+37,Bi Nguyen,28,"Houston, TX",Mixed Martial Arts Fighter,17th,Asian-American,F,False,False
+37,Natalia Azoqa,25,"Irvine, CA",Industrial Engineer,16th,Asian-American,F,False,False
+37,Natalie Cole,57,"Los Angeles, CA",Publishing CEO,15th,African-American,F,False,False
+37,Lyrsa Torres,36,"Boston, MA",Airline Agent,14th,Latin American,F,True,False
+37,Elizabeth Olson,31,"Longview, TX",Kitchen Staff Member,13th,White,F,False,False
+37,John Hennigan,38,"Los Angeles, CA",Professional Wrestler,12th,White,M,False,False
+37,Dan Rengering,27,"Lake Butler, FL",S.W.A.T. Officer,11th,White,M,False,False
+37,Alec Merlino,24,"San Clemente, CA",Bartender,10th,White,M,False,False
+37,Carl Boudreaux,41,"Beaumont, TX",Truck Driver,9th,African-American,M,False,False
+37,Gabby Pascuzzi,25,"St. Augustine, FL",Technical Writer,8th,Asian-American,F,True,False
+37,Christian Hubicki,32,"Tallahassee, FL",Robotics Scientist,7th,White,M,False,False
+37,Davie Rickenbacker,30,"Orangeburg, SC",Social Media Manager,6th,African-American,M,False,False
+37,Alison Raybould,28,"Chapel Hill, NC",Physician,5th,White,F,False,False
+37,Kara Kay,30,"San Diego, CA",Realtor,4th,White,F,False,False
+37,Angelina Keeley,28,"Sparks, NV",Financial Consultant,2nd Runner-up,Latin American,F,False,False
+37,Mike White,47,"Los Angeles, CA",Filmmaker,Runner-up,White,M,True,False
+37,Nick Wilson,27,"Williamsburg, KY",Public Defender,Winner,White,M,False,False
+38,Reem Daly,46,"Ashburn, VA",Sales Representative,18th,White,F,False,False
+38,Keith Sowell,19,"Durham, NC",Pre-Med Student,17th,African-American,M,False,False
+38,Aubry Bracco,32,"Los Angeles, CA",Marketing Director,16th,White,F,False,False
+38,Wendy Diaz,25,"Bell, CA",Small Business Owner,15th,Latin American,F,False,True
+38,Joe Anglim,29,"Ogden, UT",Multimedia Artist,14th,White,M,False,False
+38,Eric Hafemann,35,"Livermore, CA",Firefighter,13th,White,M,False,False
+38,Julia Carter,25,"Bethesda, MD",Medical Assistant,12th,African-American,F,False,False
+38,David Wright,44,"Sherman Oaks, CA",Television Writer,11th,White,M,False,False
+38,Kelley Wentworth,31,"Seattle, WA",Marketing Manager,10th,White,F,False,False
+38,Wardog DaSilva,38,"Los Angeles, CA",Law Student/Former Military,9th,White,M,False,False
+38,Ron Clark,46,"Atlanta, GA",Teacher,8th,White,M,True,False
+38,Aurora McCreary,32,"Orlando, FL",Divorce Attorney,7th,White,F,True,False
+38,Victoria Baamonde,23,"Bronx, NY",Waitress,6th,Latin American,F,False,False
+38,Lauren O'Connell,21,"Bakersfield, CA",Student,5th,White,F,False,False
+38,Rick Devens,33,"Blacksburg, VA",Morning News Anchor,4th,White,M,False,False
+38,Julie Rosenberg,46,"New York, NY",Toymaker,2nd Runner-up,White,F,False,False
+38,Gavin Whitson,23,"Erwin, TN",YMCA Program Director,Runner-up,White,M,False,False
+38,Chris Underwood,25,"Greenville, SC",District Sales Manager,Winner,Latin American,M,False,False
+39,Ronnie Bardah,35,"Henderson, NV",Poker Player,20th,Asian-American,M,False,False
+39,Molly Byman,27,"Durham, NC",Law Student,19th,White,F,False,False
+39,Vince Moua,27,"Palo Alto, CA",Admissions Counselor,18th,Asian-American,M,True,False
+39,Chelsea Walker,26,"Los Angeles, CA",Digital Content Creator,17th,White,F,False,False
+39,Tom Laidlaw,60,"Greenwich, CT",Former NHL Player,16th,White,M,False,False
+39,Jason Linden,32,"New York, NY",Personal Injury Attorney,15th,White,M,False,False
+39,Jack Nichting,23,"Harrisonburg, VA",Grad Student,14th,White,M,False,False
+39,Kellee Kim,29,"Philadelphia, PA",MBA Student,13th,Asian-American,F,False,False
+39,Jamal Shipman,33,"Providence, RI",College Administrator,12th,Latin American,M,False,False
+39,Aaron Meredith,36,"Warwick, RI",Gym Owner,11th,African-American,M,False,False
+39,Missy Byrd,24,"Tacoma, WA",Air Force Veteran,10th,African-American,F,True,False
+39,Elizabeth Beisel,26,"Saunderstown, RI",Olympic Medalist,9th,White,F,False,False
+39,Karishma Patel,37,"Houston, TX",Personal Injury Attorney,8th,Asian-American,F,False,False
+39,Elaine Stott,41,"Rockholds, KY",Factory Worker,7th,White,F,True,False
+39,Dan Spilo,48,"Los Angeles, CA",Talent Manager,6th,White,M,False,False
+39,Janet Carbin,59,"Palm Bay, FL",Chief Lifeguard,5th,White,F,False,False
+39,Lauren Beck,28,"Glendale, CA",Nanny,4th,African-American,F,False,False
+39,Noura Salman,36,"North Potomac, MD",Entrepreneur,2nd Runner-up,Asian-American,F,False,False
+39,Dean Kowalski,28,"New York, NY",Tech Sales,Runner-up,White,M,False,False
+39,Tommy Sheehan,26,"Long Beach, NY",4th Grade Teacher,Winner,White,M,False,False
+40,Amber Mariano,40,"Pensacola, FL",Director of Marketing & Communications,20th,White,F,False,False
+40,Danni Boatwright,43,"Shawnee, KS",Sideline Chic Owner,19th,White,F,False,False
+40,Ethan Zohn,45,"Hillsborough, NH",Keynote Speaker/Social Entrepreneur,18th,White,M,False,False
+40,Rob Mariano,43,"Pensacola, FL",Construction Worker,17th,White,M,False,False
+40,Parvati Shallow,36,"Los Angeles, CA",Life Coach/Speaker/Yoga Teacher,16th,White,F,True,False
+40,Sandra Diaz-Twine,44,"Riverview, FL",Case Manager,15th,Latin American,F,False,False
+40,Yul Kwon,44,"Los Altos, CA",Product Management,14th,Asian-American,M,False,False
+40,Wendell Holland,35,"Philadelphia, PA",Furniture Designer,13th,African-American,M,False,False
+40,Adam Klein,28,"Burlingame, CA",Host/Keynote Speaker,12th,White,M,False,False
+40,Tyson Apostol,39,"Mesa, AZ",Former Pro Cyclist/Shop Manager,11th,White,M,False,False
+40,Sophie Clarke,29,"Santa Monica, CA",Healthcare Consultant,10th,White,F,False,False
+40,Kim Spradlin-Wolfe,36,"San Antonio, TX",Interior Designer,9th,White,F,False,False
+40,Jeremy Collins,41,"Foxborough, MA",Firefighter,8th,African-American,M,False,False
+40,Nick Wilson,28,"Williamsburg, KY",Attorney,7th,White,M,False,False
+40,Denise Stapley,48,"Marion, IA",Sex Therapist,6th,White,F,False,False
+40,Ben Driebergen,36,"Boise, ID",Real Estate Agent/Stay-at-home Dad,5th,White,M,False,False
+40,Sarah Lacina,35,"Cedar Rapids, IA",Police Officer,4th,White,F,False,False
+40,Michele Fitzgerald,29,"Hoboken, NJ",Business Development Manager,2nd Runner-up,White,F,False,False
+40,Natalie Anderson,33,"Edgewater, NJ",CrossFit Trainer,Runner-up,Asian-American,F,False,False
+40,Tony Vlachos,45,"Allendale, NJ",Police Officer,Winner,White,M,False,False
+41,Eric Abraham,51,"San Antonio, TX",Cyber Security Analyst,18th,African-American,M,False,False
+41,Sara Wilson,24,"Boston, MA",Healthcare Consultant,17th,White,F,False,False
+41,David Voce,35,"Chicago, IL",Neurosurgeon,16th,White,M,False,False
+41,Brad Reese,50,"Shawnee, WY",Rancher,15th,White,M,False,False
+41,Jaison Robinson,20,"Oklahoma City, OK",College Student,14th,African-American,M,False,False
+41,Genie Chen,46,"Portland, OR",Grocery Clerk,13th,Asian-American,F,True,False
+41,Sydney Segal,26,"Brooklyn, NY",Law Student,12th,White,F,False,False
+41,Tiffany Seely,47,"Plainview, NY",Teacher,11th,White,F,False,False
+41,Naseer Muttalif,37,"Morgan Hill, CA",Sales Manager,10th,Asian-American,M,False,False
+41,Evvie Jagoda,28,"Arlington, MA",PhD Student,9th,White,N,True,False
+41,Shan Smith,34,"Washington, DC",Pastor,8th,African-Canadian,F,False,False
+41,Liana Wallace,20,"Washington, DC",College Student,7th,African-American,F,False,False
+41,Danny McCray,33,"Frisco, TX",Ex-NFL Player,6th,African-American,M,False,False
+41,Ricard Foyé,31,"Sedro-Woolley, WA",Flight Attendant,5th,Latin American,M,True,True
+41,Heather Aldret,52,"Charleston, SC",Stay-at-Home Mom,4th,White,F,False,False
+41,Xander Hastings,21,"Chicago, IL",App Developer,2nd Runner-up,White,M,False,False
+41,Deshawn Radden,26,"Miami, FL",Medical Student,Runner-up,African-American,M,True,False
+41,Erika Casupanan,32,"Toronto, ON (Canada)",Communications Manager,Winner,Asian-Canadian,F,True,False
+42,Jackson Fox,48,"Houston, TX",Healthcare Worker,18th,White,M,True,False
+42,Zach Wurtenberger,22,"St. Louis, MO",Student,17th,White,M,False,False
+42,Marya Sherron,47,"Noblesville, IN",Stay-at-Home Mom,16th,African-American,F,False,True
+42,Jenny Kim,43,"Brooklyn, NY",Creative Director,15th,Asian-American,F,False,False
+42,Swati Goel,19,"Palo Alto, CA",Ivy League Student,14th,Asian-American,F,False,False
+42,Daniel Strunk,30,"New Haven, CT",Law Clerk,13th,White,M,False,False
+42,Lydia Meredith,22,"Santa Monica, CA",Waitress,12th,White,F,True,False
+42,Chanelle Howell,29,"New York, NY",Executive Recruiter,11th,African-American,F,True,False
+42,Rocksroy Bailey,44,"Las Vegas, NV",Stay-at-Home Dad,10th,African-American,M,False,False
+42,Tori Meehan,25,"Rogers, AR",Therapist,9th,White,F,False,False
+42,Hai Giang,29,"New Orleans, LA",Data Scientist,8th,Asian-American,M,True,False
+42,Drea Wheeler,35,"Montreal, QC (Canada)",Fitness Consultant,7th,African-American,F,False,True
+42,Omar Zaheer,31,"Whitby, ON (Canada)",Veterinarian,6th,Asian-Canadian,M,False,False
+42,Lindsay Dolashewich,31,"Asbury Park, NJ",Dietitian,5th,White,F,False,False
+42,Jonathan Young,29,"Gulf Shores, AL",Beach Service Company Owner,4th,White,M,False,False
+42,Romeo Escobar,37,"Norwalk, CA",Pageant Coach,2nd Runner-up,Latin American,M,True,False
+42,Mike Turner,58,"Hoboken, NJ",Retired Firefighter,Runner-up,Latin American,M,False,False
+42,Maryanne Oketch,24,"Ajax, ON (Canada)",Seminary Student,Winner,African-Canadian,F,False,False
+43,Morriah Young,28,"Philadelphia, PA",Teacher,18th,African-American,F,False,False
+43,Justine Brennan,29,"Marina del Ray, CA",Cyber Security Saleswoman,17th,Asian-American,F,False,False
+43,Nneka Ejere,43,"Weatherford, TX",Pharmacist,16th,African-American,F,False,False
+43,Lindsay Carmine,42,"Downingtown, PA",Pediatric Nurse,15th,White,F,False,False
+43,Geo Bustamante,35,"Honolulu, HI",Project Manager,14th,Latin American,M,True,False
+43,Elie Scott,31,"Salt Lake City, UT",Clinical Psychologist,13th,Latin American,F,False,False
+43,Dwight Moore,22,"Collierville, TN",Graduate Student,12th,African-American,M,False,False
+43,Jeanine Zheng,24,"San Francisco, CA",UX Designer,11th,Asian-American,F,False,False
+43,James Jones,37,"Philadelphia, PA",Event Planner,10th,African-American,M,False,False
+43,Ryan Medrano,24,"El Paso, TX",Warehouse Associate,9th,Latin American,M,False,True
+43,Noelle Lambert,25,"Manchester, NH",Paralympian,8th,White,F,False,True
+43,Sami Layadi,19,"Las Vegas, NV",Pet Cremator,7th,African-American,M,False,False
+43,Cody Assenmacher,35,"Honolulu, HI",Elevator Salesman,6th,White,M,False,False
+43,Karla Cruz Godoy,28,"Newark, DE",Educational Project Manager,5th,Latin American,F,True,False
+43,Jesse Lopez,30,"Durham, NC",Political Science PhD,4th,Latin American,M,False,False
+43,Owen Knight,29,"New Orleans, LA",College Admissions Director,2nd Runner-up,Asian-American,M,False,False
+43,Cassidy Clark,26,"Austin, TX",Designer,Runner-up,White,F,True,False
+43,Mike Gabler,52,"Meridian, ID",Heart Valve Specialist,Winner,White,M,False,False
+44,Bruce Perreault,46,"West Warwick, RI",Insurance Agent,18th,African-American,M,False,False
+44,Maddy Pomilla,28,"Huntingtown, MD",Charity Projects Manager,17th,Latin American,F,False,False
+44,Helen Li,29,"San Francisco, CA",Product Manager,16th,Asian-American,F,False,False
+44,Claire Rafson,25,"Highland Park, IL",Tech Investor,15th,African-American,F,True,False
+44,Sarah Wade,27,"Rochester, MN",Management Consultant,14th,White,F,False,False
+44,Matthew Grinstead-Mayle,43,"Pickerington, OH",Barbershop Owner,13th,White,M,True,False
+44,Josh Wilder,34,"Cincinnati, OH",Surgical Podiatrist,12th,African-American,M,True,False
+44,Matt Blankinship,27,"Albany, CA",Security Software Engineer,11th,Asian-American,M,False,False
+44,Brandon Cottom,30,"Newtown, PA",Security Specialist,10th,African-American,M,False,False
+44,Kane Fritzler,25,"Moose Jaw, SK (Canada)",Law Student,9th,White,M,False,False
+44,Frannie Marin,23,"St. Paul, MN",Research Coordinator,8th,White,F,True,False
+44,Danny Massa,32,"Bronx, NY",Firefighter,7th,White,M,False,False
+44,Jaime Lynn Ruiz,35,"Mesa, AZ",Yogi,6th,Latin American,F,False,False
+44,Lauren Harpe,31,"Port Arthur, TX",Elementary School Teacher,5th,African-American,F,False,False
+44,Carson Garrett,20,"Atlanta, GA",NASA Engineering Student,4th,White,M,False,False
+44,Carolyn Wiger,35,"North St. Paul, MN",Drug Counselor,2nd Runner-up,White,F,True,False
+44,Heidi Lagares-Greenblatt,43,"Pittsburgh, PA",Engineering Manager,Runner-up,Latin American,F,False,False
+44,Yam Yam Arocho,36,"Bayamón, Puerto Rico",Salon Owner,Winner,Latin American,M,True,False
+45,Hannah Rose,33,"Baltimore, MD",Therapist,18th,White,F,False,False
+45,Brandon Donlon,26,"Sicklerville, NJ",Content Producer,17th,White,M,False,False
+45,Sabiyah Broderick,28,"Jacksonville, NC",Truck Driver,16th,African-American,F,True,False
+45,Sean Edwards,35,"Provo, UT",School Principal,15th,Asian-American,M,True,False
+45,Brando Meyer,23,"Seattle, WA",Software Developer,14th,Asian-American,M,False,False
+45,J. Maya,24,"Los Angeles, CA",Singer,13th,Asian-American,F,False,False
+45,Sifu Alsup,30,"O'Fallon, IL",Gym Owner,12th,African-American,M,False,False
+45,Kaleb Gebrewold,29,"Vancouver, BC (Canada)",Software Sales,11th,African-Canadian,M,False,False
+45,Kellie Nalbandian,29,"New York, NY",Critical Care Nurse,10th,White,F,True,False
+45,Kendra McQuarrie,31,"Steamboat Springs, CO",Bartender,9th,White,F,False,False
+45,Bruce Perreault,47,"West Warwick, RI",Insurance Agent,8th,African-American,M,False,False
+45,Emily Flippen,28,"Laurel, MD",Investment Analyst,7th,White,F,False,False
+45,Drew Basile,23,"Philadelphia, PA",Grad Student,6th,White,M,False,False
+45,Julie Alley,49,"Brentwood, TN",Estate Attorney,5th,White,F,False,False
+45,Katurah Topps,35,"Brooklyn, NY",Civil Rights Attorney,4th,African-American,F,True,False
+45,Jake O'Kane,26,"Boston, MA",Attorney,2nd Runner-up,White,M,False,False
+45,Austin Li Coon,26,"Chicago, IL",Grad Student,Runner-up,Asian-American,M,False,False
+45,Dee Valladares,26,"Miami, FL",Entrepreneur,Winner,Latin American,F,False,False
+46,David Jelinsky,22,"Las Vegas, NV",Slot Machine Salesman,18th,White,M,False,False
+46,Jessica Johnston,37,"San Francisco, CA",Software Engineer,17th,White,F,False,False
+46,Randen Montalvo,41,"Orlando, FL",Aerospace Tech,16th,Latin American,M,False,False
+46,Bhanu Gopal,41,"Acton, MA",IT Quality Analyst,15th,Asian-American,M,True,False
+46,Jem Hussain-Adams,31,"Chicago, IL",International Brand Mentor,14th,White,F,False,False
+46,Moriah Gaynor,28,"San Diego, CA",Program Coordinator,13th,White,F,True,False
+46,Tim Spicer,31,"Atlanta, GA",College Coach,12th,African-American,M,False,False
+46,Soda Thompson,27,"Lake Hopatcong, NJ",Special Ed Teacher,11th,African-American,F,False,False
+46,Tevin Davis,24,"Richmond, VA",Actor,10th,African-American,M,True,False
+46,Hunter McKnight,28,"French Camp, MS",Science Teacher,9th,White,M,False,False
+46,Tiffany Nicole Ervin,33,"Elizabeth, NJ",Artist,8th,African-American,F,False,False
+46,Venus Vafa,24,"Toronto, ON (Canada)",Data Analyst,7th,Asian-Canadian,F,False,False
+46,Q Burdette,29,"Memphis, TN",Real Estate Agent,6th,African-American,M,False,False
+46,Maria Shrime Gonzalez,48,"Dallas, TX",Parent Coach,5th,Asian-American,F,False,False
+46,Liz Wilcox,35,"Orlando, FL",Marketing Strategist,4th,White,F,False,False
+46,Ben Katzman,31,"Miami, FL",Musician,2nd Runner-up,White,M,False,False
+46,Charlie Davis,26,"Boston, MA",Law Student,Runner-up,White,M,False,False
+46,Kenzie Petty,29,"Charlotte, NC",Salon Owner,Winner,White,F,True,False
+47,Jon Lovett,42,"Los Angeles, CA",Podcast Host,18th,White,M,True,False
+47,TK Foster,31,"Upper Marlboro, MD",Athlete Marketing Manager,17th,African-American,M,False,False
+47,Aysha Welch,32,"Houston, TX",IT Consultant,16th,African-American,F,False,False
+47,Kishan Patel,28,"San Francisco, CA",ER Doctor,15th,Asian-American,M,True,False
+47,Anika Dhar,26,"Los Angeles, CA",Marketing Manager,14th,Asian-American,F,False,False
+47,Rome Cooney,30,"Phoenix, AZ",E-Sports Commentator,13th,African-American,M,False,False
+47,Tiyana Hallums,27,"Aiea, HI",Flight Attendant,12th,White,F,False,False
+47,Sierra Wright,27,"Phoenixville, PA",Nurse,11th,White,F,False,False
+47,Sol Yi,43,"Norwalk, CT",Medical Device Sales,10th,Asian-American,M,False,False
+47,Gabe Ortis,26,"Baltimore, MD",Radio Host,9th,Latin American,M,False,False
+47,Kyle Ostwald,31,"Cheboygan, MI",Construction Worker,8th,White,M,False,False
+47,Caroline Vidmar,27,"Chicago, IL",Strategy Consultant,7th,White,F,False,False
+47,Andy Rueda,31,"Brooklyn, NY",AI Research Assistant,6th,Asian-American,M,True,False
+47,Genevieve Mushaluk,33,"Winnipeg, MB (Canada)",Corporate Lawyer,5th,White,F,False,False
+47,Teeny Chirichillo,24,"Manahawkin, NJ",Freelance Writer,4th,White,N,True,False
+47,Sue Smey,59,"Putnam Valley, NY",Flight School Owner,2nd Runner-up,White,F,False,False
+47,Sam Phalen,24,"Nashville, TN",Sports Reporter,Runner-up,White,M,False,False
+47,Rachel LaMont,34,"Southfield, MI",Graphic Designer,Winner,Asian-American,F,False,False
+48,Bianca Roses,33,"Arlington, VA",PR Consultant,,White,F,False,False
+48,Cedrek McFadden,45,"Greenville, SC",Surgeon,,African-American,M,False,False
+48,Charity Nelms,34,"St. Petersburg, FL",Flight Attendant,,White,F,False,False
+48,Chrissy Sarnowsky,55,"Chicago, IL",Fire Lieutenant,,White,F,False,False
+48,David Kinne,39,"Buena Park, CA",Stunt Performer,,White,M,False,False
+48,Eva Erickson,24,"Providence, RI",PhD Candidate,,White,F,False,True
+48,Joe Hunter,45,"Sacramento, CA",Fire Captain,,White,M,False,False
+48,Justin Pioppi,29,"Winthrop, MA",Pizzeria Manager,,White,M,False,False
+48,Kamilla Karthigesu,31,"Foster City, CA",Software Engineer,,Asian-Canadian,F,False,False
+48,Kevin Leung,34,"Livermore, CA",Finance Manager,,Asian-American,M,False,False
+48,Kyle Fraser,31,"Brooklyn, NY",Attorney,,African-American,M,False,False
+48,Mary Zheng,31,"Philadelphia, PA",Substance Abuse Counselor,,Asian-American,F,False,False
+48,Mitch Guerra,34,"Waco, TX",P.E. Coach,,Latin American,M,False,True
+48,Sai Hughley,30,"Simi Valley, CA",Marketing Professional,,African-American,F,False,False
+48,Shauhin Davari,38,"Costa Mesa, CA",Debate Professor,,Asian-American,M,False,False
+48,Star Toomey,28,"Augusta, GA",Sales Expert,,African-American,F,True,False
+48,Stephanie Berger,38,"Brooklyn, NY",Tech Product Lead,,White,F,False,False
+48,Thomas Krottinger,34,"Los Angeles, CA",Music Executive,,White,M,True,False

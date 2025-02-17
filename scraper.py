@@ -288,8 +288,10 @@ stats_table.drop(('Unnamed: 1_level_0', 'SurvSc'), axis = 1, inplace=True)
 stats_table.drop(('Unnamed: 2_level_0', 'SurvAv'), axis = 1, inplace=True)
 stats_table.drop(('Unnamed: 0_level_0', 'Unnamed: 0_level_1'), axis = 1, inplace=True)
 stats_table.drop(('Challenge stats', 'ChW.1'), axis = 1, inplace=True)
+# Flatten stats multiindex to single index
+# Used ai to help get multiindex flattened, as droplevel was throwing a ValueError
+stats_table.columns = [col[1] if isinstance(col, tuple) else col for col in stats_table.columns]
 
-# Need to add following to stats table: 
 
 # most idols table
 page = requests.get('https://truedorktimes.com/survivor/boxscores/idolsfound-season.htm')
@@ -329,12 +331,12 @@ def create_csv(df, file):
     if os.path.exists(file):
         return print(f'{file} already exists.')
     else:
-        df.to_csv(file)
+        df.to_csv(file, index=False)
         print(f'{file} has been created.')
     return
 seasons = create_csv(season_table, 'seasons.csv')
 contestants = create_csv(contestant_table, 'contestants.csv')
 stats = create_csv(stats_table, 'stats.csv')
-idols = create_csv(idols, 'idols.csv') # Note - Manually added values in that were left off initial table
+idols = create_csv(idols, 'idol.csv') # Note - Manually added values in that were left off initial table
 advantages = create_csv(advantages, 'advantages.csv')
 immunities = create_csv(immunity, 'immunities.csv')
