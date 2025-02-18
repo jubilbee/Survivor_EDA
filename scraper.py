@@ -325,10 +325,6 @@ immunity = pd.concat(immunity, axis=0).reset_index(drop=True)
 # To drop- Rank, Contestant, Season (Will ultimately drop Contestant.1 for all 3 - will be merged onto stats)
 
 
-# Look at the table info/ details to figure out how to get rid of the top column names? (or at least learn how to work with a table with this format)
-# May make another table for idols/advantages, or add to stats 
-contestant_table
-
 # contestants, seasons, stats (idols, advantages, indiv. immunities)
 def create_csv(df, file):
     """
