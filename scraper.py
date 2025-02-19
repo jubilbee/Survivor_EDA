@@ -305,8 +305,6 @@ soup = BeautifulSoup(page.content, 'html.parser')
 tables = soup.find_all('table')
 idols = pd.read_html(StringIO(str(tables)))
 idols = pd.concat(idols, axis=0).reset_index(drop=True)
-# to drop - Rank, Contestant, Season
-# clean values (save for notebook?) - drop row index [81] (45+ players tie -> null contestant.1), strip row values of * (and other special characters as listed on url)
 
 # advantages - (only through season 40) 
 page = requests.get('https://truedorktimes.com/survivor/boxscores/advantages.htm')
@@ -314,7 +312,6 @@ soup = BeautifulSoup(page.content, 'html.parser')
 tables = soup.find_all('table')
 advantages = pd.read_html(StringIO(str(tables)))
 advantages = pd.concat(advantages, axis=0).reset_index(drop=True)
-# To drop - Rank, Contestant, Season, VV, VFB, Tie broken?
 
 #  individual immunity wins
 page = requests.get('https://truedorktimes.com/survivor/boxscores/icwin.htm')
@@ -322,8 +319,6 @@ soup = BeautifulSoup(page.content, 'html.parser')
 tables = soup.find_all('table')
 immunity = pd.read_html(StringIO(str(tables)))
 immunity = pd.concat(immunity, axis=0).reset_index(drop=True)
-# To drop- Rank, Contestant, Season (Will ultimately drop Contestant.1 for all 3 - will be merged onto stats)
-
 
 # contestants, seasons, stats (idols, advantages, indiv. immunities)
 def create_csv(df, file):
