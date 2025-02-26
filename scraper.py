@@ -5,16 +5,6 @@ import difflib
 import pandas as pd
 import os
 
-# season overview table
-URL = "https://en.wikipedia.org/wiki/Survivor_(American_TV_series)"
-page = requests.get(URL)
-soup  = BeautifulSoup(page.content, 'html.parser')
-
-tables = soup.find_all('table', class_='wikitable')
-table = tables[0]
-
-season_table = pd.read_html(StringIO(str(table)))
-season_table = pd.concat(season_table, axis=0).reset_index(drop=True)
 
 # contestant table
 URL = "https://en.wikipedia.org/wiki/List_of_Survivor_(American_TV_series)_contestants"
@@ -26,7 +16,6 @@ tables = soup.find_all('table', class_='wikitable')
 contestant_table = pd.read_html(StringIO(str(tables)))
 contestant_table = pd.concat(contestant_table, axis=0).reset_index(drop=True)
 
-season_table.loc[season_table['Subtitle'] == 'Borneo[c]', 'Subtitle'] = 'Borneo'
 # Function to create dictionaries of contestants with the same gender
 def get_gender(main, gender):
     """
@@ -76,11 +65,9 @@ contestant_table.replace('Evelyn "Evvie" Jagoda', 'Evvie Jagoda', inplace=True)
 contestant_table.replace('Janani "J. Maya" Krishnan-Jha', 'J. Maya', inplace=True)
 contestant_table.replace('Solomon "Sol" Yi', 'Sol Yi', inplace=True)
 contestant_table.replace('Christine "Teeny" Chirichillo', 'Teeny Chirichillo', inplace=True)
-# Run closest match function for contestant table and Winner/ Runners up columns of season table
+# Run closest match function for contestant table 
 contestant_table['Name'] = contestant_table['Name'].apply(lambda name: find_closest_match(name, gender_dict, threshold=0.6))
-season_table['Winner'] = season_table['Winner'].apply(lambda name: find_closest_match(name, gender_dict, threshold=0.6))
-season_table['Runner(s)-up'] = season_table['Runner(s)-up'].apply(lambda name: find_closest_match(name, gender_dict, threshold=0.6))
-season_table['Runner(s)-up.1'] = season_table['Runner(s)-up.1'].apply(lambda name: find_closest_match(name, gender_dict, threshold=0.6))
+
 # Function to fill Ethnicity column in contestant table with data from list of urls
 def get_ethnicity(URLS):
     """
@@ -331,7 +318,7 @@ def create_csv(df, file):
         df.to_csv(file, index=False)
         print(f'{file} has been created.')
     return
-seasons = create_csv(season_table, 'seasons.csv')
+
 contestants = create_csv(contestant_table, 'contestants.csv')
 stats = create_csv(stats_table, 'stats.csv')
 idols = create_csv(idols, 'idols.csv') # Note - Manually added values in that were left off initial table
