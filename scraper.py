@@ -48,25 +48,63 @@ female_dict = get_gender('https://survivor.fandom.com/wiki/Category:Female_Conte
 male_dict = get_gender('https://survivor.fandom.com/wiki/Category:Male_Contestants', 'M')
 gender_dict = {**male_dict, **female_dict}
 # Function to look for close name matches in the gender dictionary and contestant table, and replaces contestant table values with the gender dictionary values 
-def find_closest_match(name, gender_dict, threshold=0.6):
+def find_closest_match(name, gender_dict, threshold=0.7):
     """
-    
+    Use difflib get_close_matches to
     """
     closest_matches = difflib.get_close_matches(name, gender_dict.keys(), n=1, cutoff=threshold)
     if not closest_matches:
         return name
     else:
-        return closest_matches[0] # Pytest to double check that the names match up? Maybe
+        return closest_matches[0] 
 
 # Manually replaces what names won't be able to be replaced with find_closest_match    
-contestant_table.replace('Jon "Jonny Fairplay" Dalton', 'Jon Dalton', inplace=True)        
-contestant_table.replace('Leon Joseph "LJ" McKanas', 'LJ McKanas', inplace=True)
-contestant_table.replace('Evelyn "Evvie" Jagoda', 'Evvie Jagoda', inplace=True)
-contestant_table.replace('Janani "J. Maya" Krishnan-Jha', 'J. Maya', inplace=True)
-contestant_table.replace('Solomon "Sol" Yi', 'Sol Yi', inplace=True)
-contestant_table.replace('Christine "Teeny" Chirichillo', 'Teeny Chirichillo', inplace=True)
+contestant_table.replace({'Jon "Jonny Fairplay" Dalton': 'Jon Dalton',
+                        'Leon Joseph "LJ" McKanas': 'LJ McKanas', 
+                        'Evelyn "Evvie" Jagoda': 'Evvie Jagoda', 
+                        'Janani "J. Maya" Krishnan-Jha': 'J. Maya',
+                        'Solomon "Sol" Yi': 'Sol Yi',
+                        'Christine "Teeny" Chirichillo': 'Teeny Chirichillo',
+                        'Kimberly "Kim" Powers': 'Kim Powers',
+                        'Robert "The General" DeCanio': 'Robert DeCanio',
+                        'Cassandra "Angie" Jakusz': 'Angie Jakusz',
+                        'Virgilio "Billy" Garcia': 'Billy Garcia',
+                        'John Paul "J.P." Calderon': 'J.P. Calderon',
+                        'Anh-Tuan "Cao Boi" Bui': 'Cao Boi Bui',
+                        'Bradley "Brad" Virata': 'Brad Virata',
+                        'Rebekah "Becky" Lee': 'Becky Lee',
+                        'Alejandro "Alex" Angarita': 'Alex Angarita',
+                        'Kenward "Boo" Bernis': 'Boo Bernis',
+                        'Michael "Mikey B" Bortone': 'Michael Bortone',
+                        'Danny "GC" Brown': 'GC Brown',
+                        'Jessica "Sugar" Kiper': 'Sugar Kiper',
+                        'Jesusita "Susie" Smith': 'Susie Smith',
+                        'Benjamin "Coach" Wade': 'Coach Wade',
+                        'James "J.T." Thomas, Jr.': 'JT Thomas, Jr.',
+                        'Elizabeth "Liz" Kim': 'Liz Kim',
+                        'Yvette "Yve" Rojas': 'Yve Rojas',
+                        'Mark "Papa Bear" Caruso': 'Mark Caruso',
+                        'Roxanne "Roxy" Morris': 'Roxy Morris',
+                        'Edward "Eddie" Fox': 'Eddie Fox',
+                        'Latasha "Tasha" Fox': 'Tasha Fox',
+                        'Elisabeth "Liz" Markahm': 'Liz Markham',
+                        'Ciandre "CeCe" Taylor': 'CeCe Taylor',
+                        'Alexandrea "Ali" Elliott': 'Ali Elliott',
+                        'John Paul "JP" Hilsabeck': 'JP Hilsabeck',
+                        '''Tra'mese "Missy" Byrd''': 'Missy Byrd',
+                        'Shantel "Shan" Smith': 'Shan Smith',
+                        'Michael "Mike" Turner': 'Mike Turner',
+                        'Elisabeth "Elie" Scott': 'Elie Scott',
+                        'Nicholas "Sifu" Alsup': 'Sifu Alsup',
+                        'Jessica "Jess" Chong': 'Jess Chong',
+                        'Quintavius "Q" Burdette': 'Q Burdette',
+                        'Terran "TK" Foster': 'TK Foster',
+                        'James "Jim" Lynch': 'Jim Lynch',
+                        'Elisabeth "Liz" Markham': 'Liz Markham',
+                        'Charlotte "So" Kim': 'So Kim'
+                        }, inplace=True)
 # Run closest match function for contestant table 
-contestant_table['Name'] = contestant_table['Name'].apply(lambda name: find_closest_match(name, gender_dict, threshold=0.6))
+contestant_table['Name'] = contestant_table['Name'].apply(lambda name: find_closest_match(name, gender_dict, threshold=0.7))
 
 # Function to fill Ethnicity column in contestant table with data from list of urls
 def get_ethnicity(URLS):
@@ -189,41 +227,62 @@ def has_disability(url):
 has_disability('https://survivor.fandom.com/wiki/Category:Disabled_Contestants') # <- add to contestant table, same as lgbt - a bool
 
 # Creates a contestants stats table by iterating over various urls per season
-def stats(): # need to add season column?
-    """
+def extract_contestant_names(soup, season):
+    name_links = soup.find_all('tr', class_='score')
+    contestant_names = []
+    for i, name in enumerate(name_links):
+        # Skip header rows
+        if name.find('th'):
+            continue
+        
+        a_tag = name.find('a')
+        if a_tag:
+            href = a_tag['href']
+            contestant_name = href.split('/')[-1].split('.')[0]
+            contestant_name = contestant_name.replace('_', ' ').title()
+        else:
+            # Fallback: Extract text directly from the td element
+            td_tag = name.find('td')
+            contestant_name = td_tag.get_text().strip() if td_tag else None
+        
+        contestant_names.append(contestant_name)
+        
+    return contestant_names
 
-    """
+def stats():
     seasons = 48
     all_stats = []
-    # iterate over season urls
     for season in range(1, seasons + 1):
         url = f'https://www.truedorktimes.com/survivor/boxscores/s{season}.htm'
         page = requests.get(url)
         soup = BeautifulSoup(page.content, 'html.parser')
+        
         tables = soup.find('table')
+        if not tables:
+            print(f"No table found for season {season}")
+            continue
+
         stats_table = pd.read_html(StringIO(str(tables)))[0]
         stats_table['Unnamed: 0_level_0','Season'] = season
-        # find contestant name attributes
-        name_links = soup.find_all('tr', class_='score')
-        contestant_names = []
-        for i in range(len(stats_table)):
-            try:
-                name = name_links[i]
-                a_tag = name.find('a')
-                if a_tag:
-                    href = a_tag['href']
-                    contestant_name = href.split('/')[-1].split('.')[0]
-                    contestant_name = contestant_name.replace('_', ' ').title()
-                else:
-                    contestant_name = stats_table.loc[i, ('Unnamed: 0_level_0', 'Contestant')]
-            except (IndexError, KeyError):
-                contestant_name = stats_table.loc[i, ('Unnamed: 0_level_0', 'Contestant')]
-            contestant_names.append(contestant_name)
-        if ('Unnamed: 0_level_0', 'Contestant') in stats_table.columns:
-            stats_table[('Unnamed: 0_level_0', 'Contestant')] = pd.Series(contestant_names)
+
+        # Extract contestant names using helper function
+        contestant_names = extract_contestant_names(soup, season)
+        
+        # Remove None values and match the number of rows
+        contestant_names = [name for name in contestant_names if name]
+        if len(contestant_names) < len(stats_table):
+            contestant_names += [None] * (len(stats_table) - len(contestant_names))
+        else:
+            contestant_names = contestant_names[:len(stats_table)]
+
+        # Assign extracted names to the stats table
+        stats_table['Unnamed: 0_level_0','Contestant'] = pd.Series(contestant_names)
         all_stats.append(stats_table)
+
     stats = pd.concat(all_stats, axis=0).reset_index(drop=True)
-    return stats # used AI to help troubleshoot this function. (may add info on this in docstring)
+    return stats
+# used AI to help troubleshoot this function. (may add info on this in docstring)
+# NEED TO ENCAPSULATE - AI ASSISTED CODE
 
 stats_table = stats()
 # Manually replaces names that couldn't be handled when making stats table, with their full name
@@ -281,6 +340,7 @@ stats_table.drop(('Unnamed: 1_level_0', 'SurvSc'), axis = 1, inplace=True)
 stats_table.drop(('Unnamed: 2_level_0', 'SurvAv'), axis = 1, inplace=True)
 stats_table.drop(('Unnamed: 0_level_0', 'Unnamed: 0_level_1'), axis = 1, inplace=True)
 stats_table.drop(('Challenge stats', 'ChW.1'), axis = 1, inplace=True)
+
 # Flatten stats multiindex to single index
 # Used ai to help get multiindex flattened, as droplevel was throwing a ValueError
 stats_table.columns = [col[1] if isinstance(col, tuple) else col for col in stats_table.columns]
@@ -310,7 +370,8 @@ immunity = pd.concat(immunity, axis=0).reset_index(drop=True)
 # contestants, seasons, stats (idols, advantages, indiv. immunities)
 def create_csv(df, file):
     """
-    
+    Checks if the file already exists, if not, writes the dataframe to file.
+
     """
     if os.path.exists(file):
         return print(f'{file} already exists.')
@@ -321,6 +382,6 @@ def create_csv(df, file):
 
 contestants = create_csv(contestant_table, 'contestants.csv')
 stats = create_csv(stats_table, 'stats.csv')
-idols = create_csv(idols, 'idols.csv') # Note - Manually added values in that were left off initial table
+idols = create_csv(idols, 'idols.csv') 
 advantages = create_csv(advantages, 'advantages.csv')
 immunities = create_csv(immunity, 'immunities.csv')
