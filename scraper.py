@@ -5,54 +5,69 @@ import difflib
 import pandas as pd
 import os
 
-
+# Starting with the contestants table, I scrape the wikipedia page for Survivor contestants, and save it to a pandas Dataframe
 # contestant table
 URL = "https://en.wikipedia.org/wiki/List_of_Survivor_(American_TV_series)_contestants"
 page = requests.get(URL)
 soup = BeautifulSoup(page.content, 'html.parser')
 
 tables = soup.find_all('table', class_='wikitable')
-
+# I use StringIO to avoid the FutureWarning about read_html passing literal html being deprecated
 contestant_table = pd.read_html(StringIO(str(tables)))
 contestant_table = pd.concat(contestant_table, axis=0).reset_index(drop=True)
 
 # Function to create dictionaries of contestants with the same gender
 def get_gender(main, gender):
     """
+    Takes url and scrapes contestant names, outputs names and input gender into a dictionary.
     
+    Args: 
+        main (url): The url to be iterated through
+        gender (str): The corresponding gender for contestants names being scraped
+    Returns:
+        gender_dict (dict): A dictionary of contestant names and their corresponding gender
     """
+    # Starting with an empty dictionary and a variable with a null value
     gender_dict = {}
     contestants = None
     while True:
+        # If the contestants variable is not null, the url will be set to contestants value, otherwise url will be main
         if contestants:
             url = contestants
         else:
             url = main
-        #print("Fetching URL:", url) # Debug
+        # Webscraping to find all list elements with category-page__member, this is where the contestant names are.
         page = requests.get(url)
         soup = BeautifulSoup(page.content, 'html.parser')
         results = soup.find('div', class_='category-page__members')
         names = results.find_all('li', class_='category-page__member')
+        # Go through each list element and find the hyperlink text, strip the text to get contestant name, then assign the gender to each name
         for name in names:
             name = name.find('a', class_='category-page__member-link').text.strip()
             gender_dict[name] = gender
+        # Find the hyperlink element for next page
         contestant_links = soup.find('a', class_='category-page__pagination-next wds-button wds-is-secondary')
+        # If next page exists, get the href and set that as the value for contestants. This way the code loops through the pages until there are no more
         if contestant_links:
             contestants = contestant_links.get('href')
-            #print("Next page URL:", contestants) # Debug
         else:
             break
     return gender_dict
-# Run function for Male and Female contestants, combine into one dictionary
+# Run function for Male and Female contestants, combine into one dictionary using ** operator
 female_dict = get_gender('https://survivor.fandom.com/wiki/Category:Female_Contestants', 'F')
 male_dict = get_gender('https://survivor.fandom.com/wiki/Category:Male_Contestants', 'M')
 gender_dict = {**male_dict, **female_dict}
 # Function to look for close name matches in the gender dictionary and contestant table, and replaces contestant table values with the gender dictionary values 
-def find_closest_match(name, gender_dict, threshold=0.7):
+def find_closest_match(name, name_dict, threshold=0.7):
     """
-    Use difflib get_close_matches to
+    Use difflib's get_close_matches to compare and replace contestant names with names in a dictionary of names.
+
+    Args:
+
+    Returns:
+
     """
-    closest_matches = difflib.get_close_matches(name, gender_dict.keys(), n=1, cutoff=threshold)
+    closest_matches = difflib.get_close_matches(name, name_dict.keys(), n=1, cutoff=threshold)
     if not closest_matches:
         return name
     else:
@@ -109,9 +124,16 @@ contestant_table['Name'] = contestant_table['Name'].apply(lambda name: find_clos
 # Function to fill Ethnicity column in contestant table with data from list of urls
 def get_ethnicity(URLS):
     """
-    
+    Iterates through a list of urls, creating a dictionary of names and their ethnicity, 
+    then adds the ethnicity to a column in contestants table by mapping the names in the dictionary to the Name column
+
+    Args:
+
+    Returns:
+
     """
     ethnicity_dict = {}
+    
     for URL in URLS:
         page = requests.get(URL)
         soup = BeautifulSoup(page.content, 'html.parser')
@@ -119,9 +141,11 @@ def get_ethnicity(URLS):
         ethnicity = ethnicities.text.strip()[:-12]
         results = soup.find('div', class_='category-page__members')
         names = results.find_all('li', class_='category-page__member')
+    
         for name in names:
             name = name.find('a', class_='category-page__member-link').text.strip()
             ethnicity_dict[name] = ethnicity
+    
     contestant_table['Ethnicity'] = contestant_table['Name'].map(ethnicity_dict)
     return
 URLS = [
@@ -143,7 +167,13 @@ contestant_table.loc[contestant_table['Name'] == 'Evvie Jagoda', 'Gender'] = 'N'
 # Function to fill lgbt column in contestant table with True or False values based on url containing a list of lgbt contestants
 def get_lgbt(main):
     """
-    
+    Scrapes names from url, and stores them in a dictionary of names from the contestant table. 
+    Assigns the names True or False values depending on if the name appears in the url or not.
+
+    Args:
+
+    Returns:
+
     """
     lgbt_dict = {name: False for name in contestant_table['Name']}
     contestants = None
@@ -224,10 +254,14 @@ def has_disability(url):
         disabled_dict[name] = True
     contestant_table['Has Disability'] = contestant_table['Name'].map(disabled_dict)
     return disabled_dict
-has_disability('https://survivor.fandom.com/wiki/Category:Disabled_Contestants') # <- add to contestant table, same as lgbt - a bool
+has_disability('https://survivor.fandom.com/wiki/Category:Disabled_Contestants') 
 
 # Creates a contestants stats table by iterating over various urls per season
+# AI was used for this, to help troubleshoot and ensure data was being scraped accurately.
 def extract_contestant_names(soup, season):
+    """
+    
+    """
     name_links = soup.find_all('tr', class_='score')
     contestant_names = []
     for i, name in enumerate(name_links):
@@ -250,6 +284,9 @@ def extract_contestant_names(soup, season):
     return contestant_names
 
 def stats():
+    """
+    
+    """
     seasons = 48
     all_stats = []
     for season in range(1, seasons + 1):
@@ -280,9 +317,7 @@ def stats():
         all_stats.append(stats_table)
 
     stats = pd.concat(all_stats, axis=0).reset_index(drop=True)
-    return stats
-# used AI to help troubleshoot this function. (may add info on this in docstring)
-# NEED TO ENCAPSULATE - AI ASSISTED CODE
+    return stats # NEED TO ENCAPSULATE - AI ASSISTED CODE
 
 stats_table = stats()
 # Manually replaces names that couldn't be handled when making stats table, with their full name
@@ -345,33 +380,37 @@ stats_table.drop(('Challenge stats', 'ChW.1'), axis = 1, inplace=True)
 # Used ai to help get multiindex flattened, as droplevel was throwing a ValueError
 stats_table.columns = [col[1] if isinstance(col, tuple) else col for col in stats_table.columns]
 
-
+# Taking urls from truedorktimes, I scrape to create 3 more tables.
+def create_tables(url, table):
+    """
+    
+    """
+    page = requests.get(url)
+    soup = BeautifulSoup(page.content, 'html.parser')
+    tables = soup.find_all('table')
+    table = pd.read_html(StringIO(str(tables)))
+    table = pd.concat(table, axis=0).reset_index(drop=True)
+    return table
 # most idols table
-page = requests.get('https://truedorktimes.com/survivor/boxscores/idolsfound-season.htm')
-soup = BeautifulSoup(page.content, 'html.parser')
-tables = soup.find_all('table')
-idols = pd.read_html(StringIO(str(tables)))
-idols = pd.concat(idols, axis=0).reset_index(drop=True)
+idols = create_tables('https://truedorktimes.com/survivor/boxscores/idolsfound-season.htm', 'idols')
 
 # advantages - (only through season 40) 
-page = requests.get('https://truedorktimes.com/survivor/boxscores/advantages.htm')
-soup = BeautifulSoup(page.content, 'html.parser')
-tables = soup.find_all('table')
-advantages = pd.read_html(StringIO(str(tables)))
-advantages = pd.concat(advantages, axis=0).reset_index(drop=True)
+advantages = create_tables('https://truedorktimes.com/survivor/boxscores/advantages.htm', 'advantages')
 
 #  individual immunity wins
-page = requests.get('https://truedorktimes.com/survivor/boxscores/icwin.htm')
-soup = BeautifulSoup(page.content, 'html.parser')
-tables = soup.find_all('table')
-immunity = pd.read_html(StringIO(str(tables)))
-immunity = pd.concat(immunity, axis=0).reset_index(drop=True)
+immunity = create_tables('https://truedorktimes.com/survivor/boxscores/icwin.htm', 'immunity')
 
 # contestants, seasons, stats (idols, advantages, indiv. immunities)
 def create_csv(df, file):
     """
     Checks if the file already exists, if not, writes the dataframe to file.
 
+    Args:
+        df (pd.Dataframe): Pandas table created through webscraping
+        file (.csv): Desired name of .csv file to write the dataframe to.
+
+    Returns:
+        Newly created .csv file, or a print statement stating the file already exists.
     """
     if os.path.exists(file):
         return print(f'{file} already exists.')
