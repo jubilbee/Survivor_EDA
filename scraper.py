@@ -463,7 +463,7 @@ def create_tables(url:str) -> pd.DataFrame:
 idols = create_tables('https://truedorktimes.com/survivor/boxscores/idolsfound-season.htm')
 # advantages - (only through season 40) 
 advantages = create_tables('https://truedorktimes.com/survivor/boxscores/advantages.htm')
-#  individual immunity wins
+# individual immunity wins
 immunity = create_tables('https://truedorktimes.com/survivor/boxscores/icwin.htm')
 
 # Finally, I create a function to write my tables to csv files.
@@ -476,7 +476,7 @@ def create_csv(df:pd.DataFrame, file:str) -> str:
         file (str): Desired name of .csv file to write the dataframe to.
 
     Returns:
-        str:  Print statement either declaring the .csv file has been created, or that it already exists
+        str: Print statement either declaring the .csv file has been created, or that it already exists
     """
     # If the path for the desired .csv already exists on the os, prints a statement telling the user the file already exists
     if os.path.exists(file):
