@@ -303,8 +303,14 @@ def extract_contestant_names(soup:BeautifulSoup, season:int) -> list:
     Returns:
         list: List of contestant names extracted
     """
+    # First, find all tables, since the pages being scraped from generally have 2, but we only want data from the first
+    tables = soup.find_all('table')
     # In the html used for the stats table, the names of contestants were stored in table row elements
-    name_links = soup.find_all('tr', class_='score')
+    if tables:
+        # Ensure only the first table is being used, and search for the table row elements
+        name_links = tables[0].find_all('tr', class_='score')
+    else:
+        name_links = []
     # We create an empty list that will be used to store contestant names
     contestant_names = []
     # Loops through each element in name_links, pairing each element to an index
