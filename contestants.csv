@@ -25,7 +25,7 @@ Season,Name,Age,Hometown,Profession,Finish,Ethnicity,Gender,Lgbt,Has Disability,
 2,Alicia Calaway,32,"New York, NY",Personal Trainer,9,African-American,F,False,False,NY,USA
 2,Jerri Manthey,30,"Los Angeles, CA",Aspiring Actress,8,White,F,False,False,CA,USA
 2,Nick Brown,23,"Steilacoom, WA",Law Student,7,African-American,M,False,False,WA,USA
-2,Amber Brkich,22,"Beaver, PA",Administrative Assistant,6,White,,False,False,PA,USA
+2,Amber Mariano,22,"Beaver, PA",Administrative Assistant,6,White,F,False,False,PA,USA
 2,Rodger Bingham,53,"Crittenden, KY",Teacher/Farmer,5,White,M,False,False,KY,USA
 2,Elisabeth Filarski,23,"Newton, MA",Footwear Designer,4,White,F,False,False,MA,USA
 2,Keith Famie,40,"West Bloomfield, MI",Chef,3,White,M,False,False,MI,USA
@@ -128,7 +128,7 @@ Season,Name,Age,Hometown,Profession,Finish,Ethnicity,Gender,Lgbt,Has Disability,
 8,Rupert Boneham,40,"Indianapolis, IN",Troubled Teens Mentor,4,White,M,False,False,IN,USA
 8,Jenna Lewis,26,"Franklin, NH",Actress,3,White,F,False,False,NH,USA
 8,Rob Mariano,28,"Canton, MA",Construction Worker,2,White,M,False,False,MA,USA
-8,Amber Brkich,25,"Beaver, PA",Administrative Assistant,1,White,,False,False,PA,USA
+8,Amber Mariano,25,"Beaver, PA",Administrative Assistant,1,White,F,False,False,PA,USA
 9,Brook Geraghty,33,"Huntington Beach, CA",Document Manager,18,White,M,False,False,CA,USA
 9,Dolly Neely,25,"Mercer, PA",Sheep Farmer,17,White,F,False,False,PA,USA
 9,John Palyok,31,"Los Angeles, CA",Sales Manager,16,White,M,False,False,CA,USA
@@ -857,6 +857,7 @@ Season,Name,Age,Hometown,Profession,Finish,Ethnicity,Gender,Lgbt,Has Disability,
 47,Sam Phalen,24,"Nashville, TN",Sports Reporter,2,White,M,False,False,TN,USA
 47,Rachel LaMont,34,"Southfield, MI",Graphic Designer,1,Asian-American,F,False,False,MI,USA
 48,Stephanie Berger,38,"Brooklyn, NY",Tech Product Lead,18,White,F,False,False,NY,USA
+48,Kevin Leung,34,"Livermore, CA",Finance Manager,17,Asian-American,M,False,False,CA,USA
 48,Shauhin Davari,38,"Costa Mesa, CA",Debate Professor,0,Asian-American,M,False,False,CA,USA
 48,Eva Erickson,24,"Providence, RI",PhD Candidate,0,White,F,False,True,RI,USA
 48,Kyle Fraser,31,"Brooklyn, NY",Attorney,0,African-American,M,False,False,NY,USA
@@ -866,7 +867,6 @@ Season,Name,Age,Hometown,Profession,Finish,Ethnicity,Gender,Lgbt,Has Disability,
 48,Kamilla Karthigesu,31,"Foster City, CA",Software Engineer,0,Asian-Canadian,F,False,False,CA,USA
 48,David Kinne,39,"Buena Park, CA",Stunt Performer,0,White,M,False,False,CA,USA
 48,Thomas Krottinger,34,"Los Angeles, CA",Music Executive,0,White,M,True,False,CA,USA
-48,Kevin Leung,34,"Livermore, CA",Finance Manager,0,Asian-American,M,False,False,CA,USA
 48,Cedrek McFadden,45,"Greenville, SC",Surgeon,0,African-American,M,False,False,SC,USA
 48,Charity Nelms,34,"St. Petersburg, FL",Flight Attendant,0,White,F,False,False,FL,USA
 48,Justin Pioppi,29,"Winthrop, MA",Pizzeria Manager,0,White,M,False,False,MA,USA

@@ -120,7 +120,8 @@ contestant_table.replace({'Jon "Jonny Fairplay" Dalton': 'Jon Dalton',
             'Terran "TK" Foster': 'TK Foster',
             'James "Jim" Lynch': 'Jim Lynch',
             'Elisabeth "Liz" Markham': 'Liz Markham',
-            'Charlotte "So" Kim': 'So Kim'
+            'Charlotte "So" Kim': 'So Kim',
+            'Amber Brkich' : 'Amber Mariano'
             }, inplace=True)
 # Run closest match function for contestant table by using .apply to apply it to each column value.
 contestant_table['Name'] = contestant_table['Name'].apply(lambda name: find_closest_match(name, gender_dict))
