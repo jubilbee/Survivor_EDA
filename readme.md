@@ -1,5 +1,4 @@
-<h1 style='text-align: center;'>Survivor:</h1>
-<h3 style='text-align: center;'>Exploring Contestant Trends Through Data</h3>
+<h1 style='text-align: center;'><b>Survivor: </b>Exploring Contestant Trends Through Data</h1>
 
 ## Overview
 This project webscrapes, cleans, and visualizes data related to contestant demographics and gameplay stats for the CBS hit show Survivor.
