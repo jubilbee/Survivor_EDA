@@ -45,13 +45,14 @@ The project is organized as follows:
   |----------------|---------------------------------------|
   | Scrape TWO pieces of data from anywhere on the internet and utilize it in your project. | Scraped data from multiple sources as listed in the [Data](#data) section.         |
   | Clean your data and perform a pandas merge with your two data sets, then calculate some new values based on the new data set.      | Cleaned my data (specifically, the stats, idols, immunity, and advantages dataset) and merged them with pandas.|
-   Clean your data and perform a SQL join with your data sets using either plain sql or the pandasql Python library      | Used sqlite to join my data (stats and contestants) in multiple queries 
+   Clean your data and perform a SQL join with your data sets using either plain sql or the pandasql Python library      | Used sqlite3 to join my data (stats and contestants) in multiple queries 
   | Make 3 matplotlib or seaborn (or another plotting library) visualizations to display your data.| Made various plots to show off my findings, using matplotlib and seaborn. |
-  | Make a Tableau dashboard      | Made a dashboard with my findings. [Tableau](https://public.tableau.com/app/profile/camilla.babb/viz/Survivor_17399844202740/Dashboard1) |
+  | Make a Tableau dashboard      | Made a dashboard with my findings on [Tableau](https://public.tableau.com/app/profile/camilla.babb/viz/Survivor_17399844202740/Dashboard1 "Survivor Tableau Dashboard") |
   | Utilize a virtual environment      | Made a venv for this project. |
   | Notate your code with markdown cells in Jupyter Notebook | Included in my code, you will find clear notes describing each code block. |
+  Build a custom data dictionary and include it either in your README or as a separate document.  | Created a data dictionary to add context 
 ## AI Usage
-
+AI assistance was used in this project. Specifically, in the scraper.py script for troubleshooting the functions extract_contestant_names(), stats(), and flatten_index(). 
 ## Getting Started
 To run this project, first you'll need to clone the repository to your local machine.
 ```bash
@@ -62,7 +63,9 @@ Navigate into the project repository:
 cd Survivor_EDA
 ```
 ## Dependencies
+requests, BeatuifulSoup, StringIO, difflib, pandas, os, matplotlib.pyplot, seaborn, sqlite3
 
+Refer to requirements.txt for full list of version dependencies and requirements.
 ### Virtual Environment Instructions
 1. After you have cloned the repo to your machine, navigate to the project folder in GitBash/Terminal.
 2. Create a virtual environment in the project folder.
@@ -80,4 +83,15 @@ cd Survivor_EDA
 
 
 ## Credits
-
+I would like to highlight a few of the resources I used in the creation of this project, specifically pages I used to learn new modules, and to inform decisions made throughout my scripts. Here is an incomplete list of sites I used in research for this project:
+* [difflib.get_close_matches() — Python Standard Library](https://tedboy.github.io/python_stdlib/generated/generated/difflib.get_close_matches.html "Github.io")
+* [Adding New Column to Existing DataFrame in Pandas - GeeksforGeeks](https://www.geeksforgeeks.org/adding-new-column-to-existing-dataframe-in-pandas/# "GeeksforGeeks")
+* [Beautiful Soup: Build a Web Scraper With Python – Real Python](https://realpython.com/beautiful-soup-web-scraper-python/ "Real Python")
+* [Read Html File In Python Using Pandas - GeeksforGeeks](https://www.geeksforgeeks.org/read-html-file-in-python-using-pandas/# "GeeksforGeeks")
+* [dataframe - Python Pandas: drop a column from a multi-level column index? - Stack Overflow](https://stackoverflow.com/questions/25135578/python-pandas-drop-a-column-from-a-multi-level-column-index "Stack Overflow")
+* [Check if a File Exists in Python - GeeksforGeeks](https://www.geeksforgeeks.org/check-if-a-file-exists-in-python/# "GeeksforGeeks")
+* [How to add one row in existing Pandas DataFrame? - GeeksforGeeks](https://www.geeksforgeeks.org/how-to-add-one-row-in-an-existing-pandas-dataframe/ "GeeksforGeeks")
+* [Pandas Strip Characters Left and Right Using Wildcards - Stack Overflow](https://stackoverflow.com/questions/69411654/pandas-strip-characters-left-and-right-using-wildcards "Stack Overflow")
+* [Reorder Pandas Columns: Pandas Reindex and Pandas insert • datagy](https://datagy.io/reorder-pandas-columns/ "Datagy.io")
+* [Python Docstrings - GeeksforGeeks](https://www.geeksforgeeks.org/python-docstrings/# "GeeksforGeeks")
+* [SQL Server CAST() Function](https://www.w3schools.com/sql/func_sqlserver_cast.asp "w3schools")
