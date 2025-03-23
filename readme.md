@@ -53,6 +53,10 @@ The project is organized as follows:
   Build a custom data dictionary and include it either in your README or as a separate document.  | Created a data dictionary to add context 
 ## AI Usage
 AI assistance was used in this project. Specifically, in the scraper.py script for troubleshooting the functions extract_contestant_names(), stats(), and flatten_index(). 
+
+I ran into issues particularly with getting the pagination for the urls involved in extracting the base data for the stats dataframe to work, first because it had noticeable discrepencies in how the tables the data came from were set up, then with less obvious discrepencies with how the html was formatted, which resulted in misalignment in how the data was extracted. The troubleshooting lead me to separating the extraction of contestant names from the main stats() function, turning it into a helper function. 
+
+I also ran into issues with flattening the stats table, which was extracted as a multi-level index, and needed to consult with ai to find a solution, as the methods I found on handling multi-level indexes weren't working in this case.
 ## Getting Started
 To run this project, first you'll need to clone the repository to your local machine.
 ```bash
@@ -63,7 +67,7 @@ Navigate into the project repository:
 cd Survivor_EDA
 ```
 ## Dependencies
-requests, BeatuifulSoup, StringIO, difflib, pandas, os, matplotlib.pyplot, seaborn, sqlite3
+requests, BeatuifulSoup, pandas, matplotlib, seaborn, sqlite3
 
 Refer to requirements.txt for full list of version dependencies and requirements.
 ### Virtual Environment Instructions
