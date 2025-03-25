@@ -2,15 +2,15 @@
 <h3 align="center"><b>Exploring Contestant Trends Through Data</b></h3>
 
 ## Overview
-This project webscrapes, cleans, and visualizes data related to contestant demographics and gameplay stats for the CBS hit show Survivor. The goal of this project is to examine the data and determine if there are any trends present that would point to certain demographics having better chances of winning the show than others, or conversely, if certain demographics have noteably lower chances of winning. It also looks at how these trends vary between the classic era of Survivor (seasons 1-39), and the new era (seasons 40 onward)
+This project webscrapes, cleans, and visualizes data related to contestant demographics and gameplay stats for the CBS hit show Survivor. The goal of this project is to examine the data and determine if there are any trends present that would point to certain demographics having better chances of winning the show than others, or conversely, if certain demographics have notably lower chances of winning. It also looks at how these trends vary between the Classic Era of Survivor (seasons 1-39), and the New Era (seasons 40 onward)
 
 
 * Webscrapes the data from various sites 
 * Cleans the data by removing unnecessary columns, uniformly formatting the column names and datatypes, and adding relevant attributes
 * Some visualizations created in this project include:
     * A line graph of the average placement of contestants by age group per season
-    * Pie charts showing the distribution of season winners by gender for the classic and new era's of Survivor
-    * Pie charts showing the placements of contestants with disabilities for the new era and overall
+    * Pie charts showing the distribution of season winners by gender for the Classic and New Era's of Survivor
+    * Pie charts showing the placements of contestants with disabilities for the New Era and overall
     * Bar graphs depicting the distribution of contestants based on ethnicity, as present with contestants overall, winners, average placement, and average jury vote percentage earned
 ## Data
 This project contains two main datasets, one focused on information about contestant demographics, while the other focuses on gameplay statistics. The 'contestants' dataset includes details such as age, ethnicity, gender, profession, hometown, whether they identify as lgbt, and whether they had a disability at the time of competing, while 'stats' includes statistic information about the contestants gameplay during their season, such as average jury vote %, challenge wins, and idols found. See **Data_dictionary.pdf** and **Survivor_database_ERD.pdf** for a more in-depth look into the structure and details of these datasets.
@@ -32,7 +32,7 @@ The datasets were created by webscraping various sources, such as the [US Surviv
 
 ## Project Structure
 The project is organized as follows:
-* Webscraping: Python script scraper.py is used to extract the data from websites listed [above](#data).
+* Webscraping: Python script scraper.py is used to extract the data from websites listed [above](#data). Functions.py stores all the necessary functions for scraper.py to run smoothly.
 
 * Data Exploration: The Jupyter notebook Survivor_EDA.ipynb explores the dataset.
 
