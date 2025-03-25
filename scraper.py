@@ -493,8 +493,8 @@ def create_csv(df:pd.DataFrame, file:str) -> str:
         df.to_csv(file, index=False)
         return print(f'{file} has been created.')
 # Write all the tables I've created to csv
-create_csv(contestant_table, 'contestants.csv')
-create_csv(stats_table, 'stats.csv')
-create_csv(idols, 'idols.csv') 
-create_csv(advantages, 'advantages.csv')
-create_csv(immunity, 'immunities.csv')
+create_csv(contestant_table, 'csv_files/contestants.csv')
+create_csv(stats_table, 'csv_files/stats.csv')
+create_csv(idols, 'csv_files/idols.csv') 
+create_csv(advantages, 'csv_files/advantages.csv')
+create_csv(immunity, 'csv_files/immunities.csv')

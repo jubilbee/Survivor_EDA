@@ -1,4 +1,4 @@
-<h1 style='text-align: center;'><b>Survivor: </b>Exploring Contestant Trends Through Data</h1>
+<div align="center"><h1><b>Survivor: </b>Exploring Contestant Trends Through Data</h1></div>
 
 ## Overview
 This project webscrapes, cleans, and visualizes data related to contestant demographics and gameplay stats for the CBS hit show Survivor. The goal of this project is to examine the data and determine if there are any trends present that would point to certain demographics having better chances of winning the show than others, or conversely, if certain demographics have noteably lower chances of winning. It also looks at how these trends vary between the classic era of Survivor (seasons 1-39), and the new era (seasons 40 onward)
@@ -43,14 +43,14 @@ The project is organized as follows:
 ## Features Utilized for the Project
  | Feature        | Description                           |
   |----------------|---------------------------------------|
-  | Scrape TWO pieces of data from anywhere on the internet and utilize it in your project. | Scraped data from multiple sources as listed in the [Data](#data) section.         |
-  | Clean your data and perform a pandas merge with your two data sets, then calculate some new values based on the new data set.      | Cleaned my data (specifically, the stats, idols, immunity, and advantages dataset) and merged them with pandas.|
-   Clean your data and perform a SQL join with your data sets using either plain sql or the pandasql Python library      | Used sqlite3 to join my data (stats and contestants) in multiple queries 
-  | Make 3 matplotlib or seaborn (or another plotting library) visualizations to display your data.| Made various plots to show off my findings, using matplotlib and seaborn. |
-  | Make a Tableau dashboard      | Made a dashboard with my findings on [Tableau](https://public.tableau.com/app/profile/camilla.babb/viz/Survivor_17399844202740/Dashboard1 "Survivor Tableau Dashboard") |
+  | Scrape TWO pieces of data from anywhere on the internet and utilize it in your project | Scraped data from multiple sources as listed in the [Data](#data) section.         |
+  | Clean your data and perform a pandas merge with your two data sets, then calculate some new values based on the new data set      | Cleaned my data (specifically, the stats, idols, immunity, and advantages dataset) and merged them with pandas.|
+   Clean your data and perform a SQL join with your data sets using either plain sql or the pandasql Python library      | Used sqlite3 to join my data (stats and contestants) in multiple queries. 
+  | Make 3 matplotlib or seaborn (or another plotting library) visualizations to display your data| Made various plots to show off my findings, using matplotlib and seaborn. |
+  | Make a Tableau dashboard      | Made a dashboard with my findings on [Tableau](https://public.tableau.com/app/profile/camilla.babb/viz/Survivor_17399844202740/Dashboard1 "Survivor Tableau Dashboard"). |
   | Utilize a virtual environment      | Made a venv for this project. |
   | Notate your code with markdown cells in Jupyter Notebook | Included in my code, you will find clear notes describing each code block. |
-  Build a custom data dictionary and include it either in your README or as a separate document.  | Created a data dictionary to add context 
+  Build a custom data dictionary and include it either in your README or as a separate document  | Created a data dictionary to add context.
 ## AI Usage
 AI assistance was used in this project. Specifically, in the scraper.py script for troubleshooting the functions extract_contestant_names(), stats(), and flatten_index(). 
 
@@ -66,10 +66,26 @@ Navigate into the project repository:
 ```bash
 cd Survivor_EDA
 ```
+Set up the virtual environment using the instructions below, ensuring the environment is being made inside the Survivor_EDA folder. 
 ## Dependencies
-requests, BeatuifulSoup, pandas, matplotlib, seaborn, sqlite3
+To properly run this project, the user will need to have the following: 
+* An integrated development environment such as __VS Code__ (Recommended for this project)
+* __Python 3.13.1 or higher__ installed on the user's system. 
+    * Ensure that Python is located on the system's PATH, allowing Python commands to be executed from the terminal or command prompt. Refer to the official [Python](https://docs.python.org/3/using/windows.html#the-full-installer) documentation for more info.
+    * ___For VS Code Users___: Ensure that the Python Extension is installed on VS Code.
+* Jupyter Notebook is required for running __Survivor_EDA.ipynb__.
+    * ___For VS Code Users___: Install the Jupyter Extension on VS Code.
+* __Git Bash__ (Recommended for Windows Users) 
 
-Refer to requirements.txt for full list of version dependencies and requirements.
+### Modules:
+The following modules are used in this project and are included in __requirements.txt:__
+* requests 
+* BeautifulSoup
+* pandas
+* matplotlib
+* seaborn 
+
+Refer to requirements.txt for full list of version-specific dependencies and requirements.
 ### Virtual Environment Instructions
 1. After you have cloned the repo to your machine, navigate to the project folder in GitBash/Terminal.
 2. Create a virtual environment in the project folder.
@@ -77,13 +93,20 @@ Refer to requirements.txt for full list of version dependencies and requirements
 4. Install the required packages.
 5. When you are done working on your repo, deactivate the virtual environment.
 
-**Virtual environment commands**
-| Command | Linux/Mac | GitBash |
+__Virtual environment commands__
+| Command | Linux/Mac | Git Bash |
 | ------- | --------- | ------- |
 | Create | `python3 -m venv venv` | `python -m venv venv` |
 | Activate | `source venv/bin/activate` | `source venv/Scripts/activate` |
 | Install | `pip install -r requirements.txt` | `pip install -r requirements.txt` |
 | Deactivate | `deactivate` | `deactivate` |
+
+__Note for VS Code Users__:
+
+If you're using VS Code to run the Jupyter Notebook or Python script, ensure that the virtual environment(```venv```) is selected as the kernel. This is necessary for the modules installed from __requirements.txt__ to be active when running the project.
+* To select the kernel, open the __Command Palette__ (``Ctrl+Shift+P`` or ``Cmd+Shift+P`` on Mac) and search for __"Python: Select Interpreter"__. Choose the one for the virtual environment (``venv``).
+
+### Running the Project
 
 
 ## Credits
