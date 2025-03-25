@@ -109,7 +109,7 @@ If you're using VS Code to run the Jupyter Notebook or Python script, ensure tha
 
 
 ### Running the Project
-This repository includes pre-existing .csv files created during the project. If these files are present, the user can directly open and run __Survivor_EDA.ipynb__ in VS Code or their chosen IDE.
+This repository includes .csv files that were created during the project. If these files are present, the user can directly open and run __Survivor_EDA.ipynb__ in VS Code or their chosen IDE.
 
 __If .csv files are missing:__
 * Open __scraper.py__ in VS Code/chosen IDE
