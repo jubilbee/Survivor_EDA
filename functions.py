@@ -1,10 +1,10 @@
-
 import requests
 from bs4 import BeautifulSoup
 from io import StringIO
 import difflib
 import pandas as pd
 import os
+
 # Function to create dictionaries of contestants with the same gender
 def get_gender(main:str, gender:str) -> dict:
     """
@@ -64,7 +64,7 @@ def find_closest_match(name:str, name_dict:dict, threshold=0.7) -> str:
         return closest_matches[0] 
 
 # Function to fill Ethnicity column in contestant table with data from list of urls
-def get_ethnicity(URLS: list, table):
+def get_ethnicity(URLS: list, table:pd.DataFrame):
     """
     Iterates through a list of urls, creating a dictionary of names and their ethnicity, 
     then adds the ethnicity to a column in contestants table by mapping the names in the dictionary to the Name column
@@ -94,7 +94,7 @@ def get_ethnicity(URLS: list, table):
     return
 
 # Function to fill lgbt column in contestant table with True or False values based on url containing a list of lgbt contestants
-def get_lgbt(main:str, table):
+def get_lgbt(main:str, table:pd.DataFrame):
     """
     Stores names into a dictionary using the 'Name' column from the Dataframe contestant_table. 
     Assigns the names True or False values depending on if the name appears in the url or not.
@@ -136,7 +136,7 @@ def get_lgbt(main:str, table):
     return 
 
 # function to fill a disability column in contestant table with True or False values
-def has_disability(url:str, table):
+def has_disability(url:str, table:pd.DataFrame):
     """
     Creates a dictionary of names using the 'Name' column of the Dataframe contestant_table.
     Webscrapes contestant names from a url, and assigns them a True value into the dictionary.
@@ -255,7 +255,7 @@ def stats() -> pd.DataFrame:
 
 # Flatten stats multiindex to single index
 # Used ai to help get multiindex flattened, as droplevel was throwing a ValueError
-def flatten_index(table):
+def flatten_index(table:pd.DataFrame):
     """
     Flattens the multi-level (tuple) columns for Dataframe stats_table to a single level by keeping only the second level column names
     
@@ -301,5 +301,191 @@ def create_csv(df:pd.DataFrame, file:str) -> str:
         # if the file doesn't exist, writes the dataframe to csv, then prints a statement telling user the file has been created
         df.to_csv(file, index=False)
         return print(f'{file} has been created.')
-
     
+
+# Jupyter Notebook - specific functions:
+
+def clean_and_merge(advantages:pd.DataFrame, idols:pd.DataFrame, immunities:pd.DataFrame, stats:pd.DataFrame) -> pd.DataFrame:
+    """
+    Cleans tables for advantages, idols and immunities, then merges them to the stats table.
+
+    Args:
+        advantages(DataFrame): pd.DataFrame containing data on contestants who have found advantages
+        idols(DataFrame): pd.DataFrame containing data on top contestants who have found immunity idols
+        immunities(DataFrame): pd.DataFrame containing data on contestants who have won individual immunity challenges
+        stats(DataFrame): pd.DataFrame consisting of data on contestants overall performance in the game
+    Returns:
+        DataFrame: Merges advantages, idols, and immunities Dataframes into the stats Dataframe
+    """
+    # first I create the variable final_stats and set it to equal stats, so that if the Jupyter Notebook is ran after the data is all cleaned and merged, it should just read the cleaned stats DataFrame
+    final_stats = stats
+    # since the Notes column should only exist in the stats DataFrame if everything is already merged, I use an if statement checking if it exists in columns, only running the code to clean and merge if Notes column is not in stats.
+    if 'Notes' not in stats.columns:
+            # Copy all data over from Contestant.1 column to the Contestant column for each dataset in preparation to drop the duplicated column
+            idols['Contestant'] = idols['Contestant.1']  
+            advantages['Contestant'] = advantages['Contestant.1'] 
+            immunities['Contestant'] = immunities['Contestant.1']  
+
+            # Next I drop unnecessary or duplicate columns from the dataset to be merged with stats
+            advantages = advantages.drop(columns=['Rank', 'Contestant.1', 'VV', 'VFB', 'Tie broken?'])
+            idols = idols.drop(columns=['Rank', 'Contestant.1'])
+            immunities = immunities.drop(columns=['Rank', 'Contestant.1'])
+                
+            # strip and replace values (Season column of S, idols table of special characters (*,†/+,#))
+            advantages['Season'] = advantages['Season'].str.replace('S', '')
+            # replace all string versions of seasons with their corresponding number value
+            advantages['Season'] = advantages['Season'].replace({
+                    'Game Changers': 34,
+                    'David vs. Goliath': 37,
+                    'Winners at War': 40,
+                    'Cambodia': 31,
+                    'Island of the Idols': 39,
+                    'HvHvH': 35,
+                    'Worlds Apart': 30,
+                    'Kaoh Rong': 32,
+                    'Ghost Island': 36,
+                    'urvivor 42': 42,
+                    'Edge of Extinction': 38,
+                    'MvGX': 33   
+                })
+            # change the advantages dataset Season column to an int datatype
+            advantages['Season'] = advantages['Season'].astype(int) 
+
+            # Next I make sure all of the row values are cleaned and ready to be switched to appropiate datatypes
+            # There was a row in the idols column that did not represent a specific contestant so that was dropped
+            idols = idols.drop(idols[idols['Season'].str.strip() == '--'].index)
+            # Then strip down any special characters from rows where they were present, (and S from Season)
+            idols['Season'] = idols['Season'].str.replace('S', '') 
+            idols['Contestant'] = idols['Contestant'].str.rstrip('*').str.rstrip('#').str.rstrip('+')
+            idols['IH'] = idols['IH'].str.rstrip('*').str.rstrip('#').str.rstrip('+')
+            idols['IP'] = idols['IP'].str.rstrip('*').str.rstrip('#').str.rstrip('+')
+            idols['VV'] = idols['VV'].str.rstrip('†').str.rstrip('#')
+
+            # Change the idols columns to correct datatypes
+            idols['IH'] = idols['IH'].astype(int)
+            idols['IP'] = idols['IP'].astype(int)
+            idols['VV'] = idols['VV'].astype(int)
+            idols['Season'] = idols['Season'].astype(int)
+
+            # Repeat the process of stripping columns and converting their datatypes with the immunites dataset
+            immunities['Season'] = immunities['Season'].str.split(':').str[0]
+            immunities['Season'] = immunities['Season'].str.strip('Survivor').str.strip('S')
+            immunities['Season'] = immunities['Season'].astype(int)     
+            
+            # There were values in all of the .csv files for the dataframes being cleaned here that had double spaces instead of single space, which may have been causing issues with data merging over,so those were replaced 
+            idols['Contestant'] = idols['Contestant'].str.replace('  ', ' ').str.strip()
+            advantages['Contestant'] = advantages['Contestant'].str.replace('  ', ' ').str.strip()
+            immunities['Contestant'] = immunities['Contestant'].str.replace('  ', ' ').str.strip()
+            
+            # with all the datasets sufficiently cleaned, we then go ahead and merge the datasets to the stats table
+            merged_idols = pd.merge(stats, idols, on=['Contestant', 'Season'], how='left')
+            merged_with_advantages = pd.merge(merged_idols, advantages, on=['Contestant', 'Season'], how='left')
+            final_stats = pd.merge(merged_with_advantages, immunities, on=['Contestant', 'Season'], how='left')
+
+            # I then reorder the columns by creating a list with them in the desired order, and then reindex the merged table
+            reorder_columns = ['Season', 'Contestant', 'SurvSc', 'SurvAv', 'ChW', 'ChA', 'ChW%',
+                            'SO', 'VFB', 'VAP', 'TotV', 'TCA', 'TC%', 'wTCR', 'JVF', 'TotJ',
+                            'JV%', 'IF', 'IH', 'IP', 'VV', 'ICW', 'ICA', 'AF', 'AP', 'Notes']
+            final_stats = final_stats.reindex(columns=reorder_columns, fill_value=0)
+            
+            # I do some more stripping for values from the original stats table that hadn't been handled yet
+            final_stats['VAP'] = final_stats['VAP'].astype(str).str.rstrip('*')
+            final_stats['TotV'] = final_stats['TotV'].astype(str).str.rstrip('*')
+            final_stats['TCA'] = final_stats['TCA'].astype(str).str.rstrip('*')
+            final_stats['TC%'] = final_stats['TC%'].astype(str).str.rstrip('*')
+            final_stats['wTCR'] = final_stats['wTCR'].astype(str).str.rstrip('*')
+                
+            # Then I drop rows where SurvSc is null (Season 48 - no values for stats yet)
+            final_stats = final_stats.dropna(subset='SurvSc')
+            # Handling the rest of the null values by filling
+            final_stats['Notes'] = final_stats['Notes'].fillna('NA')  
+            final_stats = final_stats.fillna(0)
+            # Some of the tables had '-' for null values, I replaced those with 0 for the sake of converting their datatype to int later
+            final_stats = final_stats.replace('-', '0')
+
+            # then I ensure all of the columns are the appropriate datatype by creating a dictionary
+            final_stats = final_stats.astype({
+            'SurvSc': 'float64', 'SurvAv': 'float64', 'ChW': 'float64', 'ChA': 'float64',
+            'ChW%': 'float64', 'TC%': 'float64', 'wTCR': 'float64', 'JV%': 'float64',
+            'SO': 'int64', 'VFB': 'int64', 'VAP': 'int64', 'TotV': 'int64', 'TCA': 'int64',
+            'JVF': 'int64', 'TotJ': 'int64', 'IF': 'int64', 'IH': 'int64', 'IP': 'int64',
+            'VV': 'int64', 'ICW': 'int64', 'ICA': 'int64', 'AF': 'int64', 'AP': 'int64'
+            })
+            # Lastly I ensure there were no duplicate columns
+            final_stats = final_stats.drop_duplicates(subset=['Contestant', 'Season'], keep='last')
+    # For some reason the Notes column sometimes unfills the null values on repeat runs, this if statement ensures the values are filled as intended
+    if 'Notes' in stats.columns:
+        final_stats['Notes'] = final_stats['Notes'].fillna('NA') 
+    return final_stats 
+
+def rename_columns(stats:pd.DataFrame) -> pd.DataFrame:
+    """
+    Rename columns in stats table to be more readable
+    """
+    # manually renames column names in stats table from their abbreviated names for better readability
+    stats = stats.rename(columns={
+        'SurvSc': 'Survival Score',
+        'SurvAv': 'Survival Average',
+        'ChW': 'Challenge Wins',
+        'ChA': 'Challenge Appearances',
+        'ChW%': 'Challenge Win %',
+        'SO': 'Sit Outs',
+        'VFB': 'Votes For Bootee',
+        'VAP': 'Votes Against (Total)',
+        'TotV': 'Total Votes Cast',
+        'TCA': 'Tribal Council Appearances',
+        'TC%': 'Tribal Counicl %',
+        'wTCR': 'Tribal Council Ratio (Weighted)',
+        'JVF': 'Jury Votes For',
+        'TotJ': 'Total Numbers Of Jurors',
+        'JV%': 'Jury Votes %',
+        'IF': 'Idols Found',
+        'IH': 'Idols Held',
+        'IP': 'Idols Played',
+        'VV': 'Votes Voided',
+        'ICW': 'Immunity Challenge Wins',
+        'ICA': 'Immunity Challenge Appearances',
+        'AF': 'Advantages Found',
+        'AP': 'Advantages Played'
+    })
+    return stats
+
+def extract_state(hometown:str) -> str:
+    '''
+    Extracts the state or province from values in the pd.Dataframe column contestants['Hometown'] 
+    in preparation to be stored in the column contestants['State']
+
+    Args:
+        hometown(str): The value in contestants['Hometown']. Most commonly formatted 'City, ST'
+    Returns:
+        str: The state or province extracted from the 'hometown' value. 
+    '''
+    try:
+        # ensures that if the hometown value is Washington DC with no comma, that a comma is added to fit the format for extraction
+        if hometown == 'Washington DC':
+            hometown = 'Washington, DC'
+        # if the hometown has parenthesis such as when a contestant is from Canada, that only the section before the parenthesis is kept
+        if '(' in hometown:
+            hometown = hometown.split(' (')[0]
+        # splits the hometown by the comma, keeps anything after the comma
+        return hometown.split(', ')[1]
+    except:
+        # prints an error message in case an issue arises
+        print(f'Error- {hometown} unable to be stripped')    
+
+def add_countries(hometown:str) -> str:
+    '''
+    Returns either 'Canada' or 'USA' as corresponds to the value in contestants['Hometown']
+    in preparation to be stored in the column contestants['Country']
+
+    Args:
+        hometown(str): The value in contestants['Hometown']. Most commonly formatted 'City, ST'
+    Returns:
+        str: The country as determined by the 'hometown' value.
+    '''
+    # assuming there will be no contestants from outside the usa or canada, returns Canada as country if it is present in the hometown value
+    if 'Canada' in hometown:
+        return 'Canada'
+    # otherwise, returns USA as country
+    else:
+        return 'USA'

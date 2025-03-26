@@ -53,7 +53,7 @@ The project is organized as follows:
   | Notate your code with markdown cells in Jupyter Notebook | Included in my code, you will find clear notes describing each code block. |
   Build a custom data dictionary and include it either in your README or as a separate document  | Created a data dictionary to add context.
 ## AI Usage
-AI assistance was used in this project. Specifically, in the scraper.py script for troubleshooting the functions extract_contestant_names(), stats(), and flatten_index(). 
+AI assistance was used in this project. Specifically, in the functions.py script for troubleshooting the functions extract_contestant_names(), stats(), and flatten_index(). 
 
 I ran into issues particularly with getting the pagination for the urls involved in extracting the base data for the stats dataframe to work, first because it had noticeable discrepencies in how the tables the data came from were set up, then with less obvious discrepencies with how the html was formatted, which resulted in misalignment in how the data was extracted. The troubleshooting lead me to separating the extraction of contestant names from the main stats() function, turning it into a helper function. 
 

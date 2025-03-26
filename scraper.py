@@ -90,7 +90,7 @@ contestant_table['Gender'] = contestant_table['Name'].map(gender_dict)
 contestant_table.loc[contestant_table['Name'] == 'Teeny Chirichillo', 'Gender'] = 'N'
 contestant_table.loc[contestant_table['Name'] == 'Evvie Jagoda', 'Gender'] = 'N'
 
-# Running the get_lgbt() function
+# Calling the get_lgbt() function
 f.get_lgbt('https://survivor.fandom.com/wiki/Category:LGBT_Contestants', contestant_table)
 
 # Manually replaces season names in contestant table with their season number
@@ -198,6 +198,7 @@ stats_table.drop(('Unnamed: 2_level_0', 'SurvAv'), axis = 1, inplace=True)
 stats_table.drop(('Unnamed: 0_level_0', 'Unnamed: 0_level_1'), axis = 1, inplace=True)
 stats_table.drop(('Challenge stats', 'ChW.1'), axis = 1, inplace=True)
 
+# Call the flatten_index function
 f.flatten_index(stats_table)
 
 # most idols table
@@ -207,7 +208,7 @@ advantages = f.create_tables('https://truedorktimes.com/survivor/boxscores/advan
 # individual immunity wins
 immunity = f.create_tables('https://truedorktimes.com/survivor/boxscores/icwin.htm')
 
-# Write all the tables I've created to csv
+# Write all the tables I've created to csv files by calling the function create_csv
 f.create_csv(contestant_table, 'csv_files/contestants.csv')
 f.create_csv(stats_table, 'csv_files/stats.csv')
 f.create_csv(idols, 'csv_files/idols.csv') 
