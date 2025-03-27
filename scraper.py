@@ -79,6 +79,7 @@ URLS = [
     "https://survivor.fandom.com/wiki/Category:Asian-Canadian_Contestants",
     "https://survivor.fandom.com/wiki/Category:Latin_American_Contestants",
 ]
+# Call the get_ethnicity() function
 f.get_ethnicity(URLS, contestant_table)
 
 # Fills any null values in the 'Ethnicity' column

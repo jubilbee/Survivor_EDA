@@ -13,7 +13,7 @@ This project webscrapes, cleans, and visualizes data related to contestant demog
     * Pie charts showing the placements of contestants with disabilities for the New Era and overall
     * Bar graphs depicting the distribution of contestants based on ethnicity, as present with contestants overall, winners, average placement, and average jury vote percentage earned
 ## Data
-This project contains two main datasets, one focused on information about contestant demographics, while the other focuses on gameplay statistics. The 'contestants' dataset includes details such as age, ethnicity, gender, profession, hometown, whether they identify as lgbt, and whether they had a disability at the time of competing, while 'stats' includes statistic information about the contestants gameplay during their season, such as average jury vote %, challenge wins, and idols found. See **Data_dictionary.pdf** and **Survivor_database_ERD.pdf** for a more in-depth look into the structure and details of these datasets.
+This project contains two main datasets, one focused on information about contestant demographics, while the other focuses on gameplay statistics. The 'contestants' dataset includes details such as age, ethnicity, gender, profession, hometown, whether they identify as lgbt, and whether they had a disability at the time of competing, while 'stats' includes statistic information about the contestants gameplay during their season, such as average jury vote %, challenge wins, and idols found. See __Data_dictionary.pdf__ and __Survivor_database_ERD.pdf__ for a more in-depth look into the structure and details of these datasets.
 
 The datasets were created by webscraping various sources, such as the [US Survivor contestants](https://en.wikipedia.org/wiki/List_of_Survivor_(American_TV_series)_contestants "Contestants wiki") wikipedia page, and [season stats](https://www.truedorktimes.com/survivor/boxscores/s1.htm
  "Season stats") from The True Dork Times website. Other sites scraped for this project:
@@ -32,9 +32,9 @@ The datasets were created by webscraping various sources, such as the [US Surviv
 
 ## Project Structure
 The project is organized as follows:
-* Webscraping: Python script scraper.py is used to extract the data from websites listed [above](#data). Functions.py stores all the necessary functions for scraper.py to run smoothly.
+* Webscraping: Python script __scraper.py__ is used to extract the data from websites listed [above](#data). __Functions.py__ stores all the necessary functions for scraper.py to run smoothly.
 
-* Data Exploration: The Jupyter notebook Survivor_EDA.ipynb explores the dataset.
+* Data Exploration: The Jupyter notebook __Survivor_EDA.ipynb__ explores the dataset.
 
 * Analysis: Using Python with the Pandas package to clean the data.
 
@@ -51,9 +51,9 @@ The project is organized as follows:
   | Make a Tableau dashboard      | Made a dashboard with my findings on [Tableau](https://public.tableau.com/app/profile/camilla.babb/viz/Survivor_17399844202740/Dashboard1 "Survivor Tableau Dashboard"). |
   | Utilize a virtual environment      | Made a venv for this project. |
   | Notate your code with markdown cells in Jupyter Notebook | Included in my code, you will find clear notes describing each code block. |
-  Build a custom data dictionary and include it either in your README or as a separate document  | Created a data dictionary to add context.
+  Build a custom data dictionary and include it either in your README or as a separate document  | Created __Data_dictionary.pdf__ to add context for users.
 ## AI Usage
-AI assistance was used in this project. Specifically, in the functions.py script for troubleshooting the functions extract_contestant_names(), stats(), and flatten_index(). 
+AI assistance was used in this project for help troubleshooting. Specifically, in the functions.py script for the functions extract_contestant_names(), stats(), and flatten_index(). 
 
 I ran into issues particularly with getting the pagination for the urls involved in extracting the base data for the stats dataframe to work, first because it had noticeable discrepencies in how the tables the data came from were set up, then with less obvious discrepencies with how the html was formatted, which resulted in misalignment in how the data was extracted. The troubleshooting lead me to separating the extraction of contestant names from the main stats() function, turning it into a helper function. 
 
