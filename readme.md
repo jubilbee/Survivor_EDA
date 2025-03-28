@@ -2,7 +2,7 @@
 <h3 align="center"><b>Exploring Contestant Trends Through Data</b></h3>
 
 ## Overview
-This project webscrapes, cleans, and visualizes data related to contestant demographics and gameplay stats for the CBS hit show Survivor. The goal of this project is to examine the data and determine if there are any trends present that would point to certain demographics having better chances of winning the show than others, or conversely, if certain demographics have notably lower chances of winning. It also looks at how these trends vary between the Classic Era of Survivor (seasons 1-39), and the New Era (seasons 40 onward)
+This project webscrapes, cleans, and visualizes data related to contestant demographics and gameplay stats for the CBS hit show Survivor. The goal of this project is to examine the data and determine if there are any trends present that would point to certain demographics having better chances of winning the show than others, or conversely, if certain demographics have notably lower chances of winning. It also looks at how these trends vary between the Classic Era of Survivor (seasons 1-39), and the New Era (seasons 40 onward). A [Tableau Dashboard](https://public.tableau.com/app/profile/camilla.babb/viz/Survivor_17399844202740/Dashboard1 "Survivor Tableau Dashboard") of visualizations in this project was created as well.
 
 
 * Webscrapes the data from various sites 
@@ -29,6 +29,8 @@ The datasets were created by webscraping various sources, such as the [US Surviv
 * [Idols stats](https://truedorktimes.com/survivor/boxscores/idolsfound-season.htm "Idols stats")
 * [Advantage stats](https://truedorktimes.com/survivor/boxscores/advantages.htm "Advantage stats")
 * [Individual immunity challenge wins](https://truedorktimes.com/survivor/boxscores/icwin.htm "Individual Immunity wins")
+
+The data in the .csv files for this project was last pulled on 3/25/2025 (advantages.csv, idols.csv, and immunities.csv) and 3/27/2025 (contestants.csv, stats.csv)
 
 ## Project Structure
 The project is organized as follows:
