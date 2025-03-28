@@ -30,7 +30,7 @@ The datasets were created by webscraping various sources, such as the [US Surviv
 * [Advantage stats](https://truedorktimes.com/survivor/boxscores/advantages.htm "Advantage stats")
 * [Individual immunity challenge wins](https://truedorktimes.com/survivor/boxscores/icwin.htm "Individual Immunity wins")
 
-The data in the .csv files for this project was last pulled on 3/25/2025 (advantages.csv, idols.csv, and immunities.csv) and 3/27/2025 (contestants.csv, stats.csv)
+The data in the .csv files for this project was last pulled on 3/27/2025.
 
 ## Project Structure
 The project is organized as follows:

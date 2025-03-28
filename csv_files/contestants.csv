@@ -860,6 +860,7 @@ Season,Name,Age,Hometown,Profession,Finish,Ethnicity,Gender,Lgbt,Has Disability,
 48,Kevin Leung,34,"Livermore, CA",Finance Manager,17,Asian-American,M,False,False,CA,USA
 48,Justin Pioppi,29,"Winthrop, MA",Pizzeria Manager,16,White,M,False,False,MA,USA
 48,Thomas Krottinger,34,"Los Angeles, CA",Music Executive,15,White,M,True,False,CA,USA
+48,Bianca Roses,33,"Arlington, VA",PR Consultant,14,White,F,False,False,VA,USA
 48,Shauhin Davari,38,"Costa Mesa, CA",Debate Professor,0,Asian-American,M,False,False,CA,USA
 48,Eva Erickson,24,"Providence, RI",PhD Candidate,0,White,F,False,True,RI,USA
 48,Kyle Fraser,31,"Brooklyn, NY",Attorney,0,African-American,M,False,False,NY,USA
@@ -870,7 +871,6 @@ Season,Name,Age,Hometown,Profession,Finish,Ethnicity,Gender,Lgbt,Has Disability,
 48,David Kinne,39,"Buena Park, CA",Stunt Performer,0,White,M,False,False,CA,USA
 48,Cedrek McFadden,45,"Greenville, SC",Surgeon,0,African-American,M,False,False,SC,USA
 48,Charity Nelms,34,"St. Petersburg, FL",Flight Attendant,0,White,F,False,False,FL,USA
-48,Bianca Roses,33,"Arlington, VA",PR Consultant,0,White,F,False,False,VA,USA
 48,Chrissy Sarnowsky,55,"Chicago, IL",Fire Lieutenant,0,White,F,False,False,IL,USA
 48,Star Toomey,28,"Augusta, GA",Sales Expert,0,African-American,F,True,False,GA,USA
 48,Mary Zheng,31,"Philadelphia, PA",Substance Abuse Counselor,0,Asian-American,F,False,False,PA,USA
